@@ -1,0 +1,213 @@
+--------- beginning of main
+01-04 16:20:43.301  8848  8848 E a       : Map already contains entry for key experienceIdSetForActivity. Ignoring.
+01-04 16:20:43.844  8848 21362 E dev.expo.updates: {"timestamp":1767523843844,"message":"Failed to download remote update from URL: http:\/\/8zsokra-madhusmp-8081.exp.direct","code":"UpdateFailedToLoad","level":"error","stacktrace":["expo.modules.updates.logging.UpdatesLogger.logEntryString(SourceFile:23)","expo.modules.updates.logging.UpdatesLogger.error(SourceFile:2)","expo.modules.updates.logging.UpdatesLogger.error(SourceFile:1)","expo.modules.updates.logging.UpdatesLogger.error$default(SourceFile:2)","expo.modules.updates.loader.FileDownloader$downloadRemoteUpdate$1.onResponse(SourceFile:52)","expo.modules.updates.loader.FileDownloader$downloadData$1.onResponse(SourceFile:13)","okhttp3.internal.connection.RealCall$AsyncCall.run(SourceFile:61)","java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)","java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)","java.lang.Thread.run(Thread.java:1119)"]}
+01-04 16:20:43.851  8848 21362 E Loader  : Failed to download remote update from URL: http://8zsokra-madhusmp-8081.exp.direct
+01-04 16:20:43.851  8848 21362 E Loader  : java.lang.Exception: The endpoint 8zsokra-madhusmp-8081.exp.direct is offline.
+01-04 16:20:43.851  8848 21362 E Loader  : 
+01-04 16:20:43.851  8848 21362 E Loader  : ERR_NGROK_3200
+01-04 16:20:43.851  8848 21362 E Loader  : 
+01-04 16:20:43.851  8848 21362 E Loader  : 	at expo.modules.updates.loader.FileDownloader$downloadRemoteUpdate$1.onResponse(SourceFile:70)
+01-04 16:20:43.851  8848 21362 E Loader  : 	at expo.modules.updates.loader.FileDownloader$downloadData$1.onResponse(SourceFile:13)
+01-04 16:20:43.851  8848 21362 E Loader  : 	at okhttp3.internal.connection.RealCall$AsyncCall.run(SourceFile:61)
+01-04 16:20:43.851  8848 21362 E Loader  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+01-04 16:20:43.851  8848 21362 E Loader  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+01-04 16:20:43.851  8848 21362 E Loader  : 	at java.lang.Thread.run(Thread.java:1119)
+01-04 16:20:43.851  8848 21362 E LoaderTask: Failed to download remote update
+01-04 16:20:43.851  8848 21362 E LoaderTask: java.lang.Exception: The endpoint 8zsokra-madhusmp-8081.exp.direct is offline.
+01-04 16:20:43.851  8848 21362 E LoaderTask: 
+01-04 16:20:43.851  8848 21362 E LoaderTask: ERR_NGROK_3200
+01-04 16:20:43.851  8848 21362 E LoaderTask: 
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at expo.modules.updates.loader.FileDownloader$downloadRemoteUpdate$1.onResponse(SourceFile:70)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at expo.modules.updates.loader.FileDownloader$downloadData$1.onResponse(SourceFile:13)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(SourceFile:61)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at java.lang.Thread.run(Thread.java:1119)
+01-04 16:20:43.851  8848 21362 E LoaderTask: Unexpected error encountered while loading this app
+01-04 16:20:43.851  8848 21362 E LoaderTask: java.lang.Exception: The endpoint 8zsokra-madhusmp-8081.exp.direct is offline.
+01-04 16:20:43.851  8848 21362 E LoaderTask: 
+01-04 16:20:43.851  8848 21362 E LoaderTask: ERR_NGROK_3200
+01-04 16:20:43.851  8848 21362 E LoaderTask: 
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at expo.modules.updates.loader.FileDownloader$downloadRemoteUpdate$1.onResponse(SourceFile:70)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at expo.modules.updates.loader.FileDownloader$downloadData$1.onResponse(SourceFile:13)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(SourceFile:61)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+01-04 16:20:43.851  8848 21362 E LoaderTask: 	at java.lang.Thread.run(Thread.java:1119)
+01-04 16:20:43.851  8848  8848 E e0      : java.lang.NullPointerException
+01-04 16:20:43.912  8848  8848 E k       : ErrorActivity message: Sorry about that. You can go back to Expo home or try to reload the project.
+--------- beginning of system
+01-04 16:21:02.639 16641 21805 E AconfigFlags: Failed to read Aconfig values from /vendor/etc/aconfig_flags.pb
+01-04 16:21:02.639 16641 21805 E AconfigFlags: java.io.FileNotFoundException: /vendor/etc/aconfig_flags.pb: open failed: ENOENT (No such file or directory)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at java.io.FileInputStream.<init>(FileInputStream.java:133)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at com.android.internal.pm.pkg.component.AconfigFlags.<init>(AconfigFlags.java:71)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at com.android.internal.pm.pkg.parsing.ParsingPackageUtils.<clinit>(ParsingPackageUtils.java:299)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at com.android.internal.pm.parsing.PackageParser2.<init>(PackageParser2.java:99)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at android.content.pm.PackageManager.getPackageArchiveInfo(PackageManager.java:8963)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at android.content.pm.PackageManager.getPackageArchiveInfo(PackageManager.java:8937)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at iog.a(PG:144)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at frt.a(PG:31)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at frs.i(PG:193)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at frs.d(PG:35)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at fsq.b(PG:55)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at iod.f(PG:3)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at fsr.c(PG:260)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at frs.l(PG:23)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at frs.run(PG:53)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at egh.run(PG:183)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at java.lang.Thread.run(Thread.java:1119)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at fts.run(PG:6)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at libcore.io.Linux.open(Native Method)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:568)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:568)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:9700)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+01-04 16:21:02.639 16641 21805 E AconfigFlags: 	... 21 more
+01-04 16:21:06.348 18973 21857 E AbstractLogEventBuilder: The provided ProductIdOrigin 3 is not one of the process-level expected values: 1 or 2
+01-04 16:21:06.562 18973 19047 E AbstractLogEventBuilder: The provided ProductIdOrigin 3 is not one of the process-level expected values: 1 or 2
+01-04 16:21:07.219 18973 18973 E AbstractLogEventBuilder: The provided ProductIdOrigin 3 is not one of the process-level expected values: 1 or 2
+01-04 16:21:07.237 18973 21857 E AbstractLogEventBuilder: The provided ProductIdOrigin 3 is not one of the process-level expected values: 1 or 2
+01-04 16:21:08.874 18973 19038 E Finsky  : [3360] [Counters] attempted to use a non-positive increment for: 4752
+01-04 16:21:08.875 18973 19038 E Finsky  : [3360] [Counters] attempted to use a non-positive increment for: 4753
+01-04 16:21:08.940 18973 19038 E Finsky  : [3360] [Counters] attempted to use a non-positive increment for: 4752
+01-04 16:21:08.944 18973 19038 E Finsky  : [3360] [Counters] attempted to use a non-positive increment for: 4753
+01-04 16:21:09.160 18973 19043 E Finsky  : [3365] [Counters] attempted to use a non-positive increment for: 4752
+01-04 16:21:09.160 18973 19043 E Finsky  : [3365] [Counters] attempted to use a non-positive increment for: 4753
+01-04 16:21:09.525 18973 19038 E Finsky  : [3360] [Counters] attempted to use a non-positive increment for: 4752
+01-04 16:21:09.811 18973 19048 E Finsky  : [3370] [Counters] attempted to use a non-positive increment for: 4753
+01-04 16:21:19.464 16641 21779 E pzz     : Trace Application creation timed out after 980271 ms. Complete trace: # qak@9756adda
+01-04 16:21:19.464 16641 21779 E pzz     : qao: 
+01-04 16:21:19.464 16641 21779 E pzz     : 	at tk_trace.LocalSubscription onLoaded()(Started After:963)
+01-04 16:21:19.464 16641 21779 E pzz     : 	at tk_trace.LocalSubscription newLoad(Started After:963)
+01-04 16:21:19.464 16641 21779 E pzz     : 	at tk_trace.onStart FileBrowserRegularActivity(Started After:962)
+01-04 16:21:19.464 16641 21779 E pzz     : 	at tk_trace.Intenting into FileBrowserRegularActivity(Started After:962)
+01-04 16:21:21.367 16346 16346 E hlete.executive: Not starting debugger since process cannot load the jdwp agent.
+01-04 16:21:21.396 16346 16346 E hlete.executive: BBinder_init Processname  <pre-initialized>  
+01-04 16:21:21.396 16346 16346 E hlete.executive: BBinder_init hasGetProcessName  <pre-initialized>
+01-04 16:21:21.551 29398 29568 E MvfstCallbacks.cpp: readError: streamid=3; error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.558 29398 29568 E MvfstCallbacks.cpp: readError: streamid=7; error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.559 29398 29568 E MvfstCallbacks.cpp: readError: streamid=11; error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.564 29398 29568 E MvfstCallbacks.cpp: onConnectionError: error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.566 29398 29568 E MvfstCallbacks.cpp: readError: streamid=3; error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.566 29398 29568 E MvfstCallbacks.cpp: readError: streamid=7; error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.566 29398 29568 E MvfstCallbacks.cpp: readError: streamid=11; error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.567 29398 29568 E MvfstCallbacks.cpp: onConnectionError: error=LocalError: Idle timeout, Idle timeout: 60 seconds
+01-04 16:21:21.729 29398  7355 E EmergencyPushPeriodicFetchWorker: Skipping fetch since app is backgrounded
+01-04 16:21:22.159 16346 22275 I ReactNativeJS: Running "main
+01-04 16:21:26.945 31573 31665 E BufferQueueProducer: [SurfaceView[InputMethod]#173(BLAST Consumer)173](id:7b55000000ad,api:0,p:-1,c:31573) disconnect: not connected (req=1)
+01-04 16:21:27.013 31573 31573 E BufferQueueProducer: [SurfaceView[InputMethod]#172(BLAST Consumer)172](id:7b55000000ac,api:0,p:-1,c:31573) disconnect: not connected (req=2)
+01-04 16:21:28.038 16346 22275 I ReactNativeJS: 'Requesting OTP for:', 'tomcruisesmp007@gmail.com'
+01-04 16:21:29.758 16346 22275 I ReactNativeJS: 'OTP Response:', { message: 'OTP sent to your email',
+01-04 16:21:29.758 16346 22275 I ReactNativeJS:   otp: '145215',
+01-04 16:21:29.758 16346 22275 I ReactNativeJS:   email: 'tomcruisesmp007@gmail.com' }
+01-04 16:21:39.579  4317  8127 E iiah    : *~*~*~ Previous channel {0} was garbage collected without being shut down! ~*~*~*
+01-04 16:21:39.579  4317  8127 E iiah    :     Make sure to call shutdown()/shutdownNow()
+01-04 16:21:39.579  4317  8127 E iiah    : java.lang.RuntimeException: ManagedChannel allocation site
+01-04 16:21:39.579  4317  8127 E iiah    : 	at iiag.<init>(:com.google.android.gms@254730035@25.47.30 (260400-833691957):21)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at iiah.<init>(:com.google.android.gms@254730035@25.47.30 (260400-833691957):10)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at iiaf.a(:com.google.android.gms@254730035@25.47.30 (260400-833691957):250)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at ihkm.a(:com.google.android.gms@254730035@25.47.30 (260400-833691957):5)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at bcyk.a(:com.google.android.gms@254730035@25.47.30 (260400-833691957):85)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at bcyb.u(:com.google.android.gms@254730035@25.47.30 (260400-833691957):119)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at bcyb.H(:com.google.android.gms@254730035@25.47.30 (260400-833691957):5)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at exkb.a(:com.google.android.gms@254730035@25.47.30 (260400-833691957):45)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at exjg.c(:com.google.android.gms@254730035@25.47.30 (260400-833691957):20)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at exjg.a(:com.google.android.gms@254730035@25.47.30 (260400-833691957):3)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at axhp.run(:com.google.android.gms@254730035@25.47.30 (260400-833691957):5)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at bden.c(:com.google.android.gms@254730035@25.47.30 (260400-833691957):50)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at bden.run(:com.google.android.gms@254730035@25.47.30 (260400-833691957):73)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at bdke.run(:com.google.android.gms@254730035@25.47.30 (260400-833691957):8)
+01-04 16:21:39.579  4317  8127 E iiah    : 	at java.lang.Thread.run(Thread.java:1119)
+01-04 16:21:39.697 22399 22399 E oid.apps.photos: Not starting debugger since process cannot load the jdwp agent.
+01-04 16:21:39.710 22399 22399 E oid.apps.photos: BBinder_init Processname  <pre-initialized>  
+01-04 16:21:39.710 22399 22399 E oid.apps.photos: BBinder_init hasGetProcessName  <pre-initialized>
+01-04 16:21:40.229 31573 31665 E BufferQueueProducer: [SurfaceView[InputMethod]#177(BLAST Consumer)177](id:7b55000000b1,api:0,p:-1,c:31573) disconnect: not connected (req=1)
+01-04 16:22:17.682 25065 25102 E CameraManagerGlobal: Camera 2 is not present. Ignore physical camera status change
+01-04 16:22:36.522 16346 22275 I ReactNativeJS: PreRegisterVenueScreen: Component mounting...
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: Error while updating prop accessibilityState
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: java.lang.reflect.InvocationTargetException
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at java.lang.reflect.Method.invoke(Native Method)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.ViewManagersPropertyCache$PropSetter.updateViewProp(ViewManagersPropertyCache.java:93)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.ViewManagerPropertyUpdater$FallbackViewManagerSetter.setProperty(ViewManagerPropertyUpdater.java:136)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.ViewManagerPropertyUpdater.updateProps(ViewManagerPropertyUpdater.java:56)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.ViewManager.updateProperties(ViewManager.java:79)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.ViewManager.createViewInstance(ViewManager.java:181)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.ViewManager.createView(ViewManager.java:108)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.NativeViewHierarchyManager.createView(NativeViewHierarchyManager.java:281)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.UIViewOperationQueue$CreateViewOperation.execute(UIViewOperationQueue.java:194)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.UIViewOperationQueue$1.run(UIViewOperationQueue.java:920)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.UIViewOperationQueue.flushPendingBatches(UIViewOperationQueue.java:1037)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.UIViewOperationQueue.-$$Nest$mflushPendingBatches(Unknown Source:0)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.UIViewOperationQueue$DispatchUIFrameCallback.doFrameGuarded(UIViewOperationQueue.java:1097)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.java:29)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.modules.core.ReactChoreographer$ReactChoreographerDispatcher.doFrame(ReactChoreographer.java:175)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.modules.core.ChoreographerCompat$FrameCallback$1.doFrame(ChoreographerCompat.java:85)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1979)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1990)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1412)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.view.Choreographer.doFrame(Choreographer.java:1250)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1964)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.os.Handler.handleCallback(Handler.java:1014)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.os.Looper.loopOnce(Looper.java:250)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.os.Looper.loop(Looper.java:340)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at android.app.ActivityThread.main(ActivityThread.java:9846)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at java.lang.reflect.Method.invoke(Native Method)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:625)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:957)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: Caused by: com.facebook.react.bridge.UnexpectedNativeTypeException: Value for disabled cannot be cast from String to Boolean
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.bridge.ReadableNativeMap.checkInstance(ReadableNativeMap.java:143)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.bridge.ReadableNativeMap.getValue(ReadableNativeMap.java:118)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.bridge.ReadableNativeMap.getBoolean(ReadableNativeMap.java:149)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	at com.facebook.react.uimanager.BaseViewManager.setViewState(BaseViewManager.java:326)
+01-04 16:22:36.605 16346 16346 E unknown:ViewManager: 	... 29 more
+--------- beginning of crash
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: FATAL EXCEPTION: main
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: Process: com.goathlete.executive, PID: 16346
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: com.facebook.react.bridge.JSApplicationIllegalArgumentException: Error while updating property 'accessibilityState' of a view managed by: RCTView
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.ViewManagersPropertyCache$PropSetter.updateViewProp(ViewManagersPropertyCache.java:101)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.ViewManagerPropertyUpdater$FallbackViewManagerSetter.setProperty(ViewManagerPropertyUpdater.java:136)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.ViewManagerPropertyUpdater.updateProps(ViewManagerPropertyUpdater.java:56)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.ViewManager.updateProperties(ViewManager.java:79)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.ViewManager.createViewInstance(ViewManager.java:181)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.ViewManager.createView(ViewManager.java:108)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.NativeViewHierarchyManager.createView(NativeViewHierarchyManager.java:281)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.UIViewOperationQueue$CreateViewOperation.execute(UIViewOperationQueue.java:194)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.UIViewOperationQueue$1.run(UIViewOperationQueue.java:920)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.UIViewOperationQueue.flushPendingBatches(UIViewOperationQueue.java:1037)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.UIViewOperationQueue.-$$Nest$mflushPendingBatches(Unknown Source:0)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.UIViewOperationQueue$DispatchUIFrameCallback.doFrameGuarded(UIViewOperationQueue.java:1097)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.java:29)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.modules.core.ReactChoreographer$ReactChoreographerDispatcher.doFrame(ReactChoreographer.java:175)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.modules.core.ChoreographerCompat$FrameCallback$1.doFrame(ChoreographerCompat.java:85)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1979)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1990)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1412)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.view.Choreographer.doFrame(Choreographer.java:1250)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1964)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1014)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:250)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:340)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9846)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:625)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:957)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.ViewManagersPropertyCache$PropSetter.updateViewProp(ViewManagersPropertyCache.java:93)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	... 27 more
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: Caused by: com.facebook.react.bridge.UnexpectedNativeTypeException: Value for disabled cannot be cast from String to Boolean
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.bridge.ReadableNativeMap.checkInstance(ReadableNativeMap.java:143)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.bridge.ReadableNativeMap.getValue(ReadableNativeMap.java:118)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.bridge.ReadableNativeMap.getBoolean(ReadableNativeMap.java:149)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	at com.facebook.react.uimanager.BaseViewManager.setViewState(BaseViewManager.java:326)
+01-04 16:22:36.605 16346 16346 E AndroidRuntime: 	... 29 more

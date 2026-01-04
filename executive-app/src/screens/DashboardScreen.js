@@ -99,7 +99,13 @@ export default function DashboardScreen({ navigation }) {
           
           <TouchableOpacity
             style={styles.actionCard}
-            onPress={() => navigation.navigate('PreRegisterVenue')}
+            onPress={() => {
+              try {
+                navigation.navigate('PreRegisterVenue');
+              } catch (error) {
+                console.error('Error navigating to PreRegisterVenue:', error);
+              }
+            }}
           >
             <View style={styles.actionIconContainer}>
               <Text style={styles.actionIcon}>+</Text>
@@ -112,7 +118,13 @@ export default function DashboardScreen({ navigation }) {
 
           <TouchableOpacity
             style={styles.actionCard}
-            onPress={() => navigation.navigate('AddVenue')}
+            onPress={() => {
+              try {
+                navigation.navigate('AddVenue');
+              } catch (error) {
+                console.error('Error navigating to AddVenue:', error);
+              }
+            }}
           >
             <View style={[styles.actionIconContainer, { backgroundColor: '#28A745' }]}>
               <Text style={styles.actionIcon}>📝</Text>

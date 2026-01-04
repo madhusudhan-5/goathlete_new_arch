@@ -16,24 +16,36 @@ import { COLORS, SIZES } from '../constants/theme';
 import { venueService } from '../services/venueService';
 
 export default function PreRegisterVenueScreen({ navigation }) {
+  console.log('PreRegisterVenueScreen: Component mounting...');
+  
   const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({});
-  const [formData, setFormData] = useState({
-    name: '',
-    address: '',
-    city: '',
-    email: '',
-    phone: '',
-    latitude: '',
-    longitude: '',
-  });
+    const [errors, setErrors] = useState({});
+    const [formData, setFormData] = useState({
+      name: '',
+      address: '',
+      city: '',
+      email: '',
+      phone: '',
+      latitude: '',
+      longitude: '',
+    });
 
-  // Meeting schedule - Different handling for web vs native
-  const isWeb = Platform.OS === 'web';
-  const [meetingDate, setMeetingDate] = useState(isWeb ? '' : new Date());
-  const [meetingTime, setMeetingTime] = useState(isWeb ? '' : new Date());
-  const [showDatePicker, setShowDatePicker] = useState(false);
-  const [showTimePicker, setShowTimePicker] = useState(false);
+    // Meeting schedule - Different handling for web vs native
+    const isWeb = Platform.OS === 'web';
+    // Initialize dates safely - avoid Date() constructor issues on Android
+    const getInitialDate = () => {
+      if (isWeb) return '';
+      try {
+        return new Date();
+      } catch (error) {
+        console.error('Date initialization error:', error);
+        return new Date(Date.now());
+      }
+    };
+    const [meetingDate, setMeetingDate] = useState(getInitialDate());
+    const [meetingTime, setMeetingTime] = useState(getInitialDate());
+    const [showDatePicker, setShowDatePicker] = useState(false);
+    const [showTimePicker, setShowTimePicker] = useState(false);
 
   const updateField = (field, value) => {
     setFormData({ ...formData, [field]: value });
@@ -65,20 +77,36 @@ export default function PreRegisterVenueScreen({ navigation }) {
 
   const formatDate = (date) => {
     if (isWeb) return date; // For web, it's already a string
-    return date.toLocaleDateString('en-GB', {
-      day: '2-digit',
-      month: 'short',
-      year: 'numeric',
-    });
+    if (!date || !(date instanceof Date) || isNaN(date.getTime())) {
+      return 'Select Date';
+    }
+    try {
+      return date.toLocaleDateString('en-GB', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+      });
+    } catch (error) {
+      console.error('Date formatting error:', error);
+      return 'Select Date';
+    }
   };
 
   const formatTime = (time) => {
     if (isWeb) return time; // For web, it's already a string
-    return time.toLocaleTimeString('en-US', {
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: true,
-    });
+    if (!time || !(time instanceof Date) || isNaN(time.getTime())) {
+      return 'Select Time';
+    }
+    try {
+      return time.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+      });
+    } catch (error) {
+      console.error('Time formatting error:', error);
+      return 'Select Time';
+    }
   };
 
   const getLocation = async () => {
@@ -206,7 +234,13 @@ export default function PreRegisterVenueScreen({ navigation }) {
         // Web: strings in format YYYY-MM-DD and HH:MM
         meetingDateTime = `${meetingDate}T${meetingTime}:00`;
       } else {
-        // Native: Date objects
+        // Native: Date objects - validate before using
+        if (!meetingDate || !(meetingDate instanceof Date) || isNaN(meetingDate.getTime())) {
+          throw new Error('Invalid meeting date');
+        }
+        if (!meetingTime || !(meetingTime instanceof Date) || isNaN(meetingTime.getTime())) {
+          throw new Error('Invalid meeting time');
+        }
         const dateStr = meetingDate.toISOString().split('T')[0];
         const hours = meetingTime.getHours().toString().padStart(2, '0');
         const minutes = meetingTime.getMinutes().toString().padStart(2, '0');
@@ -343,7 +377,7 @@ export default function PreRegisterVenueScreen({ navigation }) {
               formData.latitude && formData.longitude && styles.locationButtonSuccess
             ]}
             onPress={getLocation}
-            disabled={loading || (formData.latitude && formData.longitude)}
+            disabled={loading || !!(formData.latitude && formData.longitude)}
           >
             <Text style={styles.locationIcon}>
               {formData.latitude && formData.longitude ? '✓' : '📍'}
@@ -469,21 +503,21 @@ export default function PreRegisterVenueScreen({ navigation }) {
           </View>
 
           {/* Date/Time Pickers for Native */}
-          {!isWeb && showDatePicker && (
+          {!isWeb && showDatePicker && meetingDate instanceof Date && !isNaN(meetingDate.getTime()) && (
             <DateTimePicker
               value={meetingDate}
               mode="date"
-              display="default"
+              display={Platform.OS === 'android' ? 'default' : 'spinner'}
               onChange={onDateChange}
               minimumDate={new Date()}
             />
           )}
 
-          {!isWeb && showTimePicker && (
+          {!isWeb && showTimePicker && meetingTime instanceof Date && !isNaN(meetingTime.getTime()) && (
             <DateTimePicker
               value={meetingTime}
               mode="time"
-              display="default"
+              display={Platform.OS === 'android' ? 'default' : 'spinner'}
               onChange={onTimeChange}
             />
           )}

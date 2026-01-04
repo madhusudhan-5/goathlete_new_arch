@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -125,6 +125,13 @@ export default function AddVenueScreen({ navigation }) {
     price: '',
     unit: 'hour',
   });
+  
+  // Ensure currentEquipment always has valid values
+  useEffect(() => {
+    if (currentEquipment.name === undefined || currentEquipment.name === null) {
+      setCurrentEquipment(prev => ({ ...prev, name: '' }));
+    }
+  }, [currentEquipment.name]);
 
   // Step 7: Court Slots & Pricing (NEW)
   const [courtSlots, setCourtSlots] = useState({});  // Will store slots per court: {courtIndex: [{day, startTime, endTime, price}]}
@@ -705,7 +712,7 @@ export default function AddVenueScreen({ navigation }) {
             venueDetails.latitude && venueDetails.longitude && styles.locationButtonSuccess
           ]}
           onPress={getLocation}
-          disabled={loading || (venueDetails.latitude && venueDetails.longitude)}
+          disabled={loading || !!(venueDetails.latitude && venueDetails.longitude)}
         >
           <Text style={styles.locationIcon}>
             {venueDetails.latitude && venueDetails.longitude ? '✓' : '📍'}
@@ -1035,9 +1042,9 @@ export default function AddVenueScreen({ navigation }) {
           <Text style={styles.icon}>⚽</Text>
           <View style={styles.pickerWrapper}>
             <Picker
-              selectedValue={currentCourt.sport_type}
+              selectedValue={currentCourt.sport_type || ''}
               style={styles.picker}
-              onValueChange={(itemValue) => setCurrentCourt({ ...currentCourt, sport_type: itemValue })}
+              onValueChange={(itemValue) => setCurrentCourt({ ...currentCourt, sport_type: itemValue || '' })}
             >
               <Picker.Item label="Select Sport Type *" value="" />
               {SPORTS_OPTIONS.map((sport) => (
@@ -1218,9 +1225,9 @@ export default function AddVenueScreen({ navigation }) {
           <Text style={styles.icon}>🎾</Text>
           <View style={styles.pickerWrapper}>
             <Picker
-              selectedValue={currentEquipment.name}
+              selectedValue={currentEquipment.name || ''}
               style={styles.picker}
-              onValueChange={(itemValue) => setCurrentEquipment({...currentEquipment, name: itemValue})}
+              onValueChange={(itemValue) => setCurrentEquipment({...currentEquipment, name: itemValue || ''})}
             >
               <Picker.Item label="Select Equipment" value="" />
               {EQUIPMENT_OPTIONS.map((equip) => (

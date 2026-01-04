@@ -4,12 +4,13 @@
     "slug": "goathlete-executive",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0A1F35"
+      "backgroundColor": "#0A1F35",
+      "imageResizeMode": "cover"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -22,12 +23,16 @@
         "NSLocationWhenInUseUsageDescription": "GoAthlete needs your location to find nearby venues and set venue locations.",
         "NSCameraUsageDescription": "GoAthlete needs camera access to take photos of your venue.",
         "NSPhotoLibraryUsageDescription": "GoAthlete needs photo library access to upload venue images."
-      }
+      },
+      "icon": "./assets/logo.png",
+      "backgroundColor": "#0A1F35"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#0A1F35"
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#0A1F35",
+        "resizeMode": "contain",
+        "imageResizeMode": "cover"
       },
       "package": "com.goathlete.executive",
       "versionCode": 1,
@@ -38,7 +43,9 @@
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE",
         "READ_MEDIA_IMAGES"
-      ]
+      ],
+      "icon": "./assets/logo.png",
+      "backgroundColor": "#0A1F35"
     },
     "web": {
       "bundler": "metro",
@@ -52,8 +59,9 @@
     ],
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "9e5720fc-25a0-4549-a883-6835d7365480"
       }
-    }
+    },
+    "owner": "madhu.smp"
   }
 }

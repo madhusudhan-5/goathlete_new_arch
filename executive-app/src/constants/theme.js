@@ -35,11 +35,7 @@ export const SIZES = {
   buttonRadius: 25,
 };
 
-// API Base URL - Use production URL for builds, localhost for development
-// __DEV__ is true in development, false in production builds
-const IS_DEVELOPMENT = __DEV__;
-
-export const API_BASE_URL = IS_DEVELOPMENT
-  ? (Platform.OS === 'web' ? 'http://localhost:8000/api' : 'http://192.168.1.8:8000/api')
-  : 'https://api.goathlete.in/api';  // Production URL for builds
+// API Base URL - Using production URL for all environments
+// Backend is deployed at https://api.goathlete.in
+export const API_BASE_URL = 'https://api.goathlete.in/api';
 
