@@ -6,62 +6,70 @@
     "orientation": "portrait",
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
+
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0A1F35",
-      "imageResizeMode": "cover"
+      "backgroundColor": "#0A1F35"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+
+    "assetBundlePatterns": ["**/*"],
+
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.goathlete.executive",
       "buildNumber": "1.0.0",
+      "icon": "./assets/logo.png",
+      "backgroundColor": "#0A1F35",
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "GoAthlete needs your location to find nearby venues and set venue locations.",
         "NSCameraUsageDescription": "GoAthlete needs camera access to take photos of your venue.",
         "NSPhotoLibraryUsageDescription": "GoAthlete needs photo library access to upload venue images."
-      },
-      "icon": "./assets/logo.png",
-      "backgroundColor": "#0A1F35"
+      }
     },
+
     "android": {
+      "package": "com.goathlete.executive",
+      "versionCode": 2,
+
+      "targetSdkVersion": 35,
+      "compileSdkVersion": 35,
+      "buildToolsVersion": "35.0.0",
+
+      "icon": "./assets/logo.png",
+      "backgroundColor": "#0A1F35",
+
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo.png",
-        "backgroundColor": "#0A1F35",
-        "resizeMode": "contain",
-        "imageResizeMode": "cover"
+        "backgroundColor": "#0A1F35"
       },
-      "package": "com.goathlete.executive",
-      "versionCode": 1,
+
       "permissions": [
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION",
         "CAMERA",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
         "READ_MEDIA_IMAGES"
-      ],
-      "icon": "./assets/logo.png",
-      "backgroundColor": "#0A1F35"
+      ]
     },
+
     "web": {
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
+
     "plugins": [
       "expo-image-picker",
       "expo-location",
       "expo-document-picker",
       "expo-file-system"
     ],
+
     "extra": {
       "eas": {
         "projectId": "9e5720fc-25a0-4549-a883-6835d7365480"
       }
     },
+
     "owner": "madhu.smp"
   }
 }
