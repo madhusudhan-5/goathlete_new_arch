@@ -50,11 +50,20 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35
+          }
+        }
+      ],
       "expo-image-picker",
       "expo-location",
       "expo-document-picker",
       "expo-file-system",
-      "expo-build-properties"
+      "expo-secure-store"
     ],
     "extra": {
       "eas": {

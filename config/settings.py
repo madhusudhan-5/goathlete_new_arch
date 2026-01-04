@@ -178,12 +178,11 @@ EMAIL_TIMEOUT = 10  # Timeout in seconds
 
 # CORS Settings
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:8081",
-    "http://127.0.0.1:8081",
+    'https://vendor.goathlete.in',
+    'https://api.goathlete.in',
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'http://localhost:8081',  # Expo web dev server
 ]
 
 CORS_ALLOW_CREDENTIALS = True
