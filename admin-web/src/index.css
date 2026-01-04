@@ -1,0 +1,142 @@
+:root {
+  --brand-navy: #0A1F35;
+  --brand-orange: #DA6F2B;
+  --brand-white: #ffffff;
+  --brand-grey: #6c757d;
+  --brand-black: #000000;
+  --brand-light-grey: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--brand-light-grey);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.sidebar {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--brand-navy) 0%, #051220 100%);
+  color: var(--brand-white);
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li a {
+  display: block;
+  padding: 12px 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a.active {
+  background-color: rgba(218, 111, 43, 0.15);
+  color: var(--brand-white);
+  border-left: 4px solid var(--brand-orange);
+}
+
+.stat-card {
+  border-left: 4px solid var(--brand-orange);
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(218, 111, 43, 0.2);
+}
+
+.badge-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.table-actions button {
+  margin-right: 5px;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--brand-navy) 0%, #1a3a52 100%);
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--brand-navy) !important;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 56px);
+  padding: 20px;
+}
+
+/* Brand color utilities */
+.text-brand-navy {
+  color: var(--brand-navy);
+}
+
+.text-brand-orange {
+  color: var(--brand-orange);
+}
+
+.bg-brand-navy {
+  background-color: var(--brand-navy);
+}
+
+.bg-brand-orange {
+  background-color: var(--brand-orange);
+}
+
+.btn-brand-orange {
+  background-color: var(--brand-orange);
+  border-color: var(--brand-orange);
+  color: var(--brand-white);
+}
+
+.btn-brand-orange:hover {
+  background-color: #c35f22;
+  border-color: #c35f22;
+  color: var(--brand-white);
+}
+
+.btn-brand-navy {
+  background-color: var(--brand-navy);
+  border-color: var(--brand-navy);
+  color: var(--brand-white);
+}
+
+.btn-brand-navy:hover {
+  background-color: #051220;
+  border-color: #051220;
+  color: var(--brand-white);
+}
+

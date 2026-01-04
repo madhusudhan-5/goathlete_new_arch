@@ -1,0 +1,14 @@
+Your GoAthlete OTP Code
+
+Hello,
+
+Your OTP code is: {{ otp_code }}
+
+This code will expire in {{ otp_expiry_minutes }} minutes.
+
+If you did not request this code, please ignore this email.
+
+Best regards,
+GoAthlete Team
+contact@goathlete.in
+

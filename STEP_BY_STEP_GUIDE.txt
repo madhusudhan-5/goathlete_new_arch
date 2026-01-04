@@ -1,0 +1,376 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║           🚀 STEP-BY-STEP GUIDE TO START ALL GOATHLETE APPS 🚀                ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: OPEN 3 TERMINAL WINDOWS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open your terminal application and create 3 separate terminal windows/tabs:
+  • Terminal 1 - For Django Backend
+  • Terminal 2 - For Admin Web App
+  • Terminal 3 - For Executive Mobile App
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: START BACKEND SERVER (Terminal 1) ⭐ START THIS FIRST!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+In Terminal 1, run these commands:
+
+cd /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch
+./run_backend.sh
+
+What you should see:
+  ✅ "Performing system checks..."
+  ✅ "System check identified no issues"
+  ✅ "Starting development server at http://127.0.0.1:8000/"
+  ✅ "Quit the server with CONTROL-C"
+
+⚠️  IMPORTANT: Wait until you see "Starting development server" before continuing!
+
+To verify backend is running:
+  • Open browser and go to: http://localhost:8000/admin
+  • You should see the Django Admin login page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3: START ADMIN WEB APP (Terminal 2)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+In Terminal 2, run these commands:
+
+cd /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch
+
+# First time only - install dependencies (takes 1-2 minutes):
+./setup_admin_web.sh
+
+# Then run the app:
+./run_admin_web.sh
+
+What you should see:
+  ✅ "VITE v6.x.x ready in XXX ms"
+  ✅ "Local: http://localhost:5173/"
+  ✅ Browser should automatically open
+
+If browser doesn't open automatically:
+  • Manually open: http://localhost:5173
+
+To verify admin web is running:
+  • You should see a login page with email and password fields
+  • Brand colors: Dark blue (#0A1F35) and Orange (#DA6F2B)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 4: START EXECUTIVE MOBILE APP (Terminal 3)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+In Terminal 3, run these commands:
+
+cd /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch
+
+# First time only - install dependencies (takes 2-3 minutes):
+./setup_executive_app.sh
+
+# Then run the web version (easiest to test):
+./run_executive_web.sh
+
+What you should see:
+  ✅ "Starting Metro Bundler"
+  ✅ "Bundling complete"
+  ✅ "Web Bundling complete"
+  ✅ "Logs for your project will appear below. Press Ctrl+C to exit."
+
+To open the app:
+  • Look for the message showing the URL
+  • Usually: http://localhost:8081
+  • Press 'w' in the terminal to open web version
+  • Or manually open: http://localhost:8081
+
+To verify executive app is running:
+  • You should see a login screen with email input
+  • Brand colors: Dark blue and orange theme
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 5: TEST DJANGO ADMIN PANEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open browser and go to: http://localhost:8000/admin
+
+2. Login with:
+   📧 Email:    admin@goathlete.org.in
+   🔑 Password: admin123
+
+3. What to check:
+   ✅ Click "Users" - You should see 4 users (1 super admin, 1 admin, 2 executives)
+   ✅ Click "Executives" - You should see 2 executives
+   ✅ Click "Venues" - You should see 2 venues (Sports Arena, Fitness Hub)
+   ✅ Click "Otps" - You should see OTP records
+
+4. Try creating a new executive:
+   • Click "Executives" → "Add Executive"
+   • Select or create a user
+   • Add phone number
+   • Click "Save"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 6: TEST ADMIN WEB APP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open browser and go to: http://localhost:5173
+
+2. Login with:
+   📧 Email:    admin1@goathlete.org.in
+   🔑 Password: admin123
+
+3. What to check:
+
+   ✅ DASHBOARD (First page after login):
+      • View total executives count (should show 2)
+      • View pre-registered venues (should show 1)
+      • See analytics charts with Chart.js
+      • Check conversion metrics
+
+   ✅ EXECUTIVES PAGE (Click "Executives" in sidebar):
+      • See list of 2 executives
+      • Click "Add New Executive" button
+      • Fill in details and submit
+      • Try editing an executive
+      • Try deleting an executive
+
+   ✅ VENUES PAGE (Click "Venues" in sidebar):
+      • See list of 2 venues
+      • Use status filter dropdown (All, Pre-Registered, Registered)
+      • Use search bar to search venues
+      • See venue details (name, city, status, executive)
+
+4. Check navigation:
+   • Click logo to go back to dashboard
+   • Use sidebar to navigate between pages
+   • Check if logout button works
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 7: TEST EXECUTIVE MOBILE APP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open browser and go to: http://localhost:8081
+
+2. Login with:
+   📧 Email:    exec1@goathlete.org.in
+   🔑 Password: exec123
+
+3. What to check:
+
+   ✅ LOGIN SCREEN:
+      • Enter email: exec1@goathlete.org.in
+      • Enter password: exec123
+      • Click "Login"
+      • Should navigate to dashboard
+
+   ✅ DASHBOARD:
+      • See welcome message with executive email
+      • View statistics cards:
+        - Total Venues
+        - Pre-Registered
+        - Meetings Scheduled
+      • See "Pre-register Venue" button
+      • See "View All Venues" button
+
+   ✅ VENUE PRE-REGISTRATION (5-STEP FLOW):
+      Click "Pre-register Venue" button
+
+      Step 1 - Basic Details:
+        • Enter venue name, address, city, email
+        • Click on map to pick location (lat/long auto-filled)
+        • Click "Next"
+
+      Step 2 - Media Upload:
+        • Click "Pick Image" to upload 2 images
+        • See image previews
+        • Remove and re-add if needed
+        • Click "Next"
+
+      Step 3 - Meeting Schedule:
+        • Pick meeting date
+        • Pick meeting time
+        • Click "Next"
+
+      Step 4 - Add Courts:
+        • Click "Add Court"
+        • Enter court name
+        • Select sport type (Badminton, Tennis, etc.)
+        • Enter count
+        • Add multiple courts if needed
+        • Click "Next"
+
+      Step 5 - Review & Submit:
+        • Review all entered information
+        • Click "Submit Pre-Registration"
+        • See success screen with animation
+        • Click "View Venues" or "Add Another Venue"
+
+   ✅ VENUE LIST:
+      • Click "View All Venues" from dashboard
+      • See list of all venues
+      • Each venue shows: name, city, status, executive
+      • Scroll through the list
+
+4. Test logout:
+   • Click "Logout" button
+   • Should return to login screen
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 8: VERIFY API ENDPOINTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open browser and test these URLs:
+
+1. API Root:
+   http://localhost:8000/api/
+   • Should show available API endpoints
+
+2. Admin Login Endpoint:
+   http://localhost:8000/api/auth/admin/login
+   • Should show DRF browsable API
+
+3. Executive Login Endpoint:
+   http://localhost:8000/api/auth/executive/login
+   • Should show DRF browsable API
+
+4. Venues List:
+   http://localhost:8000/api/venues/by-executive
+   • Should show "Authentication credentials were not provided" (expected)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 9: CHECK TERMINAL OUTPUTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Check each terminal for proper operation:
+
+Terminal 1 (Backend):
+  ✅ Should show API requests like:
+     "GET /api/auth/admin/login HTTP/1.1" 200
+     "POST /api/auth/admin/login HTTP/1.1" 200
+     "GET /api/admin/executives/ HTTP/1.1" 200
+
+Terminal 2 (Admin Web):
+  ✅ Should show:
+     "Page reload src/pages/Dashboard.jsx"
+     Files compiled successfully
+
+Terminal 3 (Executive App):
+  ✅ Should show:
+     "Bundling complete"
+     No error messages
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 10: TEST CROSS-APP INTEGRATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Test if apps communicate properly:
+
+1. In Executive App:
+   • Pre-register a new venue with all details
+   • Submit and see success message
+
+2. In Admin Web App:
+   • Go to Venues page
+   • Refresh page
+   • Check if new venue appears in the list
+   • Verify status is "PRE_REGISTERED"
+
+3. In Django Admin:
+   • Go to http://localhost:8000/admin
+   • Click "Venues"
+   • Find the newly created venue
+   • Verify all details are saved correctly
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ Backend won't start:
+   • Make sure you're in the correct directory
+   • Try: rm db.sqlite3 && ./setup_backend.sh
+
+❌ Admin web shows "Network Error":
+   • Check if backend (Terminal 1) is running
+   • Check if you see http://localhost:8000 in Terminal 1
+
+❌ Executive app shows blank screen:
+   • Check browser console for errors (F12)
+   • Check if backend is running
+   • Try refreshing the page (Cmd/Ctrl + R)
+
+❌ Port already in use:
+   • Servers will auto-select next available port
+   • Or kill process: lsof -ti:8000 | xargs kill -9 (replace 8000 with port)
+
+❌ Can't login:
+   • Double-check credentials (see login section above)
+   • Check Terminal 1 for any backend errors
+   • Try: ./setup_backend.sh to reset database
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STOPPING THE SERVERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+To stop any server:
+  1. Go to the terminal running that server
+  2. Press Ctrl + C
+  3. Wait for "Quit" or exit message
+
+To stop all servers:
+  • Press Ctrl + C in each of the 3 terminals
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+QUICK REFERENCE - ALL CREDENTIALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Django Admin (http://localhost:8000/admin):
+  📧 admin@goathlete.org.in
+  🔑 admin123
+
+Admin Web App (http://localhost:5173):
+  📧 admin1@goathlete.org.in
+  🔑 admin123
+
+Executive App (http://localhost:8081):
+  📧 exec1@goathlete.org.in
+  🔑 exec123
+  
+  or
+  
+  📧 exec2@goathlete.org.in
+  🔑 exec123
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Backend running on http://localhost:8000
+□ Admin web running on http://localhost:5173
+□ Executive app running on http://localhost:8081
+□ Can login to Django admin
+□ Can login to admin web app
+□ Can login to executive app
+□ Can see analytics in admin dashboard
+□ Can manage executives in admin web
+□ Can view venues in admin web
+□ Can pre-register venue in executive app (all 5 steps)
+□ Can view venues list in executive app
+□ New venues appear across all apps
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 That's it! You've successfully started and tested all GoAthlete applications!
+
+For more details, check:
+  • SETUP_COMPLETE.md - Complete setup summary
+  • README.md - Full documentation
+  • VISUAL_GUIDE.txt - Visual terminal guide
+
+Happy Testing! 🚀
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
