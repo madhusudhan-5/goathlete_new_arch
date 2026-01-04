@@ -1,9 +1,10 @@
 {
   "cli": {
-    "version": ">= 5.9.0"
+    "version": ">= 9.0.0"
   },
   "build": {
     "development": {
+      "node": "20.19.5",
       "developmentClient": true,
       "distribution": "internal",
       "android": {
@@ -11,12 +12,14 @@
       }
     },
     "preview": {
+      "node": "20.19.5",
       "distribution": "internal",
       "android": {
-        "buildType": "apk"
+        "buildType": "app-bundle"
       }
     },
     "production": {
+      "node": "20.19.5",
       "android": {
         "buildType": "app-bundle"
       }
@@ -31,4 +34,3 @@
     }
   }
 }
-

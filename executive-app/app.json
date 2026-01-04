@@ -6,15 +6,14 @@
     "orientation": "portrait",
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#0A1F35"
     },
-
-    "assetBundlePatterns": ["**/*"],
-
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.goathlete.executive",
@@ -27,23 +26,18 @@
         "NSPhotoLibraryUsageDescription": "GoAthlete needs photo library access to upload venue images."
       }
     },
-
     "android": {
       "package": "com.goathlete.executive",
       "versionCode": 2,
-
       "targetSdkVersion": 35,
       "compileSdkVersion": 35,
       "buildToolsVersion": "35.0.0",
-
       "icon": "./assets/logo.png",
       "backgroundColor": "#0A1F35",
-
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#0A1F35"
       },
-
       "permissions": [
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION",
@@ -51,25 +45,22 @@
         "READ_MEDIA_IMAGES"
       ]
     },
-
     "web": {
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
-
     "plugins": [
       "expo-image-picker",
       "expo-location",
       "expo-document-picker",
-      "expo-file-system"
+      "expo-file-system",
+      "expo-build-properties"
     ],
-
     "extra": {
       "eas": {
         "projectId": "9e5720fc-25a0-4549-a883-6835d7365480"
       }
     },
-
     "owner": "madhu.smp"
   }
 }
