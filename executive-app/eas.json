@@ -15,7 +15,7 @@
       "node": "20.19.5",
       "distribution": "internal",
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "apk"
       }
     },
     "production": {
