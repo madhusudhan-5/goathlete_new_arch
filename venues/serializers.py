@@ -166,3 +166,33 @@ class VenuePreRegisterSerializer(serializers.Serializer):
         
         return venue
 
+
+class SlotGenerationSerializer(serializers.Serializer):
+    court_ids = serializers.ListField(
+        child=serializers.IntegerField(),
+        required=False,
+        help_text="List of court IDs to generate slots for. If empty, generates for all courts in venue."
+    )
+    start_time = serializers.TimeField(format='%H:%M')
+    end_time = serializers.TimeField(format='%H:%M')
+    duration_minutes = serializers.IntegerField(min_value=30, max_value=120, default=60)
+    days = serializers.ListField(
+        child=serializers.CharField(),
+        default=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    )
+    base_price = serializers.DecimalField(max_digits=10, decimal_places=2)
+    
+    # Peak pricing (optional)
+    peak_start_time = serializers.TimeField(format='%H:%M', required=False)
+    peak_end_time = serializers.TimeField(format='%H:%M', required=False)
+    peak_price = serializers.DecimalField(max_digits=10, decimal_places=2, required=False)
+    
+    def validate(self, data):
+        if data['start_time'] >= data['end_time']:
+            raise serializers.ValidationError("Start time must be before end time")
+            
+        if 'peak_start_time' in data and 'peak_end_time' in data:
+            if data['peak_start_time'] >= data['peak_end_time']:
+                raise serializers.ValidationError("Peak start time must be before peak end time")
+                
+        return data

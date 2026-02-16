@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import ExecutiveLoginView, OTPVerifyView, AdminLoginView
+from .otp_views import send_otp, verify_otp, resend_otp
 from .admin_views import (
     AdminExecutiveListCreateView,
     AdminExecutiveDetailView,
@@ -14,6 +15,11 @@ urlpatterns = [
     path('auth/executive/login', ExecutiveLoginView.as_view(), name='executive-login'),
     path('auth/executive/verify-otp', OTPVerifyView.as_view(), name='verify-otp'),
     path('auth/admin/login', AdminLoginView.as_view(), name='admin-login'),
+    
+    # WhatsApp OTP endpoints for Player login (/api/auth/)
+    path('auth/send-otp', send_otp, name='send-otp'),
+    path('auth/verify-otp-whatsapp', verify_otp, name='verify-otp-whatsapp'),
+    path('auth/resend-otp', resend_otp, name='resend-otp'),
     
     # Admin endpoints for executive management (/api/admin/)
     path('admin/executives', AdminExecutiveListCreateView.as_view(), name='admin-executives-list'),

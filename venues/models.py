@@ -5,6 +5,7 @@ from accounts.models import Executive
 class VenueStatus(models.TextChoices):
     PRE_REGISTERED = 'PRE_REGISTERED', 'Pre-Registered'
     REGISTERED = 'REGISTERED', 'Registered'
+    REJECTED = 'REJECTED', 'Rejected'
 
 
 class Venue(models.Model):

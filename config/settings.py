@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'corsheaders',
     'accounts',
     'venues',
+    'partners',
+    'bookings',
+    'tournaments',
+    'players',
 ]
 
 MIDDLEWARE = [

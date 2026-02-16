@@ -1,14 +1,21 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.utils import timezone
+from datetime import timedelta
 import random
 import string
+
+# Import OTP models (defined in otp_models.py)
+from .otp_models import WhatsAppOTP, OTPRateLimit
 
 
 class UserRole(models.TextChoices):
     SUPER_ADMIN = 'SUPER_ADMIN', 'Super Admin'
     ADMIN = 'ADMIN', 'Admin'
     EXECUTIVE = 'EXECUTIVE', 'Executive'
+    VENDOR_ADMIN = 'VENDOR_ADMIN', 'Vendor Admin'
+    VENDOR_PARTNER = 'VENDOR_PARTNER', 'Vendor Partner'
+    PLAYER = 'PLAYER', 'Player'
 
 
 class UserManager(BaseUserManager):
