@@ -13,3 +13,11 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Build outputs
+*.apk
+*.aab
+*.ipa
+
+# Build logs
+eas_*.log

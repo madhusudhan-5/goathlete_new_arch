@@ -58,7 +58,7 @@ class AdminLoginSerializer(serializers.Serializer):
         password = data.get('password')
 
         try:
-            user = User.objects.get(email=email, role='ADMIN')
+            user = User.objects.get(email=email, role__in=['SUPER_ADMIN', 'ADMIN', 'VENDOR_ADMIN'])
         except User.DoesNotExist:
             raise serializers.ValidationError("Invalid credentials.")
 

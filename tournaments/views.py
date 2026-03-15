@@ -4,14 +4,20 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
 
-from .models import Tournament, Team, TeamPlayer, Match, PerformanceStats, TournamentStatus, MatchStatus
+from .models import (
+    Tournament, Team, TeamPlayer, Match, PerformanceStats,
+    TournamentStatus, MatchStatus,
+    LocalTournament, LocalTournamentParticipant, LocalTournamentStatus
+)
 from .serializers import (
     TournamentSerializer, TournamentCreateSerializer, TournamentListSerializer,
     TeamSerializer, TeamCreateSerializer, TeamListSerializer,
     TeamPlayerSerializer, TeamPlayerCreateSerializer,
     MatchSerializer, MatchCreateSerializer, MatchListSerializer,
     MatchScorecardUpdateSerializer, MatchCompleteSerializer,
-    PerformanceStatsSerializer, PerformanceStatsCreateSerializer
+    PerformanceStatsSerializer, PerformanceStatsCreateSerializer,
+    LocalTournamentSerializer, LocalTournamentCreateSerializer,
+    LocalTournamentScoreboardUpdateSerializer, LocalTournamentParticipantSerializer
 )
 
 
@@ -225,3 +231,131 @@ class PerformanceStatsViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(match_id=match_id)
         
         return queryset.order_by('-created_at')
+
+
+class LocalTournamentViewSet(viewsets.ModelViewSet):
+    """ViewSet for player-created informal tournaments with guest participants."""
+    permission_classes = [IsAuthenticated]
+    queryset = LocalTournament.objects.prefetch_related('participants').select_related('sport', 'organizer')
+
+    def get_serializer_class(self):
+        if self.action == 'create':
+            return LocalTournamentCreateSerializer
+        if self.action == 'update_scoreboard':
+            return LocalTournamentScoreboardUpdateSerializer
+        return LocalTournamentSerializer
+
+    def get_queryset(self):
+        from players.models import Player
+        user = self.request.user
+        try:
+            player = Player.objects.get(user=user)
+        except Player.DoesNotExist:
+            return LocalTournament.objects.none()
+        return LocalTournament.objects.filter(organizer=player).prefetch_related('participants').select_related('sport', 'organizer')
+
+    def perform_create(self, serializer):
+        from players.models import Player
+        player = Player.objects.get(user=self.request.user)
+
+        # Block if organizer already has an active tournament
+        if LocalTournament.objects.filter(organizer=player, status=LocalTournamentStatus.ACTIVE).exists():
+            from rest_framework.exceptions import ValidationError
+            raise ValidationError("You already have an active tournament. Close it before creating a new one.")
+
+        # Block if any participant email matches the organizer's email
+        participant_emails = [p['email'] for p in self.request.data.get('participants', [])]
+        user_email = self.request.user.email
+        if user_email in participant_emails:
+            from rest_framework.exceptions import ValidationError
+            raise ValidationError("You cannot add yourself as a participant.")
+
+        # Block if any participant email is already in an active tournament
+        blocked_emails = LocalTournamentParticipant.objects.filter(
+            email__in=participant_emails,
+            tournament__status=LocalTournamentStatus.ACTIVE
+        ).values_list('email', flat=True)
+        if blocked_emails:
+            from rest_framework.exceptions import ValidationError
+            raise ValidationError(
+                f"The following participants already have an active tournament: {', '.join(blocked_emails)}"
+            )
+
+        serializer.save(organizer=player)
+
+    @action(detail=False, methods=['get'])
+    def active(self, request):
+        """Check if the current user has an active local tournament."""
+        from players.models import Player
+        try:
+            player = Player.objects.get(user=request.user)
+        except Player.DoesNotExist:
+            return Response({'active': False, 'tournament': None})
+
+        tournament = LocalTournament.objects.filter(
+            organizer=player,
+            status=LocalTournamentStatus.ACTIVE
+        ).prefetch_related('participants').select_related('sport').first()
+
+        if tournament:
+            return Response({
+                'active': True,
+                'tournament': LocalTournamentSerializer(tournament).data
+            })
+
+        # Also check if user is a participant in any active tournament
+        user_email = request.user.email
+        as_participant = LocalTournamentParticipant.objects.filter(
+            email=user_email,
+            tournament__status=LocalTournamentStatus.ACTIVE
+        ).select_related('tournament__sport').first()
+
+        if as_participant:
+            return Response({
+                'active': True,
+                'as_participant': True,
+                'tournament': LocalTournamentSerializer(as_participant.tournament).data
+            })
+
+        return Response({'active': False, 'tournament': None})
+
+    @action(detail=True, methods=['patch'])
+    def update_scoreboard(self, request, pk=None):
+        """Update the main scoreboard JSON for the tournament."""
+        tournament = self.get_object()
+        serializer = LocalTournamentScoreboardUpdateSerializer(tournament, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(LocalTournamentSerializer(tournament).data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(detail=True, methods=['patch'], url_path='participant/(?P<participant_id>[^/.]+)/score')
+    def update_participant_score(self, request, pk=None, participant_id=None):
+        """Update individual participant score."""
+        tournament = self.get_object()
+        try:
+            participant = tournament.participants.get(id=participant_id)
+        except LocalTournamentParticipant.DoesNotExist:
+            return Response({'detail': 'Participant not found.'}, status=status.HTTP_404_NOT_FOUND)
+        score_data = request.data.get('score', {})
+        participant.score = score_data
+        participant.save()
+        return Response(LocalTournamentParticipantSerializer(participant).data)
+
+    @action(detail=True, methods=['post'])
+    def close(self, request, pk=None):
+        """Close a local tournament (only organizer can close it)."""
+        tournament = self.get_object()
+        from players.models import Player
+        try:
+            player = Player.objects.get(user=request.user)
+        except Player.DoesNotExist:
+            return Response({'detail': 'Player not found.'}, status=status.HTTP_403_FORBIDDEN)
+
+        if tournament.organizer != player:
+            return Response({'detail': 'Only the organizer can close this tournament.'}, status=status.HTTP_403_FORBIDDEN)
+
+        tournament.status = LocalTournamentStatus.COMPLETED
+        tournament.save()
+        return Response(LocalTournamentSerializer(tournament).data)
+

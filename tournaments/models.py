@@ -343,3 +343,76 @@ class PerformanceStats(models.Model):
         verbose_name_plural = "Performance Stats"
         unique_together = ['player', 'match']
         ordering = ['-created_at']
+
+
+class LocalTournamentStatus(models.TextChoices):
+    ACTIVE = 'ACTIVE', 'Active'
+    COMPLETED = 'COMPLETED', 'Completed'
+
+
+class LocalTournament(models.Model):
+    """
+    Informal, player-created tournament with guest players.
+    Only one ACTIVE tournament allowed per organizer (and per participant email).
+    Scorecard stored as JSON, keyed by sport-specific fields.
+    """
+    name = models.CharField(max_length=255)
+    sport = models.ForeignKey(
+        'tournaments.Sport',
+        on_delete=models.PROTECT,
+        related_name='local_tournaments'
+    )
+    organizer = models.ForeignKey(
+        'players.Player',
+        on_delete=models.CASCADE,
+        related_name='organized_local_tournaments'
+    )
+    scoreboard = models.JSONField(
+        default=dict,
+        blank=True,
+        help_text="Flexible sport-specific scoreboard: {teamA: {...}, teamB: {...}} or player scores"
+    )
+    status = models.CharField(
+        max_length=20,
+        choices=LocalTournamentStatus.choices,
+        default=LocalTournamentStatus.ACTIVE
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.name} ({self.sport.name}) - {self.status}"
+
+    class Meta:
+        verbose_name = "Local Tournament"
+        verbose_name_plural = "Local Tournaments"
+        ordering = ['-created_at']
+
+
+class LocalTournamentParticipant(models.Model):
+    """
+    Guest player in a LocalTournament — does not need a Player account.
+    Email is used to check if this person already has an active tournament.
+    """
+    tournament = models.ForeignKey(
+        LocalTournament,
+        on_delete=models.CASCADE,
+        related_name='participants'
+    )
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    mobile = models.CharField(max_length=20)
+    score = models.JSONField(
+        default=dict,
+        blank=True,
+        help_text="Player-specific score data, structure depends on sport"
+    )
+    added_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.name} ({self.email}) - {self.tournament.name}"
+
+    class Meta:
+        verbose_name = "Local Tournament Participant"
+        verbose_name_plural = "Local Tournament Participants"
+        ordering = ['name']

@@ -73,50 +73,52 @@ function Venues() {
 
   return (
     <div>
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2>Venue Management</h2>
+      <div className="d-flex justify-content-between align-items-center mb-4 mt-2">
+        <h3 className="fw-bold text-brand-navy">Venue Tenants Management</h3>
       </div>
 
       {error && <Alert variant="danger" dismissible onClose={() => setError('')}>{error}</Alert>}
 
       {/* Filters */}
-      <div className="bg-white shadow-sm rounded p-3 mb-3">
-        <div className="row">
-          <div className="col-md-6">
-            <InputGroup>
-              <InputGroup.Text>
-                <FaSearch />
+      <div className="bg-white shadow-sm border-0 rounded-4 p-4 mb-4">
+        <div className="row align-items-center">
+          <div className="col-md-6 mb-3 mb-md-0">
+            <InputGroup className="shadow-sm">
+              <InputGroup.Text className="bg-light border-0">
+                <FaSearch className="text-muted" />
               </InputGroup.Text>
               <Form.Control
                 type="text"
+                className="border-0 bg-light"
                 placeholder="Search by name, city, or executive email..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </InputGroup>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 mb-3 mb-md-0">
             <Form.Select
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
+              className="border-0 bg-light shadow-sm"
             >
               <option value="ALL">All Status</option>
               <option value="PRE_REGISTERED">Pre-Registered</option>
               <option value="REGISTERED">Registered</option>
             </Form.Select>
           </div>
-          <div className="col-md-3">
-            <div className="text-muted">
-              Showing {filteredVenues.length} of {venues.length} venues
-            </div>
+          <div className="col-md-3 text-md-end">
+            <Badge bg="light" text="dark" className="p-2 border border-secondary shadow-sm">
+              Showing <strong className="text-brand-orange">{filteredVenues.length}</strong> of {venues.length}
+            </Badge>
           </div>
         </div>
       </div>
 
       {/* Venues Table */}
-      <div className="bg-white shadow-sm rounded p-3">
-        <Table responsive hover>
-          <thead>
+      <div className="bg-white shadow-sm border-0 rounded-4 p-4">
+        <Table responsive hover className="align-middle">
+          <thead className="table-light">
             <tr>
               <th>Venue Name</th>
               <th>Location</th>
@@ -124,13 +126,13 @@ function Venues() {
               <th>Contact</th>
               <th>Status</th>
               <th>Courts</th>
-              <th>Actions</th>
+              <th className="text-end">Actions</th>
             </tr>
           </thead>
           <tbody>
             {filteredVenues.map((venue) => (
               <tr key={venue.id}>
-                <td>
+                <td className="fw-bold text-brand-navy">
                   <strong>{venue.name}</strong>
                 </td>
                 <td>
@@ -150,27 +152,29 @@ function Venues() {
                 </td>
                 <td>{getStatusBadge(venue.status)}</td>
                 <td>
-                  <Badge bg="info">{venue.courts_count}</Badge>
+                  <Badge bg="dark" className="px-3 py-2 rounded-pill shadow-sm">{venue.courts_count}</Badge>
                 </td>
-                <td>
+                <td className="text-end">
                   {venue.status === 'PRE_REGISTERED' ? (
                     <Button
                       variant="success"
                       size="sm"
+                      className="rounded-pill px-3 shadow-sm fw-bold"
                       onClick={() => handleStatusChange(venue.id, 'REGISTERED')}
                       title="Approve and mark as Registered"
                     >
-                      <FaCheckCircle className="me-1" />
+                      <FaCheckCircle className="me-2" />
                       Approve
                     </Button>
                   ) : (
                     <Button
-                      variant="warning"
+                      variant="outline-warning"
                       size="sm"
+                      className="rounded-pill px-3 fw-bold"
                       onClick={() => handleStatusChange(venue.id, 'PRE_REGISTERED')}
                       title="Mark as Pre-Registered"
                     >
-                      <FaTimesCircle className="me-1" />
+                      <FaTimesCircle className="me-2" />
                       Revert
                     </Button>
                   )}

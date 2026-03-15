@@ -11,8 +11,10 @@ import SlotRules from './pages/venues/SlotRules';
 import BookingCalendar from './pages/bookings/BookingCalendar';
 import BookingsManage from './pages/bookings/BookingsManage';
 import PartnerRequests from './pages/admin/PartnerRequests';
+import TournamentsManage from './pages/tournaments/TournamentsManage';
+import PartnerManagement from './pages/partners/PartnerManagement';
+import AddPartner from './pages/partners/AddPartner';
 
-// Protected Route Component
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   if (!authService.isAuthenticated()) {
     return <Navigate to="/login" replace />;
@@ -22,7 +24,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/venueadmin">
       <Routes>
         <Route path="/login" element={<Login />} />
 
@@ -38,7 +40,9 @@ function App() {
           <Route path="venues/:id/slots" element={<SlotRules />} />
           <Route path="bookings" element={<BookingCalendar />} />
           <Route path="bookings/manage" element={<BookingsManage />} />
-          <Route path="users" element={<div>Users Management (Coming Soon)</div>} />
+          <Route path="users" element={<PartnerManagement />} />
+          <Route path="users/new" element={<AddPartner />} />
+          <Route path="tournaments" element={<TournamentsManage />} />
           <Route path="requests" element={<PartnerRequests />} />
         </Route>
       </Routes>

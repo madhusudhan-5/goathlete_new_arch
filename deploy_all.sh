@@ -1,228 +1,227 @@
 #!/bin/bash
 
-###############################################################################
-# GoAthlete Complete Deployment Script
-# Deploys entire GoAthlete platform:
-# - Django Backend (with HTTPS)
-# - Admin Web Panel (with HTTPS)
-# - Prepares Android build
-###############################################################################
+# deploy_all.sh
+# ALL-IN-ONE AUTOMATED DEPLOYMENT SCRIPT
+# Run this from /opt/goathlete (as root) after transferring all the files!
 
 set -e
 
-# Color codes
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-MAGENTA='\033[0;35m'
-NC='\033[0m'
+echo "==============================================================="
+echo "🚀 GoAthlete FULL PLATFORM DEPLOYMENT SCRIPT 🚀"
+echo "==============================================================="
 
-clear
-echo -e "${MAGENTA}"
-cat << "EOF"
-  ____       _   _   _     _      _       
- / ___| ___ / \ | |_| |__ | | ___| |_ ___ 
-| |  _ / _ \/ _ \| __| '_ \| |/ _ \ __/ _ \
-| |_| | (_) / ___ \ |_| | | | |  __/ ||  __/
- \____|\___/_/   \_\__|_| |_|_|\___|\__\___|
+# ======================================================
+# CONFIGURATION — Django files live directly in /opt/goathlete
+# ======================================================
+BASE_DIR="/opt/goathlete"
+VENV_DIR="$BASE_DIR/venv"
+GUNICORN_SOCK="$BASE_DIR/gunicorn.sock"
+STATIC_DIR="$BASE_DIR/staticfiles"
+MEDIA_DIR="$BASE_DIR/media"
 
-    Complete Deployment Script v1.0
+# Check we are running as root
+if [ "$(whoami)" != "root" ]; then
+  echo "❌ Please run this script as root (e.g., sudo ./deploy_all.sh)"
+  exit 1
+fi
+
+echo "---------------------------------------------------------------"
+echo "1. 🛑 Stopping Existing Services"
+systemctl stop gunicorn_goathlete || true
+systemctl stop nginx || true
+
+echo "---------------------------------------------------------------"
+echo "2. 🐍 Setting up Django Backend API"
+cd "$BASE_DIR"
+
+# Fix permissions (server runs as root)
+chown -R root:www-data "$BASE_DIR" 2>/dev/null || chown -R root:root "$BASE_DIR"
+chmod -R 755 "$BASE_DIR"
+
+# Create venv if not already there
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Creating Python Virtual Environment..."
+    python3 -m venv "$VENV_DIR"
+fi
+
+. "$VENV_DIR/bin/activate"
+pip install --upgrade pip
+pip install -r requirements.txt
+# Ensure MSGraph email dependencies are present
+pip install msal requests
+
+# Create static and media folders if missing
+mkdir -p "$STATIC_DIR" "$MEDIA_DIR"
+
+# Database setup
+python manage.py migrate
+python manage.py collectstatic --noinput
+
+echo "---------------------------------------------------------------"
+echo "3. 🔐 Creating Default Test Credentials for All Roles"
+python manage.py shell -c "
+from accounts.models import User, UserRole
+
+def create_or_reset(email, password, role, first, last, is_staff=False, is_superuser=False):
+    if not User.objects.filter(email=email).exists():
+        u = User.objects.create_user(email=email, password=password, role=role, first_name=first, last_name=last)
+        u.is_staff = is_staff
+        u.is_superuser = is_superuser
+        u.save()
+        print(f'  ✅ Created: {email} / {password}  [{role}]')
+    else:
+        u = User.objects.get(email=email)
+        u.set_password(password)
+        u.role = role
+        u.is_staff = is_staff
+        u.is_superuser = is_superuser
+        u.save()
+        print(f'  🔄 Reset:   {email} / {password}  [{role}]')
+
+create_or_reset('superadmin@goathlete.com', 'admin123', 'SUPER_ADMIN',   'Super',  'Admin',   is_staff=True, is_superuser=True)
+create_or_reset('admin@goathlete.com',      'admin123', 'ADMIN',         'GoAthlete', 'Admin', is_staff=True)
+create_or_reset('venueadmin@goathlete.com', 'admin123', 'VENDOR_ADMIN',  'Venue',  'Admin')
+create_or_reset('executive@goathlete.com',  'admin123', 'EXECUTIVE',     'Test',   'Executive')
+create_or_reset('partner@goathlete.com',    'admin123', 'VENDOR_PARTNER','Test',   'Partner')
+print('')
+print('All credentials seeded successfully!')
+"
+
+echo "---------------------------------------------------------------"
+echo "4. ⚙️ Writing Systemd Gunicorn Service"
+cat > /etc/systemd/system/gunicorn_goathlete.service << EOF
+[Unit]
+Description=gunicorn daemon for GoAthlete
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=${BASE_DIR}
+ExecStart=${VENV_DIR}/bin/gunicorn --access-logfile - --workers 3 --bind unix:${GUNICORN_SOCK} config.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
 EOF
-echo -e "${NC}"
 
-print_header() {
-    echo -e "${MAGENTA}========================================${NC}"
-    echo -e "${MAGENTA}$1${NC}"
-    echo -e "${MAGENTA}========================================${NC}"
-}
+systemctl daemon-reload
+systemctl start gunicorn_goathlete
+systemctl enable gunicorn_goathlete
 
-print_status() {
-    echo -e "${YELLOW}>>> $1${NC}"
-}
+# Give a moment for the socket to appear
+sleep 2
 
-print_success() {
-    echo -e "${GREEN}✓ $1${NC}"
-}
-
-print_error() {
-    echo -e "${RED}✗ $1${NC}"
-}
-
-print_info() {
-    echo -e "${BLUE}ℹ $1${NC}"
-}
-
-# Pre-flight checks
-print_header "Pre-Flight Checks"
-
-# Check if root
-if [[ $EUID -ne 0 ]]; then
-   print_error "This script must be run as root (use sudo)"
-   exit 1
+if systemctl is-active --quiet gunicorn_goathlete; then
+    echo "✅ Gunicorn is running!"
+else
+    echo "❌ Gunicorn failed to start. Run: journalctl -u gunicorn_goathlete -e"
+    exit 1
 fi
 
-# Check if scripts exist
-SCRIPTS=(
-    "deploy_backend.sh"
-    "deploy_admin_web.sh"
-    "prepare_android.sh"
-)
+echo "---------------------------------------------------------------"
+echo "5. 🌐 Compiling React Frontends (this may take a few minutes)"
 
-for script in "${SCRIPTS[@]}"; do
-    if [ ! -f "$script" ]; then
-        print_error "Required script not found: $script"
-        exit 1
-    fi
-    chmod +x "$script"
-done
+echo "🔨 Building Main Admin (admin-web)..."
+cd "$BASE_DIR/admin-web"
+npm install && npm run build
+mkdir -p /var/www/admin.goathlete.in/html
+cp -r dist/* /var/www/admin.goathlete.in/html/
+echo "✅ Main Admin built!"
 
-print_success "All deployment scripts found"
+echo "🔨 Building Venue/Vendor Admin (vendor_admin_web)..."
+cd "$BASE_DIR/vendor_admin_web"
+npm install && npm run build
+mkdir -p /var/www/vendor.goathlete.in/html
+cp -r dist/* /var/www/vendor.goathlete.in/html/
+echo "✅ Venue Admin built!"
 
-# Configuration
-print_header "Deployment Configuration"
-echo ""
-echo "This script will deploy:"
-echo "  1. Django Backend (API) with HTTPS"
-echo "  2. Admin Web Panel with HTTPS"
-echo "  3. Prepare Android app for Play Store"
-echo ""
-print_info "Before proceeding, ensure you have:"
-echo "  - Domain names configured (DNS A records)"
-echo "  - Server access (SSH)"
-echo "  - Email for SSL certificates"
-echo "  - Database credentials ready"
-echo ""
+chown -R www-data:www-data /var/www/
+chmod -R 755 /var/www/
 
-read -p "Continue with deployment? (y/n): " CONTINUE
-if [ "$CONTINUE" != "y" ]; then
-    echo "Deployment cancelled"
-    exit 0
-fi
+echo "---------------------------------------------------------------"
+echo "6. 🛠️ Writing Nginx Configurations"
 
-# Get deployment options
-echo ""
-echo "Select components to deploy:"
-echo "1) Backend only"
-echo "2) Admin Web only"
-echo "3) Android preparation only"
-echo "4) Backend + Admin Web"
-echo "5) Complete deployment (Backend + Admin + Android)"
-echo ""
-read -p "Enter your choice (1-5): " DEPLOY_CHOICE
+# --- API Config (api.goathlete.in) ---
+cat > /etc/nginx/sites-available/api_goathlete << EOF
+upstream goathlete {
+    server unix:${GUNICORN_SOCK} fail_timeout=0;
+}
+server {
+    listen 80;
+    server_name api.goathlete.in;
+    client_max_body_size 100M;
 
-# Deploy based on choice
-case $DEPLOY_CHOICE in
-    1)
-        print_header "Deploying Backend"
-        ./deploy_backend.sh
-        ;;
-    2)
-        print_header "Deploying Admin Web"
-        ./deploy_admin_web.sh
-        ;;
-    3)
-        print_header "Preparing Android Build"
-        cd executive-app
-        ../prepare_android.sh
-        cd ..
-        ;;
-    4)
-        print_header "Deploying Backend + Admin Web"
-        ./deploy_backend.sh
-        echo ""
-        echo -e "${BLUE}Waiting 10 seconds before admin deployment...${NC}"
-        sleep 10
-        ./deploy_admin_web.sh
-        ;;
-    5)
-        print_header "Complete Deployment"
-        
-        # Deploy Backend
-        print_status "Step 1/3: Deploying Backend..."
-        ./deploy_backend.sh
-        print_success "Backend deployed"
-        
-        echo ""
-        echo -e "${BLUE}Waiting 10 seconds...${NC}"
-        sleep 10
-        
-        # Deploy Admin Web
-        print_status "Step 2/3: Deploying Admin Web..."
-        ./deploy_admin_web.sh
-        print_success "Admin Web deployed"
-        
-        echo ""
-        echo -e "${BLUE}Waiting 5 seconds...${NC}"
-        sleep 5
-        
-        # Prepare Android
-        print_status "Step 3/3: Preparing Android Build..."
-        cd executive-app
-        ../prepare_android.sh
-        cd ..
-        print_success "Android prepared"
-        ;;
-    *)
-        print_error "Invalid choice"
-        exit 1
-        ;;
-esac
+    location = /favicon.ico { access_log off; log_not_found off; }
 
-# Final summary
-echo ""
-print_header "Deployment Summary"
-echo ""
+    location /static/ {
+        alias ${STATIC_DIR}/;
+    }
+    location /media/ {
+        alias ${MEDIA_DIR}/;
+    }
+    location / {
+        proxy_set_header Host \$http_host;
+        proxy_set_header X-Real-IP \$remote_addr;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \$scheme;
+        proxy_pass http://goathlete;
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 300s;
+    }
+}
+EOF
 
-if [[ $DEPLOY_CHOICE == 1 || $DEPLOY_CHOICE == 4 || $DEPLOY_CHOICE == 5 ]]; then
-    echo -e "${GREEN}✓ Backend deployed${NC}"
-    echo "  URL: https://api.goathlete.in"
-    echo "  Admin: https://api.goathlete.in/admin"
-    echo ""
-fi
+# --- Vendor/Admin Frontend Config (vendor.goathlete.in) ---
+cat > /etc/nginx/sites-available/vendor_goathlete << 'EOF'
+server {
+    listen 80;
+    server_name vendor.goathlete.in;
 
-if [[ $DEPLOY_CHOICE == 2 || $DEPLOY_CHOICE == 4 || $DEPLOY_CHOICE == 5 ]]; then
-    echo -e "${GREEN}✓ Admin Web deployed${NC}"
-    echo "  URL: https://admin.goathlete.in"
-    echo ""
-fi
+    # Main Admin App at the root
+    location / {
+        root /var/www/admin.goathlete.in/html;
+        index index.html index.htm;
+        try_files $uri $uri/ /index.html;
+    }
 
-if [[ $DEPLOY_CHOICE == 3 || $DEPLOY_CHOICE == 5 ]]; then
-    echo -e "${GREEN}✓ Android build prepared${NC}"
-    echo "  Check Expo dashboard for build status"
-    echo ""
-fi
+    # Venue Admin App at /venueadmin/
+    location /venueadmin/ {
+        alias /var/www/vendor.goathlete.in/html/;
+        try_files $uri $uri/ /venueadmin/index.html;
+    }
+}
+EOF
 
-echo -e "${YELLOW}Important Next Steps:${NC}"
-echo ""
-echo "1. Update environment variables:"
-echo "   - Backend: /var/www/goathlete/.env"
-echo "   - Admin: /var/www/goathlete-admin/.env"
-echo ""
-echo "2. Configure email settings (Microsoft Graph):"
-echo "   - Update MS_CLIENT_ID, MS_CLIENT_SECRET, MS_TENANT_ID"
-echo ""
-echo "3. Setup database backups:"
-echo "   - Configure automated PostgreSQL backups"
-echo ""
-echo "4. Monitor services:"
-echo "   - Backend: sudo systemctl status gunicorn_goathlete"
-echo "   - Nginx: sudo systemctl status nginx"
-echo ""
-echo "5. Test everything:"
-echo "   - API health: curl https://api.goathlete.in/api/health/"
-echo "   - Admin panel: Visit https://admin.goathlete.in"
-echo "   - Mobile app: Test with production API"
-echo ""
+# Enable the two sites (remove old, re-enable fresh)
+rm -f /etc/nginx/sites-enabled/*
+ln -sf /etc/nginx/sites-available/api_goathlete /etc/nginx/sites-enabled/
+ln -sf /etc/nginx/sites-available/vendor_goathlete /etc/nginx/sites-enabled/
 
-echo -e "${GREEN}========================================${NC}"
-echo -e "${GREEN}Deployment Complete! 🚀${NC}"
-echo -e "${GREEN}========================================${NC}"
-echo ""
-echo "For detailed information, check:"
-echo "  - DEPLOYMENT_GUIDE.md"
-echo "  - Individual script logs"
-echo ""
-echo -e "${BLUE}Support: support@goathlete.in${NC}"
-echo ""
+nginx -t
+systemctl start nginx
+systemctl enable nginx
+echo "✅ Nginx running!"
 
+echo "---------------------------------------------------------------"
+echo "7. 🔒 Securing with SSL (Certbot)"
+certbot --nginx \
+  -d api.goathlete.in \
+  -d vendor.goathlete.in \
+  --non-interactive \
+  --agree-tos \
+  --email contact@goathlete.in \
+  --redirect || echo "⚠️ Certbot could not issue a certificate — check your DNS settings."
+
+echo ""
+echo "==============================================================="
+echo "✅ DEPLOYMENT COMPLETE!"
+echo "==============================================================="
+echo ""
+echo "📱 1. Super Admin (Django): https://api.goathlete.in/admin"
+echo "📱 2. Main Admin (React):   https://vendor.goathlete.in/"
+echo "📱 3. Venue Admin (React):  https://vendor.goathlete.in/venueadmin/"
+echo ""
+echo "🔑 Login Credentials (all portals):"
+echo "   Email:    admin@goathlete.com"
+echo "   Password: admin123"
+echo "==============================================================="

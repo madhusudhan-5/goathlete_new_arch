@@ -207,3 +207,48 @@ export const playerService = {
 };
 
 export default api;
+
+// Local Tournament Service (Player-created informal tournaments)
+export const localTournamentService = {
+    create: async (data: {
+        name: string;
+        sport: number;
+        participants: Array<{ name: string; email: string; mobile: string }>;
+    }) => {
+        const response = await api.post('/tournaments/local-tournaments/', data);
+        return response.data;
+    },
+
+    getAll: async () => {
+        const response = await api.get('/tournaments/local-tournaments/');
+        return response.data;
+    },
+
+    getById: async (id: string) => {
+        const response = await api.get(`/tournaments/local-tournaments/${id}/`);
+        return response.data;
+    },
+
+    getMyActive: async () => {
+        const response = await api.get('/tournaments/local-tournaments/active/');
+        return response.data;
+    },
+
+    updateScoreboard: async (id: string, scoreboard: object) => {
+        const response = await api.patch(`/tournaments/local-tournaments/${id}/update_scoreboard/`, { scoreboard });
+        return response.data;
+    },
+
+    updateParticipantScore: async (tournamentId: string, participantId: string, score: object) => {
+        const response = await api.patch(
+            `/tournaments/local-tournaments/${tournamentId}/participant/${participantId}/score/`,
+            { score }
+        );
+        return response.data;
+    },
+
+    close: async (id: string) => {
+        const response = await api.post(`/tournaments/local-tournaments/${id}/close/`);
+        return response.data;
+    },
+};

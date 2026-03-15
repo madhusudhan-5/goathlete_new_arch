@@ -131,7 +131,7 @@ export default function ProfileScreen() {
                         <ChevronRight size={20} color={colors.text.muted} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }} onPress={() => router.push('/(tabs)/bookings')}>
+                    <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }} onPress={() => router.push('/bookings' as any)}>
                         <Calendar size={20} color={colors.text.dark} style={{ marginRight: spacing.sm }} />
                         <Text style={{ color: colors.text.dark, fontWeight: typography.body.large.weight, flex: 1, fontFamily: typography.fontFamily }}>
                             My Bookings

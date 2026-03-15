@@ -1,191 +1,105 @@
-import { View, Text, ScrollView, TouchableOpacity, TextInput, ActivityIndicator, RefreshControl } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, ScrollView, RefreshControl } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
-import { Search, Bell } from 'lucide-react-native';
-import { venueService } from '../../services/api';
-import { VenueCard } from '../../components/booking/VenueCard';
-import { colors, spacing, typography, radius } from '../../theme/tokens';
+import { useColorScheme } from '@/components/useColorScheme';
+import { Header } from '@/components/Header';
+import { PerformanceDashboard } from '@/components/PerformanceDashboard';
+import { QuickActionGrid } from '@/components/QuickActionGrid';
+import { LiveScoreCard } from '@/components/LiveScoreCard';
+import { EquipmentRentals } from '@/components/EquipmentRentals';
+import { playerService, scoreboardService } from '../../services/api';
 
 export default function HomeScreen() {
-  const [venues, setVenues] = useState([]);
+  const colorScheme = useColorScheme();
+  const isDark = colorScheme === 'dark';
+  const [refreshing, setRefreshing] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedSport, setSelectedSport] = useState('All');
-  const router = useRouter();
 
-  const sports = ['All', 'Badminton', 'Tennis', 'Cricket', 'Football', 'Squash'];
+  const [dashboardData, setDashboardData] = useState({
+    user: { name: 'Player', avatar: 'P' },
+    performance: { matches: 0, winRate: 0, cityRank: 0 },
+    liveMatch: { league: 'Loading...', team1: '...', team2: '...', score: '- - -', status: '' }
+  });
+
+  const loadDashboardData = async () => {
+    try {
+      const [profileData, statsData, matchesData] = await Promise.all([
+        playerService.getProfile().catch(() => null),
+        playerService.getStats().catch(() => null),
+        scoreboardService.getLiveMatches().catch(() => [])
+      ]);
+
+      const liveMatch = matchesData && matchesData.length > 0 ? matchesData[0] : null;
+
+      setDashboardData({
+        user: {
+          name: profileData?.first_name || 'Player',
+          avatar: profileData?.first_name ? profileData.first_name[0].toUpperCase() : 'P'
+        },
+        performance: {
+          matches: statsData?.matches_played || 0,
+          winRate: statsData?.win_rate || 0,
+          cityRank: statsData?.city_rank || 0
+        },
+        liveMatch: liveMatch ? {
+          league: liveMatch.tournament_name || 'Tournament Match',
+          team1: liveMatch.team_a_name || 'Team 1',
+          team2: liveMatch.team_b_name || 'Team 2',
+          score: `${liveMatch.team_a_score} - ${liveMatch.team_b_score}`,
+          status: liveMatch.status === 'LIVE' ? "LIVE IN PLAY" : "AWAITING"
+        } : { league: 'No Live Matches', team1: 'N/A', team2: 'N/A', score: '0 - 0', status: 'INACTIVE' }
+      });
+    } catch (e) {
+      console.log('Error Loading Dashboard', e);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    loadVenues();
+    loadDashboardData();
   }, []);
 
-  const loadVenues = async () => {
-    try {
-      setLoading(true);
-      const data = await venueService.getAll();
-      setVenues(data);
-    } catch (e) {
-      console.error('Failed to load venues:', e);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleSearch = async () => {
-    if (!searchQuery.trim()) {
-      loadVenues();
-      return;
-    }
-    try {
-      setLoading(true);
-      const data = await venueService.search(searchQuery);
-      setVenues(data);
-    } catch (e) {
-      console.error('Search failed:', e);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const filteredVenues = selectedSport === 'All'
-    ? venues
-    : venues.filter((v: any) => v.sports?.includes(selectedSport));
+  const onRefresh = React.useCallback(async () => {
+    setRefreshing(true);
+    await loadDashboardData();
+    setRefreshing(false);
+  }, []);
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: colors.background.screen }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: isDark ? '#0A1F35' : '#FFFFFF' }}>
+      <Header
+        userName={dashboardData.user.name}
+        avatarLetter={dashboardData.user.avatar}
+        isDark={isDark}
+      />
+
       <ScrollView
-        style={{ flex: 1 }}
-        refreshControl={<RefreshControl refreshing={loading} onRefresh={loadVenues} tintColor={colors.brand.accent} />}
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#DA6F2B" />
+        }
       >
-        {/* Header */}
-        <View style={{ paddingHorizontal: spacing.md, paddingTop: spacing.lg, paddingBottom: spacing.md }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: spacing.lg }}>
-            <View>
-              <Text style={{ color: colors.text.secondary, fontSize: typography.body.regular.size, fontFamily: typography.fontFamily }}>
-                Discover
-              </Text>
-              <Text style={{
-                fontSize: typography.heading.h1.size,
-                fontWeight: typography.heading.h1.weight,
-                color: colors.text.primary,
-                fontFamily: typography.fontFamily,
-                marginTop: spacing.xxs
-              }}>
-                Venues Near You
-              </Text>
-            </View>
-            <TouchableOpacity
-              style={{
-                backgroundColor: colors.background.cardDark,
-                padding: spacing.sm,
-                borderRadius: radius.pill
-              }}
-            >
-              <Bell size={20} color={colors.text.primary} />
-            </TouchableOpacity>
-          </View>
+        <View className="flex-1 px-5 pt-2 pb-8 gap-y-6">
+          <PerformanceDashboard
+            matchesPlayed={dashboardData.performance.matches}
+            winRate={dashboardData.performance.winRate}
+            cityRank={dashboardData.performance.cityRank}
+            isDark={isDark}
+          />
 
-          {/* Search Bar */}
-          <View style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            backgroundColor: colors.background.card,
-            borderRadius: radius.md,
-            paddingHorizontal: spacing.md,
-            paddingVertical: spacing.sm,
-            marginBottom: spacing.md,
-            borderWidth: 1,
-            borderColor: colors.divider
-          }}>
-            <Search size={20} color={colors.text.muted} style={{ marginRight: spacing.xs }} />
-            <TextInput
-              style={{
-                flex: 1,
-                fontSize: typography.body.regular.size,
-                color: colors.text.dark,
-                fontFamily: typography.fontFamily
-              }}
-              placeholder="Search venues, sports..."
-              placeholderTextColor={colors.text.muted}
-              value={searchQuery}
-              onChangeText={setSearchQuery}
-              onSubmitEditing={handleSearch}
-              returnKeyType="search"
-            />
-            {searchQuery.length > 0 && (
-              <TouchableOpacity onPress={() => {
-                setSearchQuery('');
-                loadVenues();
-              }}>
-                <Text style={{ color: colors.text.muted, fontSize: 18 }}>✕</Text>
-              </TouchableOpacity>
-            )}
-          </View>
+          <QuickActionGrid isDark={isDark} />
 
-          {/* Sport Filters */}
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginBottom: spacing.md }}>
-            {sports.map((sport) => (
-              <TouchableOpacity
-                key={sport}
-                onPress={() => setSelectedSport(sport)}
-                style={{
-                  marginRight: spacing.sm,
-                  paddingHorizontal: spacing.md,
-                  paddingVertical: spacing.xs,
-                  borderRadius: radius.pill,
-                  backgroundColor: selectedSport === sport ? colors.brand.accent : colors.background.card,
-                  borderWidth: selectedSport === sport ? 0 : 1,
-                  borderColor: colors.divider,
-                }}
-              >
-                <Text
-                  style={{
-                    fontWeight: typography.body.large.weight,
-                    color: selectedSport === sport ? colors.text.primary : colors.text.dark,
-                    fontFamily: typography.fontFamily,
-                    fontSize: typography.body.regular.size
-                  }}
-                >
-                  {sport}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-        </View>
+          <LiveScoreCard
+            leagueName={dashboardData.liveMatch.league}
+            team1={dashboardData.liveMatch.team1}
+            team2={dashboardData.liveMatch.team2}
+            score={dashboardData.liveMatch.score}
+            status={dashboardData.liveMatch.status}
+            isDark={isDark}
+          />
 
-        {/* Venues List */}
-        <View style={{ paddingHorizontal: spacing.md, paddingBottom: spacing.lg }}>
-          {loading ? (
-            <View style={{ paddingVertical: spacing.xxl }}>
-              <ActivityIndicator size="large" color={colors.brand.accent} />
-            </View>
-          ) : filteredVenues.length === 0 ? (
-            <View style={{ paddingVertical: spacing.xxl, alignItems: 'center' }}>
-              <Text style={{ fontSize: 48, marginBottom: spacing.md }}>🏟️</Text>
-              <Text style={{ color: colors.text.secondary, textAlign: 'center', fontFamily: typography.fontFamily }}>
-                No venues found
-              </Text>
-              <Text style={{ color: colors.text.muted, textAlign: 'center', fontSize: typography.body.small.size, marginTop: spacing.xs, fontFamily: typography.fontFamily }}>
-                Try adjusting your search or filters
-              </Text>
-            </View>
-          ) : (
-            filteredVenues.map((venue: any) => (
-              <VenueCard
-                key={venue.id}
-                venue={{
-                  id: venue.id,
-                  name: venue.name,
-                  city: venue.city,
-                  address: venue.address,
-                  rating: 4.5,
-                  distance: '2.5 km'
-                }}
-                onPress={() => router.push(`/venues/${venue.id}`)}
-              />
-            ))
-          )}
+          <EquipmentRentals isDark={isDark} />
         </View>
       </ScrollView>
     </SafeAreaView>

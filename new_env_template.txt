@@ -1,0 +1,12 @@
+EMAIL_HOST=smtp.office365.com
+EMAIL_PORT=587
+EMAIL_HOST_USER=contact@goathlete.in
+EMAIL_HOST_PASSWORD=P*850970045654uc
+DEFAULT_FROM_EMAIL=Go-Athlete-Contact <contact@goathlete.in>
+USE_EMAIL_BACKEND=msgraph
+DEBUG=False
+SECRET_KEY=django-insecure-development-key-change-in-production
+MS_CLIENT_ID=bb57f84d-a180-4cfb-8f3b-ea95ff2a2989
+MS_TENANT_ID=a951991f-09b6-4114-bccd-17d40b0bc7cf
+AZURE_CLIENT_SECRET=
+MS_SENDER_EMAIL=contact@goathlete.in

@@ -12,11 +12,11 @@ export interface LoginResponse {
 
 export const authService = {
     login: async (email: string, password: string): Promise<LoginResponse> => {
-        const response = await api.post('/auth/executive/login', { email, password });
+        const response = await api.post('/auth/admin/login', { email, password });
 
-        if (response.data.tokens) {
-            localStorage.setItem('access_token', response.data.tokens.access);
-            localStorage.setItem('refresh_token', response.data.tokens.refresh);
+        if (response.data.access) {
+            localStorage.setItem('access_token', response.data.access);
+            localStorage.setItem('refresh_token', response.data.refresh);
             localStorage.setItem('user', JSON.stringify(response.data.user || { email }));
         }
 

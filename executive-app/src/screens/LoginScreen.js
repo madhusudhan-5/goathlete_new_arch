@@ -55,9 +55,9 @@ export default function LoginScreen({ navigation }) {
         {/* Logo */}
         <View style={styles.logoContainer}>
           <View style={styles.logoPlaceholder}>
-            <Text style={styles.logoText}>GoAthlete</Text>
+            <Text style={styles.logoText}>GO<Text style={{ color: COLORS.navy }}>ATHLETE</Text></Text>
           </View>
-          <Text style={styles.welcomeText}>Welcome to GoAthlete</Text>
+          <Text style={styles.welcomeText}>Executive App</Text>
           <Text style={styles.subtitleText}>All-in-one sports platform</Text>
         </View>
 
@@ -145,11 +145,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: SIZES.padding,
     marginBottom: SIZES.margin,
     height: 56,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.05,
-    shadowRadius: 4,
-    elevation: 2,
+    borderWidth: 1,
+    borderColor: COLORS.lightGrey,
   },
   iconContainer: {
     marginRight: 12,

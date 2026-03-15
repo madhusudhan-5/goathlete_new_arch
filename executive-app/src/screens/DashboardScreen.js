@@ -96,7 +96,7 @@ export default function DashboardScreen({ navigation }) {
         {/* Quick Actions */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Quick Actions</Text>
-          
+
           <TouchableOpacity
             style={styles.actionCard}
             onPress={() => {
@@ -267,11 +267,8 @@ const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 12,
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.05,
-    shadowRadius: 4,
-    elevation: 2,
+    borderWidth: 1,
+    borderColor: COLORS.lightGrey,
   },
   actionIconContainer: {
     width: 50,
@@ -291,13 +288,14 @@ const styles = StyleSheet.create({
   },
   actionTitle: {
     fontSize: SIZES.medium,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.navy,
     marginBottom: 4,
   },
   actionSubtitle: {
     fontSize: SIZES.small,
     color: COLORS.grey,
+    fontWeight: '500',
   },
   venueCard: {
     flexDirection: 'row',

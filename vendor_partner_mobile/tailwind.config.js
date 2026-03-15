@@ -5,12 +5,16 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                brand: {
+                    navy: '#0A1F35',
+                    orange: '#DA6F2B',
+                },
                 primary: {
-                    DEFAULT: '#4F46E5',
+                    DEFAULT: '#0A1F35',
                     foreground: '#FFFFFF',
                 },
                 secondary: {
-                    DEFAULT: '#10B981',
+                    DEFAULT: '#DA6F2B',
                     foreground: '#FFFFFF',
                 },
             },

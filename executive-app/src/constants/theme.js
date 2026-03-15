@@ -28,11 +28,11 @@ export const SIZES = {
   h1: 32,
   h2: 28,
   h3: 24,
-  
+
   padding: 16,
   margin: 16,
-  radius: 12,
-  buttonRadius: 25,
+  radius: 16, // Softer curves (was 12)
+  buttonRadius: 16, // Changed from 25 for a modern block look
 };
 
 // API Base URL - Using production URL for all environments

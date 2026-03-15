@@ -113,9 +113,9 @@ function Executives() {
 
   return (
     <div>
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2>Executive Management</h2>
-        <Button className="btn-brand-orange" onClick={() => handleShowModal()}>
+      <div className="d-flex justify-content-between align-items-center mb-4 mt-2">
+        <h3 className="fw-bold text-brand-navy">Executive Staff Management</h3>
+        <Button className="btn-brand-orange py-2 px-4 rounded-pill fw-bold" onClick={() => handleShowModal()}>
           <FaPlus className="me-2" />
           Add Executive
         </Button>
@@ -123,9 +123,9 @@ function Executives() {
 
       {error && <Alert variant="danger" dismissible onClose={() => setError('')}>{error}</Alert>}
 
-      <div className="bg-white shadow-sm rounded p-3">
-        <Table responsive hover>
-          <thead>
+      <div className="bg-white shadow-sm border-0 rounded-4 p-4">
+        <Table responsive hover className="align-middle">
+          <thead className="table-light">
             <tr>
               <th>Name</th>
               <th>Email</th>
@@ -138,7 +138,7 @@ function Executives() {
           <tbody>
             {executives.map((executive) => (
               <tr key={executive.id}>
-                <td>
+                <td className="fw-bold text-brand-navy">
                   {executive.user.first_name} {executive.user.last_name}
                 </td>
                 <td>{executive.user.email}</td>

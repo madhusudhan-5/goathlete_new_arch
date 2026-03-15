@@ -64,14 +64,14 @@ export default function BookingsManage() {
         <div className="space-y-6">
             <div className="flex justify-between items-center">
                 <div>
-                    <h1 className="text-3xl font-bold text-gray-900">Booking Management</h1>
-                    <p className="text-gray-500 mt-1">Manage all venue bookings</p>
+                    <h1 className="text-3xl font-extrabold text-brand-navy">Booking Management</h1>
+                    <p className="text-gray-500 mt-1 font-medium">Manage all venue bookings</p>
                 </div>
                 <button
                     onClick={() => setShowCreateModal(true)}
-                    className="bg-primary text-white px-4 py-2 rounded-lg flex items-center hover:bg-primary/90 transition"
+                    className="bg-brand-orange text-white px-5 py-2.5 rounded-xl font-bold flex items-center shadow-lg shadow-brand-orange/20 hover:bg-[#c26226] transition transform hover:-translate-y-0.5"
                 >
-                    <Plus size={18} className="mr-2" />
+                    <Plus size={20} className="mr-2" />
                     New Booking
                 </button>
             </div>
@@ -112,16 +112,16 @@ export default function BookingsManage() {
 
             {/* Bookings Table */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                <table className="w-full">
-                    <thead className="bg-gray-50 border-b border-gray-100">
+                <table className="w-full text-left">
+                    <thead className="bg-[#f8f9fa] border-b-2 border-brand-navy/10 text-brand-navy font-bold text-xs uppercase tracking-wider">
                         <tr>
-                            <th className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase">Booking ID</th>
-                            <th className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase">Customer</th>
-                            <th className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase">Court</th>
-                            <th className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase">Date & Time</th>
-                            <th className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase">Amount</th>
-                            <th className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase">Status</th>
-                            <th className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase">Actions</th>
+                            <th className="px-6 py-4">Booking ID</th>
+                            <th className="px-6 py-4">Customer</th>
+                            <th className="px-6 py-4">Court</th>
+                            <th className="px-6 py-4">Date & Time</th>
+                            <th className="px-6 py-4">Amount</th>
+                            <th className="px-6 py-4">Status</th>
+                            <th className="px-6 py-4">Actions</th>
                         </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100">
@@ -133,14 +133,14 @@ export default function BookingsManage() {
                             </tr>
                         ) : (
                             bookings.map((booking: any) => (
-                                <tr key={booking.id} className="hover:bg-gray-50">
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-900">{booking.booking_id}</td>
-                                    <td className="px-6 py-4 text-sm text-gray-700">{booking.customer || 'Walk-in'}</td>
+                                <tr key={booking.id} className="hover:bg-gray-50 transition">
+                                    <td className="px-6 py-4 font-bold text-brand-navy">{booking.booking_id}</td>
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-700">{booking.customer || 'Walk-in'}</td>
                                     <td className="px-6 py-4 text-sm text-gray-700">{booking.court_name}</td>
-                                    <td className="px-6 py-4 text-sm text-gray-700">
+                                    <td className="px-6 py-4 text-sm text-gray-500 font-medium">
                                         {new Date(booking.booking_date).toLocaleDateString()} {booking.start_time} - {booking.end_time}
                                     </td>
-                                    <td className="px-6 py-4 text-sm font-bold text-gray-900">${booking.total_amount}</td>
+                                    <td className="px-6 py-4 text-brand-orange font-bold text-base">${booking.total_amount}</td>
                                     <td className="px-6 py-4">{getStatusBadge(booking.status)}</td>
                                     <td className="px-6 py-4">
                                         <div className="flex gap-2">
@@ -365,17 +365,17 @@ function CreateBookingModal({ onClose, onSuccess, venues }: any) {
                         />
                     </div>
 
-                    <div className="flex justify-end gap-3 pt-4">
+                    <div className="flex justify-end gap-3 pt-4 border-t border-gray-100 mt-4">
                         <button
                             type="button"
                             onClick={onClose}
-                            className="px-4 py-2 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50"
+                            className="px-5 py-2 border-2 border-gray-200 rounded-lg text-gray-700 font-bold hover:bg-gray-50 transition"
                         >
                             Cancel
                         </button>
                         <button
                             type="submit"
-                            className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90"
+                            className="px-5 py-2 bg-brand-orange text-white rounded-lg font-bold shadow-md shadow-brand-orange/20 hover:bg-[#c26226] transition"
                         >
                             Create Booking
                         </button>

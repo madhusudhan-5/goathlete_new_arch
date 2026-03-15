@@ -1,111 +1,123 @@
 import { useState, useEffect } from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import { DollarSign, Ticket, MapPin } from 'lucide-react';
-import { bookingService } from '../../services/api';
+import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts';
+import { DollarSign, Ticket, MapPin, Users } from 'lucide-react';
+import api from '../../services/api';
+
+const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444'];
 
 export default function Dashboard() {
-    const [stats, setStats] = useState({
-        total_revenue: 0,
-        total_bookings: 0,
-        trends: []
-    });
+    const [stats, setStats] = useState<any>(null);
+    const [bookings, setBookings] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        loadDashboardData();
-    }, []);
+    useEffect(() => { loadAll(); }, []);
 
-    const loadDashboardData = async () => {
+    const loadAll = async () => {
         try {
-            const data = await bookingService.getAnalytics();
-            setStats(data);
-        } catch (error) {
-            console.error('Failed to load dashboard data', error);
+            const [statsRes, bookingsRes] = await Promise.all([
+                api.get('/partners/admins/dashboard_stats/').catch(() => ({ data: null })),
+                api.get('/bookings/').catch(() => ({ data: [] })),
+            ]);
+            setStats(statsRes.data);
+            const items = Array.isArray(bookingsRes.data) ? bookingsRes.data : (bookingsRes.data?.results || []);
+            setBookings(items.slice(0, 5));
+        } catch (err) {
+            console.error('Dashboard load error', err);
         } finally {
             setLoading(false);
         }
     };
 
-    // Transform backend trends for Recharts
-    const chartData = stats.trends.map((t: any) => ({
-        name: new Date(t.date).toLocaleDateString('en-US', { weekday: 'short' }),
-        revenue: t.revenue || 0
-    }));
+    // Group bookings by status for pie chart
+    const statusGroups = bookings.reduce((acc: any, b: any) => {
+        acc[b.status] = (acc[b.status] || 0) + 1;
+        return acc;
+    }, {});
+    const pieData = Object.entries(statusGroups).map(([name, value]) => ({ name, value }));
 
-    if (loading) return <div className="p-8 text-center text-gray-500">Loading dashboard...</div>;
+    const kpis = [
+        { label: 'Today\'s Revenue', value: `₹${(stats?.today_earnings || 0).toLocaleString()}`, icon: <DollarSign size={24} />, color: '#6366f1' },
+        { label: 'Today\'s Bookings', value: stats?.today_bookings ?? 0, icon: <Ticket size={24} />, color: '#22c55e' },
+        { label: 'Active Partners', value: stats?.active_partners ?? 0, icon: <Users size={24} />, color: '#f59e0b' },
+        { label: 'Upcoming (7d)', value: stats?.upcoming_bookings ?? 0, icon: <MapPin size={24} />, color: '#ef4444' },
+    ];
+
+    if (loading) return <div className="flex items-center justify-center h-64"><div className="animate-spin rounded-full h-10 w-10 border-4 border-primary border-t-transparent" /></div>;
 
     return (
         <div className="space-y-6">
-            <div className="flex justify-between items-center">
-                <div>
-                    <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-                    <p className="text-gray-500 mt-1">Welcome back, here's what's happening today.</p>
-                </div>
-                <button className="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
-                    Last 30 Days
-                </button>
+            <div>
+                <h1 className="text-3xl font-extrabold text-brand-navy mb-1">Dashboard</h1>
+                <p className="text-gray-500 font-medium">
+                    {stats?.venue_name ? `Venue: ${stats.venue_name}` : 'Welcome back!'}
+                    {stats?.venue_status && <span className="ml-2 text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">{stats.venue_status}</span>}
+                </p>
             </div>
 
             {/* KPI Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center">
-                    <div className="p-3 rounded-full bg-blue-50 text-blue-600 mr-4">
-                        <DollarSign size={24} />
-                    </div>
-                    <div>
-                        <p className="text-sm font-medium text-gray-500">Total Revenue</p>
-                        <h3 className="text-2xl font-bold text-gray-900">${(stats.total_revenue || 0).toLocaleString()}</h3>
-                    </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center">
-                    <div className="p-3 rounded-full bg-green-50 text-green-600 mr-4">
-                        <Ticket size={24} />
-                    </div>
-                    <div>
-                        <p className="text-sm font-medium text-gray-500">Total Bookings</p>
-                        <h3 className="text-2xl font-bold text-gray-900">{stats.total_bookings}</h3>
-                    </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center">
-                    <div className="p-3 rounded-full bg-purple-50 text-purple-600 mr-4">
-                        <MapPin size={24} />
-                    </div>
-                    <div>
-                        <p className="text-sm font-medium text-gray-500">Active Venues</p>
-                        <h3 className="text-2xl font-bold text-gray-900">1</h3>
-                    </div>
-                </div>
-            </div>
-
-            {/* Charts */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <h3 className="text-lg font-bold text-gray-900 mb-6">Revenue Trend</h3>
-                    <div className="h-64">
-                        <ResponsiveContainer width="100%" height="100%">
-                            <BarChart data={chartData}>
-                                <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#9CA3AF', fontSize: 12 }} />
-                                <YAxis axisLine={false} tickLine={false} tick={{ fill: '#9CA3AF', fontSize: 12 }} tickFormatter={(val) => `$${val}`} />
-                                <Tooltip cursor={{ fill: '#F3F4F6' }} contentStyle={{ border: 'none', borderRadius: '8px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }} />
-                                <Bar dataKey="revenue" fill="#4F46E5" radius={[4, 4, 0, 0]} barSize={32} />
-                            </BarChart>
-                        </ResponsiveContainer>
-                    </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <div className="flex justify-between items-center mb-6">
-                        <h3 className="text-lg font-bold text-gray-900">Recent Activity</h3>
-                        <button className="text-sm text-primary font-medium hover:underline">View All</button>
-                    </div>
-
-                    <div className="space-y-4">
-                        <div className="py-12 text-center text-gray-400 text-sm">
-                            Recent booking activity will appear here.
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                {kpis.map((kpi, i) => (
+                    <div key={i} className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                        <div className="p-3 rounded-xl" style={{ background: `${kpi.color}18`, color: kpi.color }}>
+                            {kpi.icon}
+                        </div>
+                        <div>
+                            <p className="text-xs font-bold text-gray-400 uppercase tracking-wide">{kpi.label}</p>
+                            <p className="text-2xl font-extrabold text-brand-navy">{kpi.value}</p>
                         </div>
                     </div>
+                ))}
+            </div>
+
+            {/* Charts Row */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Booking Status Pie */}
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 className="text-lg font-bold text-brand-navy mb-4">Booking Status Breakdown</h3>
+                    {pieData.length === 0 ? (
+                        <div className="h-48 flex items-center justify-center text-gray-400 text-sm">No booking data yet</div>
+                    ) : (
+                        <div className="h-48">
+                            <ResponsiveContainer width="100%" height="100%">
+                                <PieChart>
+                                    <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={70} label>
+                                        {pieData.map((_, idx) => <Cell key={idx} fill={COLORS[idx % COLORS.length]} />)}
+                                    </Pie>
+                                    <Tooltip />
+                                    <Legend />
+                                </PieChart>
+                            </ResponsiveContainer>
+                        </div>
+                    )}
+                </div>
+
+                {/* Recent Bookings */}
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div className="flex justify-between items-center mb-4">
+                        <h3 className="text-lg font-bold text-brand-navy">Recent Bookings</h3>
+                        <span className="text-xs text-gray-400">Last 5</span>
+                    </div>
+                    {bookings.length === 0 ? (
+                        <div className="py-10 text-center text-gray-400 text-sm">No bookings found</div>
+                    ) : (
+                        <div className="space-y-3">
+                            {bookings.map((b: any) => (
+                                <div key={b.id} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0">
+                                    <div>
+                                        <p className="font-semibold text-sm text-gray-800">{b.customer_name || b.customer || 'Walk-in'}</p>
+                                        <p className="text-xs text-gray-400">{b.court_name} · {b.booking_date}</p>
+                                    </div>
+                                    <div className="text-right">
+                                        <p className="font-bold text-brand-orange text-sm">₹{b.total_amount || 0}</p>
+                                        <span className={`text-xs font-bold px-1.5 py-0.5 rounded-full ${b.status === 'CONFIRMED' ? 'bg-green-100 text-green-700' :
+                                            b.status === 'PENDING' ? 'bg-yellow-100 text-yellow-700' :
+                                                'bg-gray-100 text-gray-500'
+                                            }`}>{b.status}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+set timeout 120
+set password [lindex $argv 0]
+
+spawn ssh -o StrictHostKeyChecking=no root@91.108.111.250 "cd /opt/goathlete/GoAthlete_New_Arch && git pull origin main || echo 'skipping git pull' && source venv/bin/activate && pip install -r requirements.txt && python manage.py migrate && systemctl restart gunicorn_goathlete && echo 'Backend Deployed Successfully'"
+
+expect {
+    "*assword:*" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}

@@ -1,14 +1,6 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
 import { useColorScheme } from '@/components/useColorScheme';
-import Colors from '@/constants/Colors';
-
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>['name'];
-  color: string;
-}) {
-  return <FontAwesome size={24} style={{ marginBottom: -3 }} {...props} />;
-}
+import { Home, Compass, Trophy, User } from 'lucide-react-native';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -16,41 +8,43 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: '#4F46E5',
-        tabBarInactiveTintColor: '#9CA3AF',
+        tabBarActiveTintColor: '#DA6F2B', // Brand Orange
+        tabBarInactiveTintColor: '#94a3b8',
         headerShown: false,
         tabBarStyle: {
-          paddingBottom: 5,
-          paddingTop: 5,
-          height: 60,
+          backgroundColor: colorScheme === 'dark' ? '#112B47' : '#FFFFFF',
+          borderTopColor: colorScheme === 'dark' ? '#1e3a5f' : '#e2e8f0',
+          paddingBottom: 24,
+          paddingTop: 8,
+          height: 80,
         },
       }}>
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+          tabBarIcon: ({ color }) => <Home size={22} color={color} />,
         }}
       />
       <Tabs.Screen
-        name="bookings"
+        name="explore"
         options={{
-          title: 'Bookings',
-          tabBarIcon: ({ color }) => <TabBarIcon name="calendar" color={color} />,
+          title: 'Explore',
+          tabBarIcon: ({ color }) => <Compass size={22} color={color} />,
         }}
       />
       <Tabs.Screen
-        name="live"
+        name="compete"
         options={{
-          title: 'Tournaments',
-          tabBarIcon: ({ color }) => <TabBarIcon name="trophy" color={color} />,
+          title: 'Compete',
+          tabBarIcon: ({ color }) => <Trophy size={22} color={color} />,
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           title: 'Profile',
-          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
+          tabBarIcon: ({ color }) => <User size={22} color={color} />,
         }}
       />
     </Tabs>

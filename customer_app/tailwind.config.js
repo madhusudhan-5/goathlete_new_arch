@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1E3A8A", // Deep Blue
-        secondary: "#F59E0B", // Amber
-        accent: "#10B981", // Emerald
+        'brand-navy': '#0A1F35',
+        'brand-orange': '#DA6F2B',
+        primary: "#DA6F2B", // Reusing Orange as Primary for native components that might default to 'primary'
+        secondary: "#0A1F35",
       }
     },
   },

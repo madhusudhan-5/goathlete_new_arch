@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Backend URL - Adjust based on environment or proxy
-const BASE_URL = 'http://localhost:8000/api';
+const BASE_URL = 'https://api.goathlete.in/api';
 
 const api = axios.create({
     baseURL: BASE_URL,
@@ -131,6 +131,38 @@ export const courtService = {
 
     getByVenue: async (venueId: string) => {
         const response = await api.get(`/venues/${venueId}/courts/`);
+        return response.data;
+    },
+
+    delete: async (courtId: string) => {
+        const response = await api.delete(`/venues/courts/${courtId}/`);
+        return response.data;
+    },
+};
+
+export const tournamentService = {
+    getAll: async (params?: any) => {
+        const response = await api.get('/tournaments/', { params });
+        return response.data;
+    },
+
+    getById: async (id: string) => {
+        const response = await api.get(`/tournaments/${id}/`);
+        return response.data;
+    },
+
+    create: async (data: any) => {
+        const response = await api.post('/tournaments/', data);
+        return response.data;
+    },
+
+    update: async (id: string, data: any) => {
+        const response = await api.patch(`/tournaments/${id}/`, data);
+        return response.data;
+    },
+
+    delete: async (id: string) => {
+        const response = await api.delete(`/tournaments/${id}/`);
         return response.data;
     }
 };

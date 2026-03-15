@@ -2,7 +2,7 @@ import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, RefreshCon
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { tournamentService } from '../../services/api';
+import { tournamentService, localTournamentService } from '../../services/api';
 import { TournamentCard } from '../../components/tournament/TournamentCard';
 import { colors, spacing, typography } from '../../theme/tokens';
 
@@ -10,11 +10,26 @@ export default function TournamentsScreen() {
     const [tournaments, setTournaments] = useState([]);
     const [loading, setLoading] = useState(true);
     const [activeTab, setActiveTab] = useState('upcoming');
+    const [activeTournament, setActiveTournament] = useState<any>(null);
+    const [checkingActive, setCheckingActive] = useState(true);
     const router = useRouter();
 
     useEffect(() => {
         loadTournaments();
+        checkActiveTournament();
     }, []);
+
+    const checkActiveTournament = async () => {
+        try {
+            setCheckingActive(true);
+            const result = await localTournamentService.getMyActive();
+            setActiveTournament(result.active ? result.tournament : null);
+        } catch (e) {
+            console.error('Failed to check active tournament:', e);
+        } finally {
+            setCheckingActive(false);
+        }
+    };
 
     const loadTournaments = async () => {
         try {
@@ -56,19 +71,84 @@ export default function TournamentsScreen() {
                 borderBottomWidth: 1,
                 borderBottomColor: colors.divider
             }}>
-                <Text style={{
-                    fontSize: typography.heading.h1.size,
-                    fontWeight: typography.heading.h1.weight,
-                    color: colors.text.primary,
-                    fontFamily: typography.fontFamily,
-                    marginBottom: spacing.xxs
-                }}>
-                    Tournaments
-                </Text>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: spacing.xxs }}>
+                    <Text style={{
+                        fontSize: typography.heading.h1.size,
+                        fontWeight: typography.heading.h1.weight,
+                        color: colors.text.primary,
+                        fontFamily: typography.fontFamily,
+                    }}>
+                        Tournaments
+                    </Text>
+                    {/* Create / View Active Tournament Button */}
+                    {checkingActive ? (
+                        <ActivityIndicator size="small" color={colors.brand.accent} />
+                    ) : activeTournament ? (
+                        <TouchableOpacity
+                            onPress={() => router.push(`/tournaments/scoreboard/${activeTournament.id}`)}
+                            style={{
+                                backgroundColor: '#16a34a22',
+                                borderRadius: 20,
+                                paddingHorizontal: spacing.md,
+                                paddingVertical: spacing.xs,
+                                borderWidth: 1,
+                                borderColor: '#16a34a',
+                            }}
+                        >
+                            <Text style={{ color: '#4ade80', fontWeight: '700', fontSize: 12, fontFamily: typography.fontFamily }}>
+                                🏆 My Tournament
+                            </Text>
+                        </TouchableOpacity>
+                    ) : (
+                        <TouchableOpacity
+                            onPress={() => router.push('/tournaments/create')}
+                            style={{
+                                backgroundColor: colors.brand.accent,
+                                borderRadius: 20,
+                                paddingHorizontal: spacing.md,
+                                paddingVertical: spacing.xs,
+                            }}
+                        >
+                            <Text style={{ color: '#fff', fontWeight: '700', fontSize: 12, fontFamily: typography.fontFamily }}>
+                                + Create
+                            </Text>
+                        </TouchableOpacity>
+                    )}
+                </View>
+
+                {/* Active tournament banner */}
+                {activeTournament && (
+                    <TouchableOpacity
+                        onPress={() => router.push(`/tournaments/scoreboard/${activeTournament.id}`)}
+                        style={{
+                            backgroundColor: '#92400e22',
+                            borderRadius: 10,
+                            padding: spacing.sm,
+                            marginTop: spacing.xs,
+                            borderWidth: 1,
+                            borderColor: '#d97706',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <Text style={{ fontSize: 20, marginRight: spacing.xs }}>🏆</Text>
+                        <View style={{ flex: 1 }}>
+                            <Text style={{ color: '#fbbf24', fontWeight: '700', fontSize: 13, fontFamily: typography.fontFamily }}>
+                                Active: {activeTournament.name}
+                            </Text>
+                            <Text style={{ color: '#d97706', fontSize: 11, fontFamily: typography.fontFamily }}>
+                                {activeTournament.sport_name} · {activeTournament.participants?.length || 0} players · Tap to view scoreboard
+                            </Text>
+                        </View>
+                        <Text style={{ color: '#fbbf24', fontSize: 16 }}>→</Text>
+                    </TouchableOpacity>
+                )}
+
                 <Text style={{
                     color: colors.text.secondary,
                     fontSize: typography.body.regular.size,
-                    fontFamily: typography.fontFamily
+                    fontFamily: typography.fontFamily,
+                    marginTop: spacing.xs,
                 }}>
                     Join and compete
                 </Text>

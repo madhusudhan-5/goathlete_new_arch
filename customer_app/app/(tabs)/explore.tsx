@@ -206,7 +206,7 @@ export default function BookingsScreen() {
                         {activeTab === 'upcoming' && (
                             <Button
                                 variant="primary"
-                                onPress={() => router.push('/(tabs)/')}
+                                onPress={() => router.push('/')}
                             >
                                 Browse Venues
                             </Button>

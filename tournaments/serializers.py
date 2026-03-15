@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Tournament, Team, TeamPlayer, Match, PerformanceStats
+from .models import Tournament, Team, TeamPlayer, Match, PerformanceStats, LocalTournament, LocalTournamentParticipant
 from players.serializers import PlayerSerializer
 from venues.serializers import VenueSerializer
 
@@ -245,3 +245,61 @@ class PerformanceStatsCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerformanceStats
         fields = ['player', 'match', 'team', 'stats', 'performance_rating', 'is_man_of_match']
+
+
+class LocalTournamentParticipantSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LocalTournamentParticipant
+        fields = ['id', 'name', 'email', 'mobile', 'score', 'added_at']
+        read_only_fields = ['added_at']
+
+
+class LocalTournamentSerializer(serializers.ModelSerializer):
+    participants = LocalTournamentParticipantSerializer(many=True, read_only=True)
+    sport_name = serializers.CharField(source='sport.name', read_only=True)
+    sport_icon = serializers.CharField(source='sport.icon', read_only=True)
+    sport_code = serializers.CharField(source='sport.code', read_only=True)
+    organizer_name = serializers.SerializerMethodField()
+
+    class Meta:
+        model = LocalTournament
+        fields = [
+            'id', 'name', 'sport', 'sport_name', 'sport_icon', 'sport_code',
+            'organizer_name', 'scoreboard', 'status', 'participants',
+            'created_at', 'updated_at'
+        ]
+        read_only_fields = ['organizer_name', 'created_at', 'updated_at']
+
+    def get_organizer_name(self, obj):
+        return obj.organizer.user.get_full_name() or obj.organizer.user.email
+
+
+class LocalTournamentCreateSerializer(serializers.ModelSerializer):
+    """Serializer for creating a local tournament with participants"""
+    participants = LocalTournamentParticipantSerializer(many=True)
+
+    class Meta:
+        model = LocalTournament
+        fields = ['name', 'sport', 'participants']
+
+    def validate_participants(self, value):
+        if len(value) < 2:
+            raise serializers.ValidationError("At least 2 participants are required.")
+        emails = [p['email'] for p in value]
+        if len(emails) != len(set(emails)):
+            raise serializers.ValidationError("Duplicate participant emails are not allowed.")
+        return value
+
+    def create(self, validated_data):
+        participants_data = validated_data.pop('participants')
+        tournament = LocalTournament.objects.create(**validated_data)
+        for participant_data in participants_data:
+            LocalTournamentParticipant.objects.create(tournament=tournament, **participant_data)
+        return tournament
+
+
+class LocalTournamentScoreboardUpdateSerializer(serializers.ModelSerializer):
+    """For updating the main scoreboard JSON"""
+    class Meta:
+        model = LocalTournament
+        fields = ['scoreboard']

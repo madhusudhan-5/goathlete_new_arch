@@ -2,7 +2,7 @@ from rest_framework import routers
 from django.urls import path, include
 from .views import (
     TournamentViewSet, TeamViewSet, TeamPlayerViewSet,
-    MatchViewSet, PerformanceStatsViewSet
+    MatchViewSet, PerformanceStatsViewSet, LocalTournamentViewSet
 )
 from .scoreboard_views import (
     SportViewSet, MatchScoreViewSet, PlayerMatchStatsViewSet, MatchEventViewSet
@@ -20,6 +20,7 @@ router.register(r'sports', SportViewSet, basename='sport')
 router.register(r'match-scores', MatchScoreViewSet, basename='match-score')
 router.register(r'player-match-stats', PlayerMatchStatsViewSet, basename='player-match-stats')
 router.register(r'match-events', MatchEventViewSet, basename='match-event')
+router.register(r'local-tournaments', LocalTournamentViewSet, basename='local-tournament')
 
 urlpatterns = [
     path('', include(router.urls)),
