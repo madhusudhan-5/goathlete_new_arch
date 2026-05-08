@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.goathlete.executive",
-      "buildNumber": "4",
+      "buildNumber": "5",
       "icon": "./assets/logo.png",
       "backgroundColor": "#0A1F35",
       "infoPlist": {
@@ -28,7 +28,7 @@
     },
     "android": {
       "package": "com.goathlete.executive",
-      "versionCode": 4,
+      "versionCode": 5,
       "targetSdkVersion": 35,
       "compileSdkVersion": 35,
       "buildToolsVersion": "35.0.0",
