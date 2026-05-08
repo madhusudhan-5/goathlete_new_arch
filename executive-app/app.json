@@ -2,7 +2,7 @@
   "expo": {
     "name": "GoAthlete Executive",
     "slug": "goathlete-executive",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.goathlete.executive",
-      "buildNumber": "5",
+      "buildNumber": "6",
       "icon": "./assets/logo.png",
       "backgroundColor": "#0A1F35",
       "infoPlist": {
@@ -28,7 +28,7 @@
     },
     "android": {
       "package": "com.goathlete.executive",
-      "versionCode": 5,
+      "versionCode": 6,
       "targetSdkVersion": 35,
       "compileSdkVersion": 35,
       "buildToolsVersion": "35.0.0",
