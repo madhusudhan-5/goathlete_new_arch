@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.goathlete.executive",
-      "buildNumber": "6",
+      "buildNumber": "7",
       "icon": "./assets/logo.png",
       "backgroundColor": "#0A1F35",
       "infoPlist": {
@@ -28,10 +28,7 @@
     },
     "android": {
       "package": "com.goathlete.executive",
-      "versionCode": 6,
-      "targetSdkVersion": 35,
-      "compileSdkVersion": 35,
-      "buildToolsVersion": "35.0.0",
+      "versionCode": 7,
       "icon": "./assets/logo.png",
       "backgroundColor": "#0A1F35",
       "adaptiveIcon": {
@@ -43,8 +40,6 @@
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.INTERNET"
       ]
     },

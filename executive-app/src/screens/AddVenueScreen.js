@@ -329,20 +329,23 @@ export default function AddVenueScreen({ navigation }) {
       return;
     }
 
-    const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (status !== 'granted') {
-      Alert.alert('Permission Denied', 'Camera roll permission is required');
-      return;
+    if (Platform.OS !== 'android') {
+      const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
+      if (status !== 'granted') {
+        Alert.alert('Permission Denied', 'Camera roll permission is required');
+        return;
+      }
     }
 
-    const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      allowsMultipleSelection: false,
-      quality: 0.8,
-    });
+    try {
+      const result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        allowsMultipleSelection: false,
+        quality: 0.8,
+      });
 
-    if (!result.canceled && result.assets[0]) {
-      const asset = result.assets[0];
+      if (!result.canceled && result.assets && result.assets[0]) {
+        const asset = result.assets[0];
       
       // Convert to base64
       let base64Data = '';
@@ -376,6 +379,10 @@ export default function AddVenueScreen({ navigation }) {
         console.error('Error converting image to base64:', error);
         Alert.alert('Error', 'Failed to process image');
       }
+    }
+    } catch (pickerError) {
+      console.error('Image picker error:', pickerError);
+      Alert.alert('Error', 'Failed to open image picker');
     }
   };
 
