@@ -13,15 +13,17 @@ from bookings.models import Booking
 class TestBookingAPI:
     """Test booking CRUD operations."""
 
-    def test_create_booking_online(self, player_client, court):
+    def test_create_booking_online(self, player_client, court, player):
         """Test creating an online booking."""
         url = reverse('booking-list')
         tomorrow = timezone.now().date() + timedelta(days=1)
         
         data = {
             'court': court.id,
+            'player': player.id,
             'booking_date': str(tomorrow),
             'start_time': '10:00',
+            'end_time': '11:00',
             'duration_hours': 1.0,
             'price_per_hour': 500,
             'total_amount': 500,
@@ -32,10 +34,11 @@ class TestBookingAPI:
         
         response = player_client.post(url, data)
         assert response.status_code == status.HTTP_201_CREATED
-        assert response.data['status'] == 'CONFIRMED'
+        booking = Booking.objects.get(court=court)
+        assert booking.status == 'PENDING'
         assert Booking.objects.filter(court=court).exists()
 
-    def test_create_booking_offline(self, partner_client, court):
+    def test_create_booking_offline(self, partner_client, court, vendor_partner):
         """Test creating an offline booking by partner."""
         url = reverse('booking-list')
         tomorrow = timezone.now().date() + timedelta(days=1)
@@ -44,6 +47,7 @@ class TestBookingAPI:
             'court': court.id,
             'booking_date': str(tomorrow),
             'start_time': '14:00',
+            'end_time': '16:00',
             'duration_hours': 2.0,
             'price_per_hour': 600,
             'total_amount': 1200,
@@ -56,17 +60,19 @@ class TestBookingAPI:
         
         response = partner_client.post(url, data)
         assert response.status_code == status.HTTP_201_CREATED
-        assert response.data['customer_name'] == 'Walk-in Customer'
+        booking = Booking.objects.get(court=court)
+        assert booking.customer_name == 'Walk-in Customer'
 
-    def test_list_my_bookings(self, player_client, court, player_user):
+    def test_list_my_bookings(self, player_client, court, player):
         """Test listing user's own bookings."""
         # Create a booking
         tomorrow = timezone.now().date() + timedelta(days=1)
         Booking.objects.create(
             court=court,
-            user=player_user,
+            player=player,
             booking_date=tomorrow,
             start_time='10:00',
+            end_time='11:00',
             duration_hours=1.0,
             price_per_hour=500,
             total_amount=500,
@@ -80,14 +86,15 @@ class TestBookingAPI:
         assert response.status_code == status.HTTP_200_OK
         assert len(response.data) >= 1
 
-    def test_cancel_booking(self, player_client, court, player_user):
+    def test_cancel_booking(self, player_client, court, player):
         """Test cancelling a booking."""
         tomorrow = timezone.now().date() + timedelta(days=1)
         booking = Booking.objects.create(
             court=court,
-            user=player_user,
+            player=player,
             booking_date=tomorrow,
             start_time='10:00',
+            end_time='11:00',
             duration_hours=1.0,
             price_per_hour=500,
             total_amount=500,
@@ -102,14 +109,15 @@ class TestBookingAPI:
         booking.refresh_from_db()
         assert booking.status == 'CANCELLED'
 
-    def test_cannot_cancel_others_booking(self, player_client, court, user):
+    def test_cannot_cancel_others_booking(self, player_client, court):
         """Test that user cannot cancel another user's booking."""
         tomorrow = timezone.now().date() + timedelta(days=1)
         booking = Booking.objects.create(
             court=court,
-            user=user,  # Different user
+            player=None,  # No player (not owned by current user)
             booking_date=tomorrow,
             start_time='10:00',
+            end_time='11:00',
             duration_hours=1.0,
             price_per_hour=500,
             total_amount=500,
@@ -122,15 +130,17 @@ class TestBookingAPI:
         
         assert response.status_code in [status.HTTP_403_FORBIDDEN, status.HTTP_404_NOT_FOUND]
 
-    def test_booking_validation_past_date(self, player_client, court):
+    def test_booking_validation_past_date(self, player_client, court, player):
         """Test that booking in the past is not allowed."""
         url = reverse('booking-list')
         yesterday = timezone.now().date() - timedelta(days=1)
         
         data = {
             'court': court.id,
+            'player': player.id,
             'booking_date': str(yesterday),
             'start_time': '10:00',
+            'end_time': '11:00',
             'duration_hours': 1.0,
             'price_per_hour': 500,
             'total_amount': 500,
@@ -140,14 +150,15 @@ class TestBookingAPI:
         response = player_client.post(url, data)
         assert response.status_code == status.HTTP_400_BAD_REQUEST
 
-    def test_filter_bookings_by_date(self, player_client, court, player_user):
+    def test_filter_bookings_by_date(self, player_client, court, player):
         """Test filtering bookings by date."""
         tomorrow = timezone.now().date() + timedelta(days=1)
         Booking.objects.create(
             court=court,
-            user=player_user,
+            player=player,
             booking_date=tomorrow,
             start_time='10:00',
+            end_time='11:00',
             duration_hours=1.0,
             price_per_hour=500,
             total_amount=500,
@@ -161,15 +172,16 @@ class TestBookingAPI:
         assert response.status_code == status.HTTP_200_OK
         assert len(response.data) >= 1
 
-    def test_booking_analytics(self, admin_client, court, player_user):
+    def test_booking_analytics(self, admin_client, court, player):
         """Test booking analytics endpoint."""
         # Create some bookings
         tomorrow = timezone.now().date() + timedelta(days=1)
         Booking.objects.create(
             court=court,
-            user=player_user,
+            player=player,
             booking_date=tomorrow,
             start_time='10:00',
+            end_time='11:00',
             duration_hours=1.0,
             price_per_hour=500,
             total_amount=500,
@@ -178,10 +190,8 @@ class TestBookingAPI:
             is_paid=True
         )
         
-        url = reverse('booking-analytics')  # Adjust based on your URL name
+        url = reverse('booking-analytics-reports')
         response = admin_client.get(url)
         
-        # This will depend on your analytics implementation
-        # assert response.status_code == status.HTTP_200_OK
-        # assert 'total_revenue' in response.data
-        pass  # Placeholder
+        assert response.status_code == status.HTTP_200_OK
+        assert 'total_revenue' in response.data

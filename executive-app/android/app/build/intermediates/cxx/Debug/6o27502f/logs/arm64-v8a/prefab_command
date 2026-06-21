@@ -1,0 +1,21 @@
+/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/java \
+  --class-path \
+  /Users/madhusudhanm/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.0.0/f2702b5ca13df54e3ca92f29d6b403fb6285d8df/cli-2.0.0-all.jar \
+  com.google.prefab.cli.AppKt \
+  --build-system \
+  cmake \
+  --platform \
+  android \
+  --abi \
+  arm64-v8a \
+  --os-version \
+  24 \
+  --stl \
+  c++_shared \
+  --ndk-version \
+  26 \
+  --output \
+  /var/folders/xm/trx60p_113158jjrgllm5_q40000gn/T/agp-prefab-staging15097841591775988314/staged-cli-output \
+  /Users/madhusudhanm/.gradle/caches/transforms-4/316c45911752b0e6cd75cbf7ce5f3d7e/transformed/jetified-react-android-0.74.1-debug/prefab \
+  /Users/madhusudhanm/.gradle/caches/transforms-4/3c5dde19dade6a991082d852d6b04916/transformed/jetified-fbjni-0.6.0/prefab \
+  /Users/madhusudhanm/.gradle/caches/transforms-4/bdc9393c6fd9afba1c60efb640495400/transformed/jetified-hermes-android-0.74.1-debug/prefab

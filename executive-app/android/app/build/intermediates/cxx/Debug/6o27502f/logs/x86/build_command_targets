@@ -1,0 +1,13 @@
+/Users/madhusudhanm/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/x86 \
+  appmodules \
+  react_codegen_RNBootSplashSpec \
+  react_codegen_RNDateTimePickerCGen \
+  react_codegen_RNImagePickerSpec \
+  react_codegen_rnasyncstorage \
+  react_codegen_rndocumentpicker \
+  react_codegen_rnpicker \
+  react_codegen_rnscreens \
+  react_codegen_rnsvg \
+  react_codegen_safeareacontext

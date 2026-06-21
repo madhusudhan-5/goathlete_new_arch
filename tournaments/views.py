@@ -77,6 +77,45 @@ class TournamentViewSet(viewsets.ModelViewSet):
         tournament.save()
         return Response(TournamentSerializer(tournament).data)
 
+    @action(detail=True, methods=['post'])
+    def register(self, request, pk=None):
+        """Register the current player for this tournament"""
+        from players.models import Player
+        tournament = self.get_object()
+        try:
+            player = Player.objects.get(user=request.user)
+        except Player.DoesNotExist:
+            return Response({'detail': 'Player profile not found.'}, status=status.HTTP_404_NOT_FOUND)
+
+        if tournament.status != TournamentStatus.UPCOMING:
+            return Response({'detail': 'Registration is only available for upcoming tournaments.'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Check if already registered (as a TeamPlayer in any team of this tournament)
+        from .models import TeamPlayer
+        already = TeamPlayer.objects.filter(player=player, team__tournament=tournament).exists()
+        if already:
+            return Response({'detail': 'You are already registered for this tournament.'}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response({'detail': 'Registration noted. An admin will assign you to a team shortly.'}, status=status.HTTP_200_OK)
+
+    @action(detail=False, methods=['get'], url_path='my-tournaments')
+    def my_tournaments(self, request):
+        """Get tournaments the current player has participated in"""
+        from players.models import Player
+        try:
+            player = Player.objects.get(user=request.user)
+        except Player.DoesNotExist:
+            return Response([])
+
+        # Tournaments where player is the organizer or in a team
+        from .models import TeamPlayer
+        team_player_ids = TeamPlayer.objects.filter(player=player).values_list('team__tournament_id', flat=True)
+        organized_ids = Tournament.objects.filter(organizer=player).values_list('id', flat=True)
+        all_ids = list(set(list(team_player_ids) + list(organized_ids)))
+
+        tournaments = Tournament.objects.filter(id__in=all_ids).select_related('organizer', 'venue', 'sport').order_by('-start_date')
+        return Response(TournamentListSerializer(tournaments, many=True).data)
+
 
 class TeamViewSet(viewsets.ModelViewSet):
     """ViewSet for Team operations"""

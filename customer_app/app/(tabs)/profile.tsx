@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, TouchableOpacity, Alert, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import { User, Edit, Calendar, Award, Bell, CreditCard, HelpCircle, LogOut, ChevronRight } from 'lucide-react-native';
+import { User, Edit, Calendar, Award, Bell, CreditCard, HelpCircle, LogOut, ChevronRight, TrendingUp, Activity } from 'lucide-react-native';
 import { authService, playerService } from '../../services/api';
 import { useEffect, useState } from 'react';
 import { Card } from '../../components/ui/Card';
@@ -123,7 +123,10 @@ export default function ProfileScreen() {
                         Account
                     </Text>
 
-                    <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }}>
+                    <TouchableOpacity
+                        style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }}
+                        onPress={() => router.push('/profile/edit' as any)}
+                    >
                         <Edit size={20} color={colors.text.dark} style={{ marginRight: spacing.sm }} />
                         <Text style={{ color: colors.text.dark, fontWeight: typography.body.large.weight, flex: 1, fontFamily: typography.fontFamily }}>
                             Edit Profile
@@ -139,10 +142,35 @@ export default function ProfileScreen() {
                         <ChevronRight size={20} color={colors.text.muted} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }}>
+                    <TouchableOpacity
+                        style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }}
+                        onPress={() => router.push('/profile/badges' as any)}
+                    >
                         <Award size={20} color={colors.text.dark} style={{ marginRight: spacing.sm }} />
                         <Text style={{ color: colors.text.dark, fontWeight: typography.body.large.weight, flex: 1, fontFamily: typography.fontFamily }}>
                             Badges & Achievements
+                        </Text>
+                        <ChevronRight size={20} color={colors.text.muted} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }}
+                        onPress={() => router.push('/profile/sport-record' as any)}
+                    >
+                        <TrendingUp size={20} color={colors.text.dark} style={{ marginRight: spacing.sm }} />
+                        <Text style={{ color: colors.text.dark, fontWeight: typography.body.large.weight, flex: 1, fontFamily: typography.fontFamily }}>
+                            Sport Records
+                        </Text>
+                        <ChevronRight size={20} color={colors.text.muted} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={{ flexDirection: 'row', alignItems: 'center', padding: spacing.md, backgroundColor: colors.background.card, borderRadius: radius.lg, marginBottom: spacing.xs }}
+                        onPress={() => router.push('/profile/performance' as any)}
+                    >
+                        <Activity size={20} color={colors.text.dark} style={{ marginRight: spacing.sm }} />
+                        <Text style={{ color: colors.text.dark, fontWeight: typography.body.large.weight, flex: 1, fontFamily: typography.fontFamily }}>
+                            Performance History
                         </Text>
                         <ChevronRight size={20} color={colors.text.muted} />
                     </TouchableOpacity>

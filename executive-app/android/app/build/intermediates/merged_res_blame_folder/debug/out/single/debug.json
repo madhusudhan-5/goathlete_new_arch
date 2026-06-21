@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-ldpi_ic_launcher.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/drawable-hdpi_bootsplash_logo.png.flat",
+        "source": "com.executiveapp-main-40:/drawable-hdpi/bootsplash_logo.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.executiveapp-main-40:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/drawable-xxhdpi_bootsplash_logo.png.flat",
+        "source": "com.executiveapp-main-40:/drawable-xxhdpi/bootsplash_logo.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/drawable-mdpi_bootsplash_logo.png.flat",
+        "source": "com.executiveapp-main-40:/drawable-mdpi/bootsplash_logo.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-ldpi_ic_launcher_round.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-ldpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/drawable-xhdpi_bootsplash_logo.png.flat",
+        "source": "com.executiveapp-main-40:/drawable-xhdpi/bootsplash_logo.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.executiveapp-main-40:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.executiveapp-merged_res-38:/drawable-xxxhdpi_bootsplash_logo.png.flat",
+        "source": "com.executiveapp-main-40:/drawable-xxxhdpi/bootsplash_logo.png"
+    }
+]

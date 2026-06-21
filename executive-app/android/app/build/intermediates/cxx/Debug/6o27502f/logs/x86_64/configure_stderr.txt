@@ -1,0 +1,5 @@
+CMake Warning at /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:69 (message):
+  CMAKE_CURRENT_SOURCE_DIR
+  /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/src/main/jni
+
+

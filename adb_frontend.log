@@ -1,0 +1,1266 @@
+--------- beginning of main
+06-20 18:45:31.361 31472 31523 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:31.407 31472 31523 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:31.409 31472 31523 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:31.409 31472 31523 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:31.409 31472 31523 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:45:35.249 31676 31713 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:35.282 31676 31713 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:35.283 31676 31713 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:35.283 31676 31713 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:35.283 31676 31713 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:45:37.674 31755 31790 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:37.706 31755 31790 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:37.707 31755 31790 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:37.707 31755 31790 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:37.707 31755 31790 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:45:44.483 31853 31888 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:44.515 31853 31888 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:44.516 31853 31888 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:44.516 31853 31888 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:44.516 31853 31888 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:45:46.254 31912 31951 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:46.288 31912 31951 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:46.289 31912 31951 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:46.289 31912 31951 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:46.289 31912 31951 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:45:47.836 31992 32028 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:47.868 31992 32028 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:47.869 31992 32028 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:47.869 31992 32028 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:47.869 31992 32028 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:45:52.265 32062 32098 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:52.297 32062 32098 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:52.298 32062 32098 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:52.298 32062 32098 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:52.298 32062 32098 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:45:55.889 32122 32157 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:45:55.921 32122 32157 I ReactNativeJS: Running "CustomerApp"
+06-20 18:45:55.922 32122 32157 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:45:55.922 32122 32157 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:45:55.922 32122 32157 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:46:27.115 32211 32247 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:46:27.147 32211 32247 I ReactNativeJS: Running "CustomerApp"
+06-20 18:46:27.148 32211 32247 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:46:27.148 32211 32247 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:46:27.148 32211 32247 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:46:29.538 32277 32313 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:46:29.570 32277 32313 I ReactNativeJS: Running "CustomerApp"
+06-20 18:46:29.571 32277 32313 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:46:29.571 32277 32313 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:46:29.571 32277 32313 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:46:35.306 32390 32425 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:46:35.338 32390 32425 I ReactNativeJS: Running "CustomerApp"
+06-20 18:46:35.340 32390 32425 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:46:35.340 32390 32425 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:46:35.340 32390 32425 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:46:41.418 32472 32507 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:46:41.451 32472 32507 I ReactNativeJS: Running "CustomerApp"
+06-20 18:46:41.452 32472 32507 E ReactNativeJS: Invariant Violation: "CustomerApp" has not been registered. This can happen if:
+06-20 18:46:41.452 32472 32507 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+06-20 18:46:41.452 32472 32507 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+06-20 18:49:00.301   418   470 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:49:00.334   418   470 I ReactNativeJS: Running "CustomerApp"
+06-20 18:49:00.335   418   470 E ReactNativeJS: TypeError: Cannot read property 'ReactCurrentDispatcher' of undefined
+06-20 18:49:00.336   418   470 E ReactNativeJS: TypeError: Cannot read property 'render' of undefined
+06-20 18:51:57.787  1606  1644 I ReactNativeJS: Bridgeless mode is enabled
+06-20 18:51:57.821  1606  1644 I ReactNativeJS: Running "CustomerApp"
+06-20 18:51:57.822  1606  1644 E ReactNativeJS: TypeError: Cannot read property 'ReactCurrentDispatcher' of undefined
+06-20 18:51:57.823  1606  1644 E ReactNativeJS: TypeError: Cannot read property 'render' of undefined
+06-20 19:05:05.174  5414  5488 I ReactNativeJS: Bridgeless mode is enabled
+06-20 19:05:05.208  5414  5488 I ReactNativeJS: Running "CustomerApp"
+06-20 22:28:22.992 22694 22730 I ReactNativeJS: Bridgeless mode is enabled
+06-20 22:28:23.024 22694 22730 I ReactNativeJS: Running "CustomerApp"
+06-20 22:31:13.213 22694 22730 E ReactNativeJS: TypeError: Object is not a function
+06-20 22:31:13.213 22694 22730 E ReactNativeJS: 
+06-20 22:31:13.213 22694 22730 E ReactNativeJS: This error is located at:
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in GestureHandlerRootView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in DrawerView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in NavigationContent
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in StaticContainer
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in SceneView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in DebugContainer
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in MaybeNestedStack
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in RNSScreen
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Suspender
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Suspense
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Freeze
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in DelayedFreeze
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in InnerScreen
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in SceneView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in RNSScreenStack
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in ScreenStack
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in NativeStackViewInner
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in SafeAreaProvider
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in NativeStackView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in NavigationContent
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in NativeStackNavigator
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in BaseNavigationContainer
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in ThemeProvider
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in NavigationContainerInner
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in App
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.213 22694 22730 E ReactNativeJS:     in AppContainer
+06-20 22:31:13.265 22694 22730 E ReactNativeJS: TypeError: Object is not a function
+06-20 22:31:13.265 22694 22730 E ReactNativeJS: 
+06-20 22:31:13.265 22694 22730 E ReactNativeJS: This error is located at:
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in GestureHandlerRootView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in DrawerView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in NavigationContent
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in StaticContainer
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in SceneView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in DebugContainer
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in MaybeNestedStack
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in RNSScreen
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Suspender
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Suspense
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Freeze
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in DelayedFreeze
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in InnerScreen
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in SceneView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in RNSScreenStack
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in ScreenStack
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in NativeStackViewInner
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in SafeAreaProvider
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in NativeStackView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in NavigationContent
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in NativeStackNavigator
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in BaseNavigationContainer
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in ThemeProvider
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in NavigationContainerInner
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in App
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in RCTView
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in Unknown
+06-20 22:31:13.265 22694 22730 E ReactNativeJS:     in AppContainer
+06-20 22:31:19.288 23220 23257 I ReactNativeJS: Bridgeless mode is enabled
+06-20 22:31:19.319 23220 23257 I ReactNativeJS: Running "CustomerApp"
+06-20 22:31:19.351 23220 23257 E ReactNativeJS: TypeError: Object is not a function
+06-20 22:31:19.351 23220 23257 E ReactNativeJS: 
+06-20 22:31:19.351 23220 23257 E ReactNativeJS: This error is located at:
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in GestureHandlerRootView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in DrawerView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in NavigationContent
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in StaticContainer
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in SceneView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in DebugContainer
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in MaybeNestedStack
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in RNSScreen
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Suspender
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Suspense
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Freeze
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in DelayedFreeze
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in InnerScreen
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in SceneView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in RNSScreenStack
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in ScreenStack
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in NativeStackViewInner
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in SafeAreaProvider
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in NativeStackView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in NavigationContent
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in NativeStackNavigator
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in BaseNavigationContainer
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in ThemeProvider
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in NavigationContainerInner
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in App
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.351 23220 23257 E ReactNativeJS:     in AppContainer
+06-20 22:31:19.353 23220 23257 E ReactNativeJS: TypeError: Object is not a function
+06-20 22:31:19.353 23220 23257 E ReactNativeJS: 
+06-20 22:31:19.353 23220 23257 E ReactNativeJS: This error is located at:
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in GestureHandlerRootView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in DrawerView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in NavigationContent
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in DrawerNavigator
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in StaticContainer
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in SceneView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in DebugContainer
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in MaybeNestedStack
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in RNSScreen
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Suspender
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Suspense
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Freeze
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in DelayedFreeze
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in InnerScreen
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in SceneView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in RNSScreenStack
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in ScreenStack
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in NativeStackViewInner
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in SafeAreaProvider
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in NativeStackView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in PreventRemoveProvider
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in NavigationContent
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in NativeStackNavigator
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in BaseNavigationContainer
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in ThemeProvider
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in NavigationContainerInner
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in App
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in RCTView
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in Unknown
+06-20 22:31:19.353 23220 23257 E ReactNativeJS:     in AppContainer
+06-20 23:46:04.578 31014 31045 I ReactNativeJS: Bridgeless mode is enabled
+06-20 23:46:04.614 31014 31045 I ReactNativeJS: Running "CustomerApp"
+06-20 23:46:04.653 31014 31045 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:46:04.653 31014 31045 E ReactNativeJS: 
+06-20 23:46:04.653 31014 31045 E ReactNativeJS: This error is located at:
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in DrawerView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in NavigationContent
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in StaticContainer
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in SceneView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in DebugContainer
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in RNSScreen
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Suspender
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Suspense
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Freeze
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in DelayedFreeze
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in InnerScreen
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in SceneView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in RNSScreenStack
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in ScreenStack
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in NativeStackView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in NavigationContent
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in ThemeProvider
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in App
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.653 31014 31045 E ReactNativeJS:     in AppContainer
+06-20 23:46:04.657 31014 31045 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:46:04.657 31014 31045 E ReactNativeJS: 
+06-20 23:46:04.657 31014 31045 E ReactNativeJS: This error is located at:
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in DrawerView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in NavigationContent
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in StaticContainer
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in SceneView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in DebugContainer
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in RNSScreen
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Suspender
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Suspense
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Freeze
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in DelayedFreeze
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in InnerScreen
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in SceneView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in RNSScreenStack
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in ScreenStack
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in NativeStackView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in NavigationContent
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in ThemeProvider
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in App
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in RCTView
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in Unknown
+06-20 23:46:04.657 31014 31045 E ReactNativeJS:     in AppContainer
+06-20 23:46:06.648 31097 31128 I ReactNativeJS: Bridgeless mode is enabled
+06-20 23:46:06.682 31097 31128 I ReactNativeJS: Running "CustomerApp"
+06-20 23:46:06.718 31097 31128 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:46:06.718 31097 31128 E ReactNativeJS: 
+06-20 23:46:06.718 31097 31128 E ReactNativeJS: This error is located at:
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in DrawerView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in NavigationContent
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in StaticContainer
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in SceneView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in DebugContainer
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in RNSScreen
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Suspender
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Suspense
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Freeze
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in DelayedFreeze
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in InnerScreen
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in SceneView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in RNSScreenStack
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in ScreenStack
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in NativeStackView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in NavigationContent
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in ThemeProvider
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in App
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.718 31097 31128 E ReactNativeJS:     in AppContainer
+06-20 23:46:06.720 31097 31128 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:46:06.720 31097 31128 E ReactNativeJS: 
+06-20 23:46:06.720 31097 31128 E ReactNativeJS: This error is located at:
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in DrawerView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in NavigationContent
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in StaticContainer
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in SceneView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in DebugContainer
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in RNSScreen
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Suspender
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Suspense
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Freeze
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in DelayedFreeze
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in InnerScreen
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in SceneView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in RNSScreenStack
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in ScreenStack
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in NativeStackView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in NavigationContent
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in ThemeProvider
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in App
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in RCTView
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in Unknown
+06-20 23:46:06.720 31097 31128 E ReactNativeJS:     in AppContainer
+06-20 23:46:28.171 31461 31493 I ReactNativeJS: Bridgeless mode is enabled
+06-20 23:46:28.206 31461 31493 I ReactNativeJS: Running "CustomerApp"
+06-20 23:46:28.246 31461 31493 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:46:28.246 31461 31493 E ReactNativeJS: 
+06-20 23:46:28.246 31461 31493 E ReactNativeJS: This error is located at:
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in DrawerView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in NavigationContent
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in StaticContainer
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in SceneView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in DebugContainer
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in RNSScreen
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Suspender
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Suspense
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Freeze
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in DelayedFreeze
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in InnerScreen
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in SceneView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in RNSScreenStack
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in ScreenStack
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in NativeStackView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in NavigationContent
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in ThemeProvider
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in App
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.246 31461 31493 E ReactNativeJS:     in AppContainer
+06-20 23:46:28.247 31461 31493 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:46:28.247 31461 31493 E ReactNativeJS: 
+06-20 23:46:28.247 31461 31493 E ReactNativeJS: This error is located at:
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in DrawerView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in NavigationContent
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in DrawerNavigator
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in StaticContainer
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in SceneView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in DebugContainer
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in RNSScreen
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Suspender
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Suspense
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Freeze
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in DelayedFreeze
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in InnerScreen
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in SceneView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in RNSScreenStack
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in ScreenStack
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in NativeStackView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in NavigationContent
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in ThemeProvider
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in App
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in RCTView
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in Unknown
+06-20 23:46:28.247 31461 31493 E ReactNativeJS:     in AppContainer
+06-20 23:49:42.494 32198 32243 I ReactNativeJS: Bridgeless mode is enabled
+06-20 23:49:42.538 32198 32243 I ReactNativeJS: Running "CustomerApp"
+06-20 23:49:42.610 32198 32243 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:49:42.610 32198 32243 E ReactNativeJS: 
+06-20 23:49:42.610 32198 32243 E ReactNativeJS: This error is located at:
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in DrawerView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in NavigationContent
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in DrawerNavigator
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in DrawerNavigator
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in StaticContainer
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in SceneView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in DebugContainer
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in RNSScreen
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Suspender
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Suspense
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Freeze
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in DelayedFreeze
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in InnerScreen
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in SceneView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in RNSScreenStack
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in ScreenStack
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in NativeStackView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in NavigationContent
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in ThemeProvider
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in App
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.610 32198 32243 E ReactNativeJS:     in AppContainer
+06-20 23:49:42.613 32198 32243 E ReactNativeJS: TypeError: Object is not a function
+06-20 23:49:42.613 32198 32243 E ReactNativeJS: 
+06-20 23:49:42.613 32198 32243 E ReactNativeJS: This error is located at:
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in GestureHandlerRootView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in DrawerView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in NavigationContent
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in DrawerNavigator
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in DrawerNavigator
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in StaticContainer
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in SceneView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in DebugContainer
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in MaybeNestedStack
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in RNSScreen
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Suspender
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Suspense
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Freeze
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in DelayedFreeze
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in InnerScreen
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in SceneView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in RNSScreenStack
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in ScreenStack
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in NativeStackViewInner
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in RNCSafeAreaProvider
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in SafeAreaProvider
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in SafeAreaProviderCompat
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in NativeStackView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in PreventRemoveProvider
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in NavigationContent
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in NativeStackNavigator
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in EnsureSingleNavigator
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in BaseNavigationContainer
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in ThemeProvider
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in NavigationContainerInner
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in App
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in RCTView
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in Unknown
+06-20 23:49:42.613 32198 32243 E ReactNativeJS:     in AppContainer
+06-21 00:03:08.853  3213  3346 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:03:08.886  3213  3346 I ReactNativeJS: Running "CustomerApp"
+06-21 00:03:08.904  3213  3346 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:03:08.904  3213  3346 E ReactNativeJS: 
+06-21 00:03:08.904  3213  3346 E ReactNativeJS: This error is located at:
+06-21 00:03:08.904  3213  3346 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:03:08.904  3213  3346 E ReactNativeJS:     in App
+06-21 00:03:08.904  3213  3346 E ReactNativeJS:     in RCTView
+06-21 00:03:08.904  3213  3346 E ReactNativeJS:     in Unknown
+06-21 00:03:08.904  3213  3346 E ReactNativeJS:     in AppContainer
+06-21 00:03:08.905  3213  3346 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:03:08.905  3213  3346 E ReactNativeJS: 
+06-21 00:03:08.905  3213  3346 E ReactNativeJS: This error is located at:
+06-21 00:03:08.905  3213  3346 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:03:08.905  3213  3346 E ReactNativeJS:     in App
+06-21 00:03:08.905  3213  3346 E ReactNativeJS:     in RCTView
+06-21 00:03:08.905  3213  3346 E ReactNativeJS:     in Unknown
+06-21 00:03:08.905  3213  3346 E ReactNativeJS:     in AppContainer
+06-21 00:04:04.643  3728  3782 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:04:04.674  3728  3782 I ReactNativeJS: Running "CustomerApp"
+06-21 00:04:04.688  3728  3782 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:04:04.688  3728  3782 E ReactNativeJS: 
+06-21 00:04:04.688  3728  3782 E ReactNativeJS: This error is located at:
+06-21 00:04:04.688  3728  3782 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:04:04.688  3728  3782 E ReactNativeJS:     in App
+06-21 00:04:04.688  3728  3782 E ReactNativeJS:     in RCTView
+06-21 00:04:04.688  3728  3782 E ReactNativeJS:     in Unknown
+06-21 00:04:04.688  3728  3782 E ReactNativeJS:     in AppContainer
+06-21 00:04:04.690  3728  3782 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:04:04.690  3728  3782 E ReactNativeJS: 
+06-21 00:04:04.690  3728  3782 E ReactNativeJS: This error is located at:
+06-21 00:04:04.690  3728  3782 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:04:04.690  3728  3782 E ReactNativeJS:     in App
+06-21 00:04:04.690  3728  3782 E ReactNativeJS:     in RCTView
+06-21 00:04:04.690  3728  3782 E ReactNativeJS:     in Unknown
+06-21 00:04:04.690  3728  3782 E ReactNativeJS:     in AppContainer
+06-21 00:06:08.822  4085  4134 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:06:08.855  4085  4134 I ReactNativeJS: Running "CustomerApp"
+06-21 00:06:08.872  4085  4134 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:06:08.872  4085  4134 E ReactNativeJS: 
+06-21 00:06:08.872  4085  4134 E ReactNativeJS: This error is located at:
+06-21 00:06:08.872  4085  4134 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:06:08.872  4085  4134 E ReactNativeJS:     in App
+06-21 00:06:08.872  4085  4134 E ReactNativeJS:     in RCTView
+06-21 00:06:08.872  4085  4134 E ReactNativeJS:     in Unknown
+06-21 00:06:08.872  4085  4134 E ReactNativeJS:     in AppContainer
+06-21 00:06:08.873  4085  4134 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:06:08.873  4085  4134 E ReactNativeJS: 
+06-21 00:06:08.873  4085  4134 E ReactNativeJS: This error is located at:
+06-21 00:06:08.873  4085  4134 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:06:08.873  4085  4134 E ReactNativeJS:     in App
+06-21 00:06:08.873  4085  4134 E ReactNativeJS:     in RCTView
+06-21 00:06:08.873  4085  4134 E ReactNativeJS:     in Unknown
+06-21 00:06:08.873  4085  4134 E ReactNativeJS:     in AppContainer
+06-21 00:06:15.220  4360  4399 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:06:15.251  4360  4399 I ReactNativeJS: Running "CustomerApp"
+06-21 00:06:15.263  4360  4399 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:06:15.263  4360  4399 E ReactNativeJS: 
+06-21 00:06:15.263  4360  4399 E ReactNativeJS: This error is located at:
+06-21 00:06:15.263  4360  4399 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:06:15.263  4360  4399 E ReactNativeJS:     in App
+06-21 00:06:15.263  4360  4399 E ReactNativeJS:     in RCTView
+06-21 00:06:15.263  4360  4399 E ReactNativeJS:     in Unknown
+06-21 00:06:15.263  4360  4399 E ReactNativeJS:     in AppContainer
+06-21 00:06:15.264  4360  4399 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:06:15.264  4360  4399 E ReactNativeJS: 
+06-21 00:06:15.264  4360  4399 E ReactNativeJS: This error is located at:
+06-21 00:06:15.264  4360  4399 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:06:15.264  4360  4399 E ReactNativeJS:     in App
+06-21 00:06:15.264  4360  4399 E ReactNativeJS:     in RCTView
+06-21 00:06:15.264  4360  4399 E ReactNativeJS:     in Unknown
+06-21 00:06:15.264  4360  4399 E ReactNativeJS:     in AppContainer
+06-21 00:06:18.450  4452  4492 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:06:18.481  4452  4492 I ReactNativeJS: Running "CustomerApp"
+06-21 00:06:18.497  4452  4492 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:06:18.497  4452  4492 E ReactNativeJS: 
+06-21 00:06:18.497  4452  4492 E ReactNativeJS: This error is located at:
+06-21 00:06:18.497  4452  4492 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:06:18.497  4452  4492 E ReactNativeJS:     in App
+06-21 00:06:18.497  4452  4492 E ReactNativeJS:     in RCTView
+06-21 00:06:18.497  4452  4492 E ReactNativeJS:     in Unknown
+06-21 00:06:18.497  4452  4492 E ReactNativeJS:     in AppContainer
+06-21 00:06:18.498  4452  4492 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:06:18.498  4452  4492 E ReactNativeJS: 
+06-21 00:06:18.498  4452  4492 E ReactNativeJS: This error is located at:
+06-21 00:06:18.498  4452  4492 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:06:18.498  4452  4492 E ReactNativeJS:     in App
+06-21 00:06:18.498  4452  4492 E ReactNativeJS:     in RCTView
+06-21 00:06:18.498  4452  4492 E ReactNativeJS:     in Unknown
+06-21 00:06:18.498  4452  4492 E ReactNativeJS:     in AppContainer
+06-21 00:07:13.313  5603  5691 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:07:13.347  5603  5691 I ReactNativeJS: Running "CustomerApp"
+06-21 00:07:13.374  5603  5691 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:07:13.374  5603  5691 E ReactNativeJS: 
+06-21 00:07:13.374  5603  5691 E ReactNativeJS: This error is located at:
+06-21 00:07:13.374  5603  5691 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:07:13.374  5603  5691 E ReactNativeJS:     in App
+06-21 00:07:13.374  5603  5691 E ReactNativeJS:     in RCTView
+06-21 00:07:13.374  5603  5691 E ReactNativeJS:     in Unknown
+06-21 00:07:13.374  5603  5691 E ReactNativeJS:     in AppContainer
+06-21 00:07:13.375  5603  5691 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:07:13.375  5603  5691 E ReactNativeJS: 
+06-21 00:07:13.375  5603  5691 E ReactNativeJS: This error is located at:
+06-21 00:07:13.375  5603  5691 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:07:13.375  5603  5691 E ReactNativeJS:     in App
+06-21 00:07:13.375  5603  5691 E ReactNativeJS:     in RCTView
+06-21 00:07:13.375  5603  5691 E ReactNativeJS:     in Unknown
+06-21 00:07:13.375  5603  5691 E ReactNativeJS:     in AppContainer
+06-21 00:07:59.033  5940  5977 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:07:59.065  5940  5977 I ReactNativeJS: Running "CustomerApp"
+06-21 00:07:59.086  5940  5977 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:07:59.086  5940  5977 E ReactNativeJS: 
+06-21 00:07:59.086  5940  5977 E ReactNativeJS: This error is located at:
+06-21 00:07:59.086  5940  5977 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:07:59.086  5940  5977 E ReactNativeJS:     in App
+06-21 00:07:59.086  5940  5977 E ReactNativeJS:     in RCTView
+06-21 00:07:59.086  5940  5977 E ReactNativeJS:     in Unknown
+06-21 00:07:59.086  5940  5977 E ReactNativeJS:     in AppContainer
+06-21 00:07:59.087  5940  5977 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:07:59.087  5940  5977 E ReactNativeJS: 
+06-21 00:07:59.087  5940  5977 E ReactNativeJS: This error is located at:
+06-21 00:07:59.087  5940  5977 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:07:59.087  5940  5977 E ReactNativeJS:     in App
+06-21 00:07:59.087  5940  5977 E ReactNativeJS:     in RCTView
+06-21 00:07:59.087  5940  5977 E ReactNativeJS:     in Unknown
+06-21 00:07:59.087  5940  5977 E ReactNativeJS:     in AppContainer
+06-21 00:08:02.144  6022  6060 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:08:02.175  6022  6060 I ReactNativeJS: Running "CustomerApp"
+06-21 00:08:02.191  6022  6060 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:08:02.191  6022  6060 E ReactNativeJS: 
+06-21 00:08:02.191  6022  6060 E ReactNativeJS: This error is located at:
+06-21 00:08:02.191  6022  6060 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:08:02.191  6022  6060 E ReactNativeJS:     in App
+06-21 00:08:02.191  6022  6060 E ReactNativeJS:     in RCTView
+06-21 00:08:02.191  6022  6060 E ReactNativeJS:     in Unknown
+06-21 00:08:02.191  6022  6060 E ReactNativeJS:     in AppContainer
+06-21 00:08:02.192  6022  6060 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:08:02.192  6022  6060 E ReactNativeJS: 
+06-21 00:08:02.192  6022  6060 E ReactNativeJS: This error is located at:
+06-21 00:08:02.192  6022  6060 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:08:02.192  6022  6060 E ReactNativeJS:     in App
+06-21 00:08:02.192  6022  6060 E ReactNativeJS:     in RCTView
+06-21 00:08:02.192  6022  6060 E ReactNativeJS:     in Unknown
+06-21 00:08:02.192  6022  6060 E ReactNativeJS:     in AppContainer
+06-21 00:08:03.689  6090  6127 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:08:03.721  6090  6127 I ReactNativeJS: Running "CustomerApp"
+06-21 00:08:03.737  6090  6127 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:08:03.737  6090  6127 E ReactNativeJS: 
+06-21 00:08:03.737  6090  6127 E ReactNativeJS: This error is located at:
+06-21 00:08:03.737  6090  6127 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:08:03.737  6090  6127 E ReactNativeJS:     in App
+06-21 00:08:03.737  6090  6127 E ReactNativeJS:     in RCTView
+06-21 00:08:03.737  6090  6127 E ReactNativeJS:     in Unknown
+06-21 00:08:03.737  6090  6127 E ReactNativeJS:     in AppContainer
+06-21 00:08:03.739  6090  6127 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:08:03.739  6090  6127 E ReactNativeJS: 
+06-21 00:08:03.739  6090  6127 E ReactNativeJS: This error is located at:
+06-21 00:08:03.739  6090  6127 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:08:03.739  6090  6127 E ReactNativeJS:     in App
+06-21 00:08:03.739  6090  6127 E ReactNativeJS:     in RCTView
+06-21 00:08:03.739  6090  6127 E ReactNativeJS:     in Unknown
+06-21 00:08:03.739  6090  6127 E ReactNativeJS:     in AppContainer
+06-21 00:35:20.384  9779  9844 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:35:20.419  9779  9844 I ReactNativeJS: Running "CustomerApp"
+06-21 00:35:20.432  9779  9844 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:35:20.432  9779  9844 E ReactNativeJS: 
+06-21 00:35:20.432  9779  9844 E ReactNativeJS: This error is located at:
+06-21 00:35:20.432  9779  9844 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:35:20.432  9779  9844 E ReactNativeJS:     in App
+06-21 00:35:20.432  9779  9844 E ReactNativeJS:     in RCTView
+06-21 00:35:20.432  9779  9844 E ReactNativeJS:     in Unknown
+06-21 00:35:20.432  9779  9844 E ReactNativeJS:     in AppContainer
+06-21 00:35:20.433  9779  9844 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:35:20.433  9779  9844 E ReactNativeJS: 
+06-21 00:35:20.433  9779  9844 E ReactNativeJS: This error is located at:
+06-21 00:35:20.433  9779  9844 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:35:20.433  9779  9844 E ReactNativeJS:     in App
+06-21 00:35:20.433  9779  9844 E ReactNativeJS:     in RCTView
+06-21 00:35:20.433  9779  9844 E ReactNativeJS:     in Unknown
+06-21 00:35:20.433  9779  9844 E ReactNativeJS:     in AppContainer
+06-21 00:37:34.729 10379 10425 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:37:34.761 10379 10425 I ReactNativeJS: Running "CustomerApp"
+06-21 00:37:34.779 10379 10425 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:34.779 10379 10425 E ReactNativeJS: 
+06-21 00:37:34.779 10379 10425 E ReactNativeJS: This error is located at:
+06-21 00:37:34.779 10379 10425 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:34.779 10379 10425 E ReactNativeJS:     in App
+06-21 00:37:34.779 10379 10425 E ReactNativeJS:     in RCTView
+06-21 00:37:34.779 10379 10425 E ReactNativeJS:     in Unknown
+06-21 00:37:34.779 10379 10425 E ReactNativeJS:     in AppContainer
+06-21 00:37:34.780 10379 10425 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:34.780 10379 10425 E ReactNativeJS: 
+06-21 00:37:34.780 10379 10425 E ReactNativeJS: This error is located at:
+06-21 00:37:34.780 10379 10425 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:34.780 10379 10425 E ReactNativeJS:     in App
+06-21 00:37:34.780 10379 10425 E ReactNativeJS:     in RCTView
+06-21 00:37:34.780 10379 10425 E ReactNativeJS:     in Unknown
+06-21 00:37:34.780 10379 10425 E ReactNativeJS:     in AppContainer
+06-21 00:37:36.258 10542 10582 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:37:36.290 10542 10582 I ReactNativeJS: Running "CustomerApp"
+06-21 00:37:36.305 10542 10582 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:36.305 10542 10582 E ReactNativeJS: 
+06-21 00:37:36.305 10542 10582 E ReactNativeJS: This error is located at:
+06-21 00:37:36.305 10542 10582 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:36.305 10542 10582 E ReactNativeJS:     in App
+06-21 00:37:36.305 10542 10582 E ReactNativeJS:     in RCTView
+06-21 00:37:36.305 10542 10582 E ReactNativeJS:     in Unknown
+06-21 00:37:36.305 10542 10582 E ReactNativeJS:     in AppContainer
+06-21 00:37:36.307 10542 10582 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:36.307 10542 10582 E ReactNativeJS: 
+06-21 00:37:36.307 10542 10582 E ReactNativeJS: This error is located at:
+06-21 00:37:36.307 10542 10582 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:36.307 10542 10582 E ReactNativeJS:     in App
+06-21 00:37:36.307 10542 10582 E ReactNativeJS:     in RCTView
+06-21 00:37:36.307 10542 10582 E ReactNativeJS:     in Unknown
+06-21 00:37:36.307 10542 10582 E ReactNativeJS:     in AppContainer
+06-21 00:37:54.188 10639 10720 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:37:54.219 10639 10720 I ReactNativeJS: Running "CustomerApp"
+06-21 00:37:54.231 10639 10720 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:54.231 10639 10720 E ReactNativeJS: 
+06-21 00:37:54.231 10639 10720 E ReactNativeJS: This error is located at:
+06-21 00:37:54.231 10639 10720 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:54.231 10639 10720 E ReactNativeJS:     in App
+06-21 00:37:54.231 10639 10720 E ReactNativeJS:     in RCTView
+06-21 00:37:54.231 10639 10720 E ReactNativeJS:     in Unknown
+06-21 00:37:54.231 10639 10720 E ReactNativeJS:     in AppContainer
+06-21 00:37:54.233 10639 10720 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:54.233 10639 10720 E ReactNativeJS: 
+06-21 00:37:54.233 10639 10720 E ReactNativeJS: This error is located at:
+06-21 00:37:54.233 10639 10720 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:54.233 10639 10720 E ReactNativeJS:     in App
+06-21 00:37:54.233 10639 10720 E ReactNativeJS:     in RCTView
+06-21 00:37:54.233 10639 10720 E ReactNativeJS:     in Unknown
+06-21 00:37:54.233 10639 10720 E ReactNativeJS:     in AppContainer
+06-21 00:37:55.661 10766 10801 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:37:55.692 10766 10801 I ReactNativeJS: Running "CustomerApp"
+06-21 00:37:55.706 10766 10801 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:55.706 10766 10801 E ReactNativeJS: 
+06-21 00:37:55.706 10766 10801 E ReactNativeJS: This error is located at:
+06-21 00:37:55.706 10766 10801 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:55.706 10766 10801 E ReactNativeJS:     in App
+06-21 00:37:55.706 10766 10801 E ReactNativeJS:     in RCTView
+06-21 00:37:55.706 10766 10801 E ReactNativeJS:     in Unknown
+06-21 00:37:55.706 10766 10801 E ReactNativeJS:     in AppContainer
+06-21 00:37:55.707 10766 10801 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:37:55.707 10766 10801 E ReactNativeJS: 
+06-21 00:37:55.707 10766 10801 E ReactNativeJS: This error is located at:
+06-21 00:37:55.707 10766 10801 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:37:55.707 10766 10801 E ReactNativeJS:     in App
+06-21 00:37:55.707 10766 10801 E ReactNativeJS:     in RCTView
+06-21 00:37:55.707 10766 10801 E ReactNativeJS:     in Unknown
+06-21 00:37:55.707 10766 10801 E ReactNativeJS:     in AppContainer
+06-21 00:38:42.983 10988 11027 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:38:43.014 10988 11027 I ReactNativeJS: Running "CustomerApp"
+06-21 00:38:43.025 10988 11027 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:43.025 10988 11027 E ReactNativeJS: 
+06-21 00:38:43.025 10988 11027 E ReactNativeJS: This error is located at:
+06-21 00:38:43.025 10988 11027 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:43.025 10988 11027 E ReactNativeJS:     in App
+06-21 00:38:43.025 10988 11027 E ReactNativeJS:     in RCTView
+06-21 00:38:43.025 10988 11027 E ReactNativeJS:     in Unknown
+06-21 00:38:43.025 10988 11027 E ReactNativeJS:     in AppContainer
+06-21 00:38:43.027 10988 11027 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:43.027 10988 11027 E ReactNativeJS: 
+06-21 00:38:43.027 10988 11027 E ReactNativeJS: This error is located at:
+06-21 00:38:43.027 10988 11027 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:43.027 10988 11027 E ReactNativeJS:     in App
+06-21 00:38:43.027 10988 11027 E ReactNativeJS:     in RCTView
+06-21 00:38:43.027 10988 11027 E ReactNativeJS:     in Unknown
+06-21 00:38:43.027 10988 11027 E ReactNativeJS:     in AppContainer
+06-21 00:38:44.678 11120 11155 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:38:44.710 11120 11155 I ReactNativeJS: Running "CustomerApp"
+06-21 00:38:44.723 11120 11155 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:44.723 11120 11155 E ReactNativeJS: 
+06-21 00:38:44.723 11120 11155 E ReactNativeJS: This error is located at:
+06-21 00:38:44.723 11120 11155 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:44.723 11120 11155 E ReactNativeJS:     in App
+06-21 00:38:44.723 11120 11155 E ReactNativeJS:     in RCTView
+06-21 00:38:44.723 11120 11155 E ReactNativeJS:     in Unknown
+06-21 00:38:44.723 11120 11155 E ReactNativeJS:     in AppContainer
+06-21 00:38:44.724 11120 11155 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:44.724 11120 11155 E ReactNativeJS: 
+06-21 00:38:44.724 11120 11155 E ReactNativeJS: This error is located at:
+06-21 00:38:44.724 11120 11155 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:44.724 11120 11155 E ReactNativeJS:     in App
+06-21 00:38:44.724 11120 11155 E ReactNativeJS:     in RCTView
+06-21 00:38:44.724 11120 11155 E ReactNativeJS:     in Unknown
+06-21 00:38:44.724 11120 11155 E ReactNativeJS:     in AppContainer
+06-21 00:38:46.704 11201 11238 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:38:46.735 11201 11238 I ReactNativeJS: Running "CustomerApp"
+06-21 00:38:46.749 11201 11238 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:46.749 11201 11238 E ReactNativeJS: 
+06-21 00:38:46.749 11201 11238 E ReactNativeJS: This error is located at:
+06-21 00:38:46.749 11201 11238 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:46.749 11201 11238 E ReactNativeJS:     in App
+06-21 00:38:46.749 11201 11238 E ReactNativeJS:     in RCTView
+06-21 00:38:46.749 11201 11238 E ReactNativeJS:     in Unknown
+06-21 00:38:46.749 11201 11238 E ReactNativeJS:     in AppContainer
+06-21 00:38:46.750 11201 11238 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:46.750 11201 11238 E ReactNativeJS: 
+06-21 00:38:46.750 11201 11238 E ReactNativeJS: This error is located at:
+06-21 00:38:46.750 11201 11238 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:46.750 11201 11238 E ReactNativeJS:     in App
+06-21 00:38:46.750 11201 11238 E ReactNativeJS:     in RCTView
+06-21 00:38:46.750 11201 11238 E ReactNativeJS:     in Unknown
+06-21 00:38:46.750 11201 11238 E ReactNativeJS:     in AppContainer
+06-21 00:38:53.698 11304 11339 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:38:53.730 11304 11339 I ReactNativeJS: Running "CustomerApp"
+06-21 00:38:53.744 11304 11339 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:53.744 11304 11339 E ReactNativeJS: 
+06-21 00:38:53.744 11304 11339 E ReactNativeJS: This error is located at:
+06-21 00:38:53.744 11304 11339 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:53.744 11304 11339 E ReactNativeJS:     in App
+06-21 00:38:53.744 11304 11339 E ReactNativeJS:     in RCTView
+06-21 00:38:53.744 11304 11339 E ReactNativeJS:     in Unknown
+06-21 00:38:53.744 11304 11339 E ReactNativeJS:     in AppContainer
+06-21 00:38:53.745 11304 11339 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:38:53.745 11304 11339 E ReactNativeJS: 
+06-21 00:38:53.745 11304 11339 E ReactNativeJS: This error is located at:
+06-21 00:38:53.745 11304 11339 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:38:53.745 11304 11339 E ReactNativeJS:     in App
+06-21 00:38:53.745 11304 11339 E ReactNativeJS:     in RCTView
+06-21 00:38:53.745 11304 11339 E ReactNativeJS:     in Unknown
+06-21 00:38:53.745 11304 11339 E ReactNativeJS:     in AppContainer
+06-21 00:42:56.928 14942 14990 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:42:56.963 14942 14990 I ReactNativeJS: Running "CustomerApp"
+06-21 00:42:56.992 14942 14990 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:42:56.992 14942 14990 E ReactNativeJS: 
+06-21 00:42:56.992 14942 14990 E ReactNativeJS: This error is located at:
+06-21 00:42:56.992 14942 14990 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:42:56.992 14942 14990 E ReactNativeJS:     in App
+06-21 00:42:56.992 14942 14990 E ReactNativeJS:     in RCTView
+06-21 00:42:56.992 14942 14990 E ReactNativeJS:     in Unknown
+06-21 00:42:56.992 14942 14990 E ReactNativeJS:     in AppContainer
+06-21 00:42:57.079 14942 14990 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:42:57.079 14942 14990 E ReactNativeJS: 
+06-21 00:42:57.079 14942 14990 E ReactNativeJS: This error is located at:
+06-21 00:42:57.079 14942 14990 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:42:57.079 14942 14990 E ReactNativeJS:     in App
+06-21 00:42:57.079 14942 14990 E ReactNativeJS:     in RCTView
+06-21 00:42:57.079 14942 14990 E ReactNativeJS:     in Unknown
+06-21 00:42:57.079 14942 14990 E ReactNativeJS:     in AppContainer
+06-21 00:43:10.252 15188 15236 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:43:10.284 15188 15236 I ReactNativeJS: Running "CustomerApp"
+06-21 00:43:10.299 15188 15236 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:43:10.299 15188 15236 E ReactNativeJS: 
+06-21 00:43:10.299 15188 15236 E ReactNativeJS: This error is located at:
+06-21 00:43:10.299 15188 15236 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:43:10.299 15188 15236 E ReactNativeJS:     in App
+06-21 00:43:10.299 15188 15236 E ReactNativeJS:     in RCTView
+06-21 00:43:10.299 15188 15236 E ReactNativeJS:     in Unknown
+06-21 00:43:10.299 15188 15236 E ReactNativeJS:     in AppContainer
+06-21 00:43:10.304 15188 15236 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:43:10.304 15188 15236 E ReactNativeJS: 
+06-21 00:43:10.304 15188 15236 E ReactNativeJS: This error is located at:
+06-21 00:43:10.304 15188 15236 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:43:10.304 15188 15236 E ReactNativeJS:     in App
+06-21 00:43:10.304 15188 15236 E ReactNativeJS:     in RCTView
+06-21 00:43:10.304 15188 15236 E ReactNativeJS:     in Unknown
+06-21 00:43:10.304 15188 15236 E ReactNativeJS:     in AppContainer
+06-21 00:43:22.128 15388 15422 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:43:22.160 15388 15422 I ReactNativeJS: Running "CustomerApp"
+06-21 00:43:22.175 15388 15422 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:43:22.175 15388 15422 E ReactNativeJS: 
+06-21 00:43:22.175 15388 15422 E ReactNativeJS: This error is located at:
+06-21 00:43:22.175 15388 15422 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:43:22.175 15388 15422 E ReactNativeJS:     in App
+06-21 00:43:22.175 15388 15422 E ReactNativeJS:     in RCTView
+06-21 00:43:22.175 15388 15422 E ReactNativeJS:     in Unknown
+06-21 00:43:22.175 15388 15422 E ReactNativeJS:     in AppContainer
+06-21 00:43:22.176 15388 15422 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:43:22.176 15388 15422 E ReactNativeJS: 
+06-21 00:43:22.176 15388 15422 E ReactNativeJS: This error is located at:
+06-21 00:43:22.176 15388 15422 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:43:22.176 15388 15422 E ReactNativeJS:     in App
+06-21 00:43:22.176 15388 15422 E ReactNativeJS:     in RCTView
+06-21 00:43:22.176 15388 15422 E ReactNativeJS:     in Unknown
+06-21 00:43:22.176 15388 15422 E ReactNativeJS:     in AppContainer
+06-21 00:49:08.354 20690 20780 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:49:08.525 20690 20780 I ReactNativeJS: Running "CustomerApp"
+06-21 00:49:08.585 20690 20780 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:49:08.585 20690 20780 E ReactNativeJS: 
+06-21 00:49:08.585 20690 20780 E ReactNativeJS: This error is located at:
+06-21 00:49:08.585 20690 20780 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:49:08.585 20690 20780 E ReactNativeJS:     in App
+06-21 00:49:08.585 20690 20780 E ReactNativeJS:     in RCTView
+06-21 00:49:08.585 20690 20780 E ReactNativeJS:     in Unknown
+06-21 00:49:08.585 20690 20780 E ReactNativeJS:     in AppContainer
+06-21 00:49:08.594 20690 20780 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:49:08.594 20690 20780 E ReactNativeJS: 
+06-21 00:49:08.594 20690 20780 E ReactNativeJS: This error is located at:
+06-21 00:49:08.594 20690 20780 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:49:08.594 20690 20780 E ReactNativeJS:     in App
+06-21 00:49:08.594 20690 20780 E ReactNativeJS:     in RCTView
+06-21 00:49:08.594 20690 20780 E ReactNativeJS:     in Unknown
+06-21 00:49:08.594 20690 20780 E ReactNativeJS:     in AppContainer
+06-21 00:51:22.791 24321 24356 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:51:22.823 24321 24356 I ReactNativeJS: Running "CustomerApp"
+06-21 00:51:22.837 24321 24356 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:51:22.837 24321 24356 E ReactNativeJS: 
+06-21 00:51:22.837 24321 24356 E ReactNativeJS: This error is located at:
+06-21 00:51:22.837 24321 24356 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:51:22.837 24321 24356 E ReactNativeJS:     in App
+06-21 00:51:22.837 24321 24356 E ReactNativeJS:     in RCTView
+06-21 00:51:22.837 24321 24356 E ReactNativeJS:     in Unknown
+06-21 00:51:22.837 24321 24356 E ReactNativeJS:     in AppContainer
+06-21 00:51:22.839 24321 24356 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:51:22.839 24321 24356 E ReactNativeJS: 
+06-21 00:51:22.839 24321 24356 E ReactNativeJS: This error is located at:
+06-21 00:51:22.839 24321 24356 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:51:22.839 24321 24356 E ReactNativeJS:     in App
+06-21 00:51:22.839 24321 24356 E ReactNativeJS:     in RCTView
+06-21 00:51:22.839 24321 24356 E ReactNativeJS:     in Unknown
+06-21 00:51:22.839 24321 24356 E ReactNativeJS:     in AppContainer
+06-21 00:51:24.449 24398 24433 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:51:24.480 24398 24433 I ReactNativeJS: Running "CustomerApp"
+06-21 00:51:24.495 24398 24433 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:51:24.495 24398 24433 E ReactNativeJS: 
+06-21 00:51:24.495 24398 24433 E ReactNativeJS: This error is located at:
+06-21 00:51:24.495 24398 24433 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:51:24.495 24398 24433 E ReactNativeJS:     in App
+06-21 00:51:24.495 24398 24433 E ReactNativeJS:     in RCTView
+06-21 00:51:24.495 24398 24433 E ReactNativeJS:     in Unknown
+06-21 00:51:24.495 24398 24433 E ReactNativeJS:     in AppContainer
+06-21 00:51:24.496 24398 24433 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:51:24.496 24398 24433 E ReactNativeJS: 
+06-21 00:51:24.496 24398 24433 E ReactNativeJS: This error is located at:
+06-21 00:51:24.496 24398 24433 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:51:24.496 24398 24433 E ReactNativeJS:     in App
+06-21 00:51:24.496 24398 24433 E ReactNativeJS:     in RCTView
+06-21 00:51:24.496 24398 24433 E ReactNativeJS:     in Unknown
+06-21 00:51:24.496 24398 24433 E ReactNativeJS:     in AppContainer
+06-21 00:52:09.299 24582 24615 I ReactNativeJS: Bridgeless mode is enabled
+06-21 00:52:09.332 24582 24615 I ReactNativeJS: Running "CustomerApp"
+06-21 00:52:09.351 24582 24615 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:52:09.351 24582 24615 E ReactNativeJS: 
+06-21 00:52:09.351 24582 24615 E ReactNativeJS: This error is located at:
+06-21 00:52:09.351 24582 24615 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:52:09.351 24582 24615 E ReactNativeJS:     in App
+06-21 00:52:09.351 24582 24615 E ReactNativeJS:     in RCTView
+06-21 00:52:09.351 24582 24615 E ReactNativeJS:     in Unknown
+06-21 00:52:09.351 24582 24615 E ReactNativeJS:     in AppContainer
+06-21 00:52:09.352 24582 24615 E ReactNativeJS: TypeError: Object is not a function
+06-21 00:52:09.352 24582 24615 E ReactNativeJS: 
+06-21 00:52:09.352 24582 24615 E ReactNativeJS: This error is located at:
+06-21 00:52:09.352 24582 24615 E ReactNativeJS:     in GestureHandlerRootView
+06-21 00:52:09.352 24582 24615 E ReactNativeJS:     in App
+06-21 00:52:09.352 24582 24615 E ReactNativeJS:     in RCTView
+06-21 00:52:09.352 24582 24615 E ReactNativeJS:     in Unknown
+06-21 00:52:09.352 24582 24615 E ReactNativeJS:     in AppContainer
+06-21 01:02:31.264 25917 25966 I ReactNativeJS: Bridgeless mode is enabled
+06-21 01:02:31.297 25917 25966 I ReactNativeJS: Running "CustomerApp"
+06-21 01:02:31.314 25917 25966 E ReactNativeJS: TypeError: Object is not a function
+06-21 01:02:31.314 25917 25966 E ReactNativeJS: 
+06-21 01:02:31.314 25917 25966 E ReactNativeJS: This error is located at:
+06-21 01:02:31.314 25917 25966 E ReactNativeJS:     in GestureHandlerRootView
+06-21 01:02:31.314 25917 25966 E ReactNativeJS:     in App
+06-21 01:02:31.314 25917 25966 E ReactNativeJS:     in RCTView
+06-21 01:02:31.314 25917 25966 E ReactNativeJS:     in Unknown
+06-21 01:02:31.314 25917 25966 E ReactNativeJS:     in AppContainer
+06-21 01:02:31.315 25917 25966 E ReactNativeJS: TypeError: Object is not a function
+06-21 01:02:31.315 25917 25966 E ReactNativeJS: 
+06-21 01:02:31.315 25917 25966 E ReactNativeJS: This error is located at:
+06-21 01:02:31.315 25917 25966 E ReactNativeJS:     in GestureHandlerRootView
+06-21 01:02:31.315 25917 25966 E ReactNativeJS:     in App
+06-21 01:02:31.315 25917 25966 E ReactNativeJS:     in RCTView
+06-21 01:02:31.315 25917 25966 E ReactNativeJS:     in Unknown
+06-21 01:02:31.315 25917 25966 E ReactNativeJS:     in AppContainer
+06-21 01:10:55.751 26845 26890 I ReactNativeJS: Bridgeless mode is enabled
+06-21 01:10:55.785 26845 26890 I ReactNativeJS: Running "CustomerApp"
+06-21 01:10:55.807 26845 26890 E ReactNativeJS: TypeError: Object is not a function
+06-21 01:10:55.807 26845 26890 E ReactNativeJS: 
+06-21 01:10:55.807 26845 26890 E ReactNativeJS: This error is located at:
+06-21 01:10:55.807 26845 26890 E ReactNativeJS:     in GestureHandlerRootView
+06-21 01:10:55.807 26845 26890 E ReactNativeJS:     in App
+06-21 01:10:55.807 26845 26890 E ReactNativeJS:     in RCTView
+06-21 01:10:55.807 26845 26890 E ReactNativeJS:     in Unknown
+06-21 01:10:55.807 26845 26890 E ReactNativeJS:     in AppContainer
+06-21 01:10:55.813 26845 26890 E ReactNativeJS: TypeError: Object is not a function
+06-21 01:10:55.813 26845 26890 E ReactNativeJS: 
+06-21 01:10:55.813 26845 26890 E ReactNativeJS: This error is located at:
+06-21 01:10:55.813 26845 26890 E ReactNativeJS:     in GestureHandlerRootView
+06-21 01:10:55.813 26845 26890 E ReactNativeJS:     in App
+06-21 01:10:55.813 26845 26890 E ReactNativeJS:     in RCTView
+06-21 01:10:55.813 26845 26890 E ReactNativeJS:     in Unknown
+06-21 01:10:55.813 26845 26890 E ReactNativeJS:     in AppContainer
+06-21 01:30:39.813 29958 30002 I ReactNativeJS: Bridgeless mode is enabled
+06-21 01:30:39.864 29958 30002 I ReactNativeJS: Running "CustomerApp"
+06-21 02:37:07.609 29410 30438 I ReactNativeJS: Bridgeless mode is enabled
+06-21 02:37:07.828 29410 30438 I ReactNativeJS: Running "CustomerApp" with {"rootTag":11,"initialProps":{},"fabric":true}
+06-21 02:43:45.396 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8', 'clean:', '8'
+06-21 02:43:45.504 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '89', 'clean:', '89'
+06-21 02:43:45.554 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '895', 'clean:', '895'
+06-21 02:43:45.622 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8951', 'clean:', '8951'
+06-21 02:43:45.654 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '89510', 'clean:', '89510'
+06-21 02:43:45.681 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '895107', 'clean:', '895107'
+06-21 02:43:45.683 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8951070', 'clean:', '8951070'
+06-21 02:43:45.709 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '89510702', 'clean:', '89510702'
+06-21 02:43:45.737 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '895107025', 'clean:', '895107025'
+06-21 02:43:45.739 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8951070251', 'clean:', '8951070251'
+06-21 02:44:17.250 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '895107025', 'clean:', '895107025'
+06-21 02:44:17.673 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '89510702', 'clean:', '89510702'
+06-21 02:44:17.726 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8951070', 'clean:', '8951070'
+06-21 02:44:17.782 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '895107', 'clean:', '895107'
+06-21 02:44:17.841 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '89510', 'clean:', '89510'
+06-21 02:44:17.895 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8951', 'clean:', '8951'
+06-21 02:44:17.958 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '895', 'clean:', '895'
+06-21 02:44:18.009 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '89', 'clean:', '89'
+06-21 02:44:18.063 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8', 'clean:', '8'
+06-21 02:44:18.124 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '', 'clean:', ''
+06-21 02:44:24.759 29410 30438 I ReactNativeJS: '[DEV] PhoneInput onChangeText:', '8951070251', 'clean:', '8951070251'
+06-21 02:44:26.244 29410 30438 I ReactNativeJS: [API] → POST http://192.168.1.199:8000/api/auth/send-otp
+06-21 02:44:27.237 29410 30438 I ReactNativeJS: [API] ← 200 /auth/send-otp
+06-21 02:45:02.988 29410 30438 I ReactNativeJS: [API] → POST http://192.168.1.199:8000/api/auth/verify-otp-whatsapp
+06-21 02:45:03.176 29410 30438 I ReactNativeJS: [API] ← 200 /auth/verify-otp-whatsapp
+06-21 02:45:03.200 29410 30438 I ReactNativeJS: [DEV] OTP verified — navigating to app
+06-21 02:45:04.199 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/players/me/stats/
+06-21 02:45:04.200 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/banners/
+06-21 02:45:04.202 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/matches/?status=LIVE
+06-21 02:45:04.203 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/open-matches/
+06-21 02:45:04.324 29410 30438 I ReactNativeJS: [API] ← 200 /tournaments/matches/?status=LIVE
+06-21 02:45:04.327 29410 30438 I ReactNativeJS: [API] ← 200 /banners/
+06-21 02:45:04.365 29410 30438 W ReactNativeJS: '[API] ← ERROR 404 /tournaments/open-matches/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/tournaments/open-matches/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/tournaments/open-matches/?status=OPEN&amp;limit=5</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/ve
+06-21 02:45:04.377 29410 30438 W ReactNativeJS: '[API] ← ERROR 404 /players/me/stats/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/players/me/stats/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/players/me/stats/</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues/&lt;int:pk&gt;/status\n                [nam
+06-21 02:45:04.830 29410 30438 W ReactNativeJS: '[DEV] Geolocation error:', 'Location permission was not granted.'
+06-21 02:45:33.817 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/bookings/
+06-21 02:45:33.908 29410 30438 I ReactNativeJS: [API] ← 200 /bookings/
+06-21 02:45:36.124 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/
+06-21 02:45:36.126 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/local-tournaments/
+06-21 02:45:36.165 29410 30438 I ReactNativeJS: [API] ← 200 /tournaments/
+06-21 02:45:36.176 29410 30438 I ReactNativeJS: [API] ← 200 /tournaments/local-tournaments/
+06-21 02:45:56.504 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/
+06-21 02:45:56.506 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/local-tournaments/
+06-21 02:45:56.646 29410 30438 I ReactNativeJS: [API] ← 200 /tournaments/
+06-21 02:45:56.649 29410 30438 I ReactNativeJS: [API] ← 200 /tournaments/local-tournaments/
+06-21 02:46:01.978 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/
+06-21 02:46:01.983 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/local-tournaments/
+06-21 02:46:02.031 29410 30438 I ReactNativeJS: [API] ← 200 /tournaments/
+06-21 02:46:02.037 29410 30438 I ReactNativeJS: [API] ← 200 /tournaments/local-tournaments/
+06-21 02:46:37.451 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/venues/
+06-21 02:46:37.624 29410 30438 I ReactNativeJS: [API] ← 200 /venues/
+06-21 02:46:39.273 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/venues/6/
+06-21 02:46:39.275 29410 30438 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/venues/6/courts/
+06-21 02:46:39.351 29410 30438 W ReactNativeJS: '[API] ← ERROR 403 /venues/6/courts/', { error: 'Permission denied' }
+06-21 02:46:39.362 29410 30438 I ReactNativeJS: [API] ← 200 /venues/6/
+06-21 02:46:56.982 31682 31757 I ReactNativeJS: Bridgeless mode is enabled
+06-21 02:46:57.190 31682 31757 I ReactNativeJS: Running "CustomerApp" with {"rootTag":11,"initialProps":{},"fabric":true}
+06-21 02:47:00.247 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/players/me/stats/
+06-21 02:47:00.263 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/banners/
+06-21 02:47:00.265 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/matches/?status=LIVE
+06-21 02:47:00.266 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/open-matches/
+06-21 02:47:00.467 31682 31757 I ReactNativeJS: [API] ← 200 /tournaments/matches/?status=LIVE
+06-21 02:47:00.471 31682 31757 I ReactNativeJS: [API] ← 200 /banners/
+06-21 02:47:00.496 31682 31757 W ReactNativeJS: '[API] ← ERROR 404 /players/me/stats/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/players/me/stats/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/players/me/stats/</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues/&lt;int:pk&gt;/status\n                [nam
+06-21 02:47:00.519 31682 31757 W ReactNativeJS: '[API] ← ERROR 404 /tournaments/open-matches/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/tournaments/open-matches/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/tournaments/open-matches/?status=OPEN&amp;limit=5</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/ve
+06-21 02:47:00.525 31682 31757 W ReactNativeJS: '[DEV] Geolocation error:', 'Location permission was not granted.'
+06-21 02:47:05.021 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/bookings/
+06-21 02:47:05.194 31682 31757 I ReactNativeJS: [API] ← 200 /bookings/
+06-21 02:47:20.416 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/players/me/
+06-21 02:47:20.418 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/players/me/stats/
+06-21 02:47:20.513 31682 31757 W ReactNativeJS: '[API] ← ERROR 404 /players/me/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/players/me/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/players/me/</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues/&lt;int:pk&gt;/status\n                [name=\'admin-venue-st
+06-21 02:47:20.519 31682 31757 W ReactNativeJS: '[API] ← ERROR 404 /players/me/stats/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/players/me/stats/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/players/me/stats/</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues/&lt;int:pk&gt;/status\n                [nam
+06-21 02:47:32.091 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/players/me/stats/
+06-21 02:47:32.093 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/banners/
+06-21 02:47:32.095 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/matches/?status=LIVE
+06-21 02:47:32.096 31682 31757 I ReactNativeJS: [API] → GET http://192.168.1.199:8000/api/tournaments/open-matches/
+06-21 02:47:32.171 31682 31757 I ReactNativeJS: [API] ← 200 /banners/
+06-21 02:47:32.181 31682 31757 W ReactNativeJS: '[API] ← ERROR 404 /players/me/stats/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/players/me/stats/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/players/me/stats/</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues/&lt;int:pk&gt;/status\n                [nam
+06-21 02:47:32.185 31682 31757 I ReactNativeJS: [API] ← 200 /tournaments/matches/?status=LIVE
+06-21 02:47:32.192 31682 31757 W ReactNativeJS: '[API] ← ERROR 404 /tournaments/open-matches/', '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /api/tournaments/open-matches/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    \n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://192.168.1.199:8000/api/tournaments/open-matches/?status=OPEN&amp;limit=5</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>config.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/login\n                [name=\'executive-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/executive/verify-otp\n                [name=\'verify-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/admin/login\n                [name=\'admin-login\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/send-otp\n                [name=\'send-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/verify-otp-whatsapp\n                [name=\'verify-otp-whatsapp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                auth/resend-otp\n                [name=\'resend-otp\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives\n                [name=\'admin-executives-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;\n                [name=\'admin-executive-detail\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/executives/&lt;int:pk&gt;/status\n                [name=\'admin-executive-status\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/venues\n                [name=\'admin-venues-list\']\n            \n          </li>\n        \n          <li>\n            \n                api/\n                \n            \n                admin/ve
+06-21 02:47:32.316 31682 31757 W ReactNativeJS: '[DEV] Geolocation error:', 'Location permission was not granted.'

@@ -12,5 +12,6 @@ urlpatterns = [
     path('api/players/', include('players.urls')),
     path('api/bookings/', include('bookings.urls')),
     path('api/tournaments/', include('tournaments.urls')),
+    path('api/banners/', include('banners.urls')),
+    path('api/payments/', include('payments.urls')),
 ]
-

@@ -35,7 +35,7 @@ export const SIZES = {
   buttonRadius: 16, // Changed from 25 for a modern block look
 };
 
-// API Base URL - Using production URL for all environments
-// Backend is deployed at https://api.goathlete.in
-export const API_BASE_URL = 'https://api.goathlete.in/api';
+// API Base URL - Local Testing Mode
+// Uses 10.0.2.2 which is the Android emulator's alias to host localhost, and localhost for iOS
+export const API_BASE_URL = Platform.OS === 'android' ? 'http://10.0.2.2:8000/api' : 'http://localhost:8000/api';
 

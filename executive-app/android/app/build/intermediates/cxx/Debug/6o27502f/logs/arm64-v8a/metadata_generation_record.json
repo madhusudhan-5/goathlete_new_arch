@@ -1,0 +1,184 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 24 min SDK version: arm64-v8a",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/arm64-v8a/android_gradle_build.json due to:",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "- no fingerprint file, will remove stale configuration folder",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/java \\\n  --class-path \\\n  /Users/madhusudhanm/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.0.0/f2702b5ca13df54e3ca92f29d6b403fb6285d8df/cli-2.0.0-all.jar \\\n  com.google.prefab.cli.AppKt \\\n  --build-system \\\n  cmake \\\n  --platform \\\n  android \\\n  --abi \\\n  arm64-v8a \\\n  --os-version \\\n  24 \\\n  --stl \\\n  c++_shared \\\n  --ndk-version \\\n  26 \\\n  --output \\\n  /var/folders/xm/trx60p_113158jjrgllm5_q40000gn/T/agp-prefab-staging15097841591775988314/staged-cli-output \\\n  /Users/madhusudhanm/.gradle/caches/transforms-4/316c45911752b0e6cd75cbf7ce5f3d7e/transformed/jetified-react-android-0.74.1-debug/prefab \\\n  /Users/madhusudhanm/.gradle/caches/transforms-4/3c5dde19dade6a991082d852d6b04916/transformed/jetified-fbjni-0.6.0/prefab \\\n  /Users/madhusudhanm/.gradle/caches/transforms-4/bdc9393c6fd9afba1c60efb640495400/transformed/jetified-hermes-android-0.74.1-debug/prefab\n",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Received process result: 0",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/arm64-v8a\u0027",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/arm64-v8a\u0027",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake /Users/madhusudhanm/Library/Android/sdk/cmake/3.22.1/bin/cmake \\\n  -H/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup \\\n  -DCMAKE_SYSTEM_NAME\u003dAndroid \\\n  -DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON \\\n  -DCMAKE_SYSTEM_VERSION\u003d24 \\\n  -DANDROID_PLATFORM\u003dandroid-24 \\\n  -DANDROID_ABI\u003darm64-v8a \\\n  -DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a \\\n  -DANDROID_NDK\u003d/Users/madhusudhanm/Library/Android/sdk/ndk/26.1.10909125 \\\n  -DCMAKE_ANDROID_NDK\u003d/Users/madhusudhanm/Library/Android/sdk/ndk/26.1.10909125 \\\n  -DCMAKE_TOOLCHAIN_FILE\u003d/Users/madhusudhanm/Library/Android/sdk/ndk/26.1.10909125/build/cmake/android.toolchain.cmake \\\n  -DCMAKE_MAKE_PROGRAM\u003d/Users/madhusudhanm/Library/Android/sdk/cmake/3.22.1/bin/ninja \\\n  -DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/arm64-v8a \\\n  -DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/arm64-v8a \\\n  -DCMAKE_BUILD_TYPE\u003dDebug \\\n  -DCMAKE_FIND_ROOT_PATH\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/prefab/arm64-v8a/prefab \\\n  -B/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/arm64-v8a \\\n  -GNinja \\\n  -DPROJECT_BUILD_DIR\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build \\\n  -DREACT_ANDROID_DIR\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid \\\n  -DANDROID_STL\u003dc++_shared \\\n  -DANDROID_USE_LEGACY_TOOLCHAIN_FILE\u003dON\n",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "/Users/madhusudhanm/Library/Android/sdk/cmake/3.22.1/bin/cmake \\\n  -H/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup \\\n  -DCMAKE_SYSTEM_NAME\u003dAndroid \\\n  -DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON \\\n  -DCMAKE_SYSTEM_VERSION\u003d24 \\\n  -DANDROID_PLATFORM\u003dandroid-24 \\\n  -DANDROID_ABI\u003darm64-v8a \\\n  -DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a \\\n  -DANDROID_NDK\u003d/Users/madhusudhanm/Library/Android/sdk/ndk/26.1.10909125 \\\n  -DCMAKE_ANDROID_NDK\u003d/Users/madhusudhanm/Library/Android/sdk/ndk/26.1.10909125 \\\n  -DCMAKE_TOOLCHAIN_FILE\u003d/Users/madhusudhanm/Library/Android/sdk/ndk/26.1.10909125/build/cmake/android.toolchain.cmake \\\n  -DCMAKE_MAKE_PROGRAM\u003d/Users/madhusudhanm/Library/Android/sdk/cmake/3.22.1/bin/ninja \\\n  -DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/arm64-v8a \\\n  -DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/arm64-v8a \\\n  -DCMAKE_BUILD_TYPE\u003dDebug \\\n  -DCMAKE_FIND_ROOT_PATH\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/prefab/arm64-v8a/prefab \\\n  -B/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/arm64-v8a \\\n  -GNinja \\\n  -DPROJECT_BUILD_DIR\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build \\\n  -DREACT_ANDROID_DIR\u003d/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid \\\n  -DANDROID_STL\u003dc++_shared \\\n  -DANDROID_USE_LEGACY_TOOLCHAIN_FILE\u003dON\n",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Received process result: 0",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Exiting generation of /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/arm64-v8a/compile_commands.json.bin normally",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "done executing cmake",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "hard linked /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/arm64-v8a/compile_commands.json to /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/tools/debug/arm64-v8a/compile_commands.json",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  }
+]

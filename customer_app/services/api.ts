@@ -1,13 +1,23 @@
 import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
+import { Platform } from 'react-native';
 
-// CHANGE THIS to your machine's IP address (e.g. 192.168.1.5:8000) for physical device testing
-// For iOS Simulator, 'http://localhost:8000' works
-// For Android Emulator, 'http://10.0.2.2:8000' works
-const BASE_URL = 'http://10.0.2.2:8000/api';
+// ─── API Base URL Configuration ────────────────────────────────────────────
+// DEV  (Android Emulator): http://10.0.2.2:8000
+// DEV  (Physical device):  Replace with your machine's LAN IP e.g. http://192.168.1.5:8000
+// PROD (Play Store build): https://api.goathlete.in
+//
+// __DEV__ is automatically true in debug builds and false in release builds.
+// When you run `./gradlew assembleRelease`, __DEV__ is false → uses PROD URL.
+const DEV_API_URL = 'http://192.168.1.4:8000/api';
+const PROD_API_URL = 'https://api.goathlete.in/api';
+
+// Forcing local testing mode
+const BASE_URL = DEV_API_URL;
 
 const api = axios.create({
     baseURL: BASE_URL,
+    timeout: 30000, // 30 second timeout for production
     headers: {
         'Content-Type': 'application/json',
     },
@@ -194,8 +204,14 @@ export const playerService = {
         return response.data;
     },
 
+    getProfileFresh: async () => {
+        const response = await api.get('/players/me/');
+        await SecureStore.setItemAsync('user_data', JSON.stringify(response.data));
+        return response.data;
+    },
+
     updateProfile: async (data: any) => {
-        const response = await api.patch('/players/me/', data);
+        const response = await api.patch('/players/update_profile/', data);
         await SecureStore.setItemAsync('user_data', JSON.stringify(response.data));
         return response.data;
     },
@@ -203,7 +219,27 @@ export const playerService = {
     getStats: async () => {
         const response = await api.get('/players/me/stats/');
         return response.data;
-    }
+    },
+
+    getSportStats: async () => {
+        const response = await api.get('/players/me/sport_stats/');
+        return response.data;
+    },
+
+    getPerformanceHistory: async () => {
+        const response = await api.get('/players/me/performance_history/');
+        return response.data;
+    },
+
+    getBadges: async () => {
+        const response = await api.get('/players/player-badges/');
+        return response.data;
+    },
+
+    getAllBadges: async () => {
+        const response = await api.get('/players/badges/');
+        return response.data;
+    },
 };
 
 export default api;

@@ -7,8 +7,25 @@ from rest_framework.test import APIClient
 from venues.models import Venue, Court
 from partners.models import VendorAdmin, VendorPartner
 from players.models import Player
+from accounts.models import Executive
+
+from tournaments.scoreboard_models import Sport
 
 User = get_user_model()
+
+
+@pytest.fixture
+def sport():
+    """Create a test sport."""
+    sport, _ = Sport.objects.get_or_create(
+        name='Badminton',
+        defaults={
+            'code': 'BADMINTON',
+            'icon': '🏸',
+            'description': 'Badminton Sport'
+        }
+    )
+    return sport
 
 
 @pytest.fixture
@@ -21,7 +38,6 @@ def api_client():
 def user():
     """Create a test user."""
     return User.objects.create_user(
-        username='testuser',
         email='test@example.com',
         password='testpass123',
         first_name='Test',
@@ -33,7 +49,6 @@ def user():
 def admin_user():
     """Create an admin user."""
     return User.objects.create_user(
-        username='admin',
         email='admin@example.com',
         password='adminpass123',
         first_name='Admin',
@@ -43,7 +58,16 @@ def admin_user():
 
 
 @pytest.fixture
-def venue(admin_user):
+def executive(admin_user):
+    """Create an executive."""
+    return Executive.objects.create(
+        user=admin_user,
+        phone='+919876543210'
+    )
+
+
+@pytest.fixture
+def venue(executive):
     """Create a test venue."""
     return Venue.objects.create(
         name='Test Sports Complex',
@@ -51,9 +75,10 @@ def venue(admin_user):
         city='Mumbai',
         state='Maharashtra',
         pincode='400001',
-        contact_number='+919876543210',
-        contact_email='venue@test.com',
-        status='ACTIVE'
+        phone='+919876543210',
+        email='venue@test.com',
+        status='REGISTERED',
+        executive=executive
     )
 
 
@@ -71,7 +96,6 @@ def vendor_admin(admin_user, venue):
 def partner_user():
     """Create a partner user."""
     return User.objects.create_user(
-        username='partner',
         email='partner@example.com',
         password='partnerpass123',
         first_name='Partner',
@@ -86,9 +110,9 @@ def vendor_partner(partner_user, venue, vendor_admin):
     return VendorPartner.objects.create(
         user=partner_user,
         venue=venue,
-        vendor_admin=vendor_admin,
+        admin=vendor_admin,
         phone='+919876543211',
-        status='ACTIVE'
+        is_active=True
     )
 
 
@@ -96,10 +120,8 @@ def vendor_partner(partner_user, venue, vendor_admin):
 def player_user():
     """Create a player user."""
     return User.objects.create_user(
-        username='player',
         email='player@example.com',
         password='playerpass123',
-        phone='+919876543212',
         first_name='Player',
         last_name='User',
         role='PLAYER'
@@ -121,8 +143,9 @@ def court(venue):
     return Court.objects.create(
         venue=venue,
         name='Court 1',
-        sport='Badminton',
+        sport_type='Badminton',
         surface_type='Wooden',
+        price_per_hour=500.0,
         is_active=True
     )
 

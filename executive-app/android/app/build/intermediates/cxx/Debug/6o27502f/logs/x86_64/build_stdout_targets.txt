@@ -1,0 +1,657 @@
+ninja: Entering directory `/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/.cxx/Debug/6o27502f/x86_64'
+[0/2] Re-checking globbed directories...
+[1/88] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/States.cpp.o
+[2/88] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/EventEmitters.cpp.o
+[3/88] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/rnasyncstorageJSI-generated.cpp.o
+[4/88] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/ShadowNodes.cpp.o
+[5/88] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/Props.cpp.o
+[6/88] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/rnasyncstorage-generated.cpp.o
+[7/88] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/ComponentDescriptors.cpp.o
+[8/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_rnasyncstorage.so
+[9/88] Building CXX object CMakeFiles/appmodules.dir/OnLoad.cpp.o
+[10/88] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDropdownPickerMeasurementsManager.cpp.o
+[11/88] Building CXX object RNDateTimePickerCGen_autolinked_build/CMakeFiles/react_codegen_RNDateTimePickerCGen.dir/react/renderer/components/RNDateTimePickerCGen/States.cpp.o
+[12/88] Building CXX object RNDateTimePickerCGen_autolinked_build/CMakeFiles/react_codegen_RNDateTimePickerCGen.dir/RNDateTimePickerCGen-generated.cpp.o
+[13/88] Building CXX object RNDateTimePickerCGen_autolinked_build/CMakeFiles/react_codegen_RNDateTimePickerCGen.dir/react/renderer/components/RNDateTimePickerCGen/ComponentDescriptors.cpp.o
+[14/88] Building CXX object RNDateTimePickerCGen_autolinked_build/CMakeFiles/react_codegen_RNDateTimePickerCGen.dir/react/renderer/components/RNDateTimePickerCGen/EventEmitters.cpp.o
+[15/88] Building CXX object RNDateTimePickerCGen_autolinked_build/CMakeFiles/react_codegen_RNDateTimePickerCGen.dir/react/renderer/components/RNDateTimePickerCGen/RNDateTimePickerCGenJSI-generated.cpp.o
+[16/88] Building CXX object RNDateTimePickerCGen_autolinked_build/CMakeFiles/react_codegen_RNDateTimePickerCGen.dir/react/renderer/components/RNDateTimePickerCGen/ShadowNodes.cpp.o
+[17/88] Building CXX object RNDateTimePickerCGen_autolinked_build/CMakeFiles/react_codegen_RNDateTimePickerCGen.dir/react/renderer/components/RNDateTimePickerCGen/Props.cpp.o
+[18/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_RNDateTimePickerCGen.so
+[19/88] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDialogPickerMeasurementsManager.cpp.o
+[20/88] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDialogPickerShadowNode.cpp.o
+[21/88] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDialogPickerState.cpp.o
+[22/88] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDropdownPickerState.cpp.o
+[23/88] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp.o'
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:16:60: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCAndroidDialogPickerEventEmitter::onSelect(OnSelect $event) const {
+                                                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:17:31: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("topSelect", [$event=std::move($event)](jsi::Runtime &runtime) {
+                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:17:48: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("topSelect", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                               ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:18:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:19:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "position", $event.position);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:19:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "position", $event.position);
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:20:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:25:58: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCAndroidDialogPickerEventEmitter::onFocus(OnFocus $event) const {
+                                                         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:27:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:29:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:34:56: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCAndroidDialogPickerEventEmitter::onBlur(OnBlur $event) const {
+                                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:36:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:38:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:43:62: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCAndroidDropdownPickerEventEmitter::onSelect(OnSelect $event) const {
+                                                             ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:44:31: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("topSelect", [$event=std::move($event)](jsi::Runtime &runtime) {
+                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:44:48: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("topSelect", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                               ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:45:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:46:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "position", $event.position);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:46:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "position", $event.position);
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:47:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:52:60: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCAndroidDropdownPickerEventEmitter::onFocus(OnFocus $event) const {
+                                                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:54:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:56:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:61:58: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCAndroidDropdownPickerEventEmitter::onBlur(OnBlur $event) const {
+                                                         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:63:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:65:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:70:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCPickerEventEmitter::onChange(OnChange $event) const {
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:71:28: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("change", [$event=std::move($event)](jsi::Runtime &runtime) {
+                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:71:45: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("change", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                            ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:72:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:73:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "newValue", jsi::valueFromDynamic(runtime, $event.newValue));
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:73:78: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "newValue", jsi::valueFromDynamic(runtime, $event.newValue));
+                                                                             ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:74:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "newIndex", $event.newIndex);
+^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:74:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "newIndex", $event.newIndex);
+                                          ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp:75:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+35 warnings generated.
+[24/88] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDropdownPickerShadowNode.cpp.o
+[25/88] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/rnpicker.cpp.o
+[26/88] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/ComponentDescriptors.cpp.o'
+[27/88] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/ShadowNodes.cpp.o'
+[28/88] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/States.cpp.o'
+[29/88] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/rnpickerJSI-generated.cpp.o'
+[30/88] Building CXX object RNBootSplashSpec_autolinked_build/CMakeFiles/react_codegen_RNBootSplashSpec.dir/RNBootSplashSpec-generated.cpp.o
+[31/88] Building CXX object RNBootSplashSpec_autolinked_build/CMakeFiles/react_codegen_RNBootSplashSpec.dir/react/renderer/components/RNBootSplashSpec/ComponentDescriptors.cpp.o
+[32/88] Building CXX object RNBootSplashSpec_autolinked_build/CMakeFiles/react_codegen_RNBootSplashSpec.dir/react/renderer/components/RNBootSplashSpec/Props.cpp.o
+[33/88] Building CXX object RNBootSplashSpec_autolinked_build/CMakeFiles/react_codegen_RNBootSplashSpec.dir/react/renderer/components/RNBootSplashSpec/EventEmitters.cpp.o
+[34/88] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/Props.cpp.o'
+[35/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_rnpicker.so
+[36/88] Building CXX object RNBootSplashSpec_autolinked_build/CMakeFiles/react_codegen_RNBootSplashSpec.dir/react/renderer/components/RNBootSplashSpec/States.cpp.o
+[37/88] Building CXX object RNBootSplashSpec_autolinked_build/CMakeFiles/react_codegen_RNBootSplashSpec.dir/react/renderer/components/RNBootSplashSpec/RNBootSplashSpecJSI-generated.cpp.o
+[38/88] Building CXX object RNBootSplashSpec_autolinked_build/CMakeFiles/react_codegen_RNBootSplashSpec.dir/react/renderer/components/RNBootSplashSpec/ShadowNodes.cpp.o
+[39/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_RNBootSplashSpec.so
+[40/88] Building CXX object rndocumentpicker_autolinked_build/CMakeFiles/react_codegen_rndocumentpicker.dir/react/renderer/components/rndocumentpicker/ComponentDescriptors.cpp.o
+[41/88] Building CXX object rndocumentpicker_autolinked_build/CMakeFiles/react_codegen_rndocumentpicker.dir/react/renderer/components/rndocumentpicker/EventEmitters.cpp.o
+[42/88] Building CXX object rndocumentpicker_autolinked_build/CMakeFiles/react_codegen_rndocumentpicker.dir/react/renderer/components/rndocumentpicker/States.cpp.o
+[43/88] Building CXX object rndocumentpicker_autolinked_build/CMakeFiles/react_codegen_rndocumentpicker.dir/react/renderer/components/rndocumentpicker/Props.cpp.o
+[44/88] Building CXX object rndocumentpicker_autolinked_build/CMakeFiles/react_codegen_rndocumentpicker.dir/react/renderer/components/rndocumentpicker/ShadowNodes.cpp.o
+[45/88] Building CXX object rndocumentpicker_autolinked_build/CMakeFiles/react_codegen_rndocumentpicker.dir/react/renderer/components/rndocumentpicker/rndocumentpickerJSI-generated.cpp.o
+[46/88] Building CXX object rndocumentpicker_autolinked_build/CMakeFiles/react_codegen_rndocumentpicker.dir/rndocumentpicker-generated.cpp.o
+[47/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_rndocumentpicker.so
+[48/88] Building CXX object RNImagePickerSpec_autolinked_build/CMakeFiles/react_codegen_RNImagePickerSpec.dir/RNImagePickerSpec-generated.cpp.o
+[49/88] Building CXX object RNImagePickerSpec_autolinked_build/CMakeFiles/react_codegen_RNImagePickerSpec.dir/react/renderer/components/RNImagePickerSpec/EventEmitters.cpp.o
+[50/88] Building CXX object RNImagePickerSpec_autolinked_build/CMakeFiles/react_codegen_RNImagePickerSpec.dir/react/renderer/components/RNImagePickerSpec/ComponentDescriptors.cpp.o
+[51/88] Building CXX object RNImagePickerSpec_autolinked_build/CMakeFiles/react_codegen_RNImagePickerSpec.dir/react/renderer/components/RNImagePickerSpec/Props.cpp.o
+[52/88] Building CXX object RNImagePickerSpec_autolinked_build/CMakeFiles/react_codegen_RNImagePickerSpec.dir/react/renderer/components/RNImagePickerSpec/States.cpp.o
+[53/88] Building CXX object RNImagePickerSpec_autolinked_build/CMakeFiles/react_codegen_RNImagePickerSpec.dir/react/renderer/components/RNImagePickerSpec/RNImagePickerSpecJSI-generated.cpp.o
+[54/88] Building CXX object RNImagePickerSpec_autolinked_build/CMakeFiles/react_codegen_RNImagePickerSpec.dir/react/renderer/components/RNImagePickerSpec/ShadowNodes.cpp.o
+[55/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_RNImagePickerSpec.so
+[56/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp.o
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:16:69: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNCSafeAreaProviderEventEmitter::onInsetsChange(OnInsetsChange $event) const {
+                                                                    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:17:34: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("insetsChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                 ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:17:51: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("insetsChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:18:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:21:38: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  insets.setProperty(runtime, "top", $event.insets.top);
+                                     ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:22:40: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  insets.setProperty(runtime, "right", $event.insets.right);
+                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:23:41: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  insets.setProperty(runtime, "bottom", $event.insets.bottom);
+                                        ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:24:39: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  insets.setProperty(runtime, "left", $event.insets.left);
+                                      ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:25:3: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  $payload.setProperty(runtime, "insets", insets);
+  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:29:35: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  frame.setProperty(runtime, "x", $event.frame.x);
+                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:30:35: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  frame.setProperty(runtime, "y", $event.frame.y);
+                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:31:39: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  frame.setProperty(runtime, "width", $event.frame.width);
+                                      ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:32:40: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  frame.setProperty(runtime, "height", $event.frame.height);
+                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:33:3: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  $payload.setProperty(runtime, "frame", frame);
+  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp:35:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+15 warnings generated.
+[57/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/common/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewState.cpp.o
+[58/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/common/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewShadowNode.cpp.o
+[59/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/States.cpp.o
+[60/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/Props.cpp.o
+[61/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/ShadowNodes.cpp.o
+[62/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/safeareacontextJSI-generated.cpp.o
+[63/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/ComponentDescriptors.cpp.o
+[64/88] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/safeareacontext-generated.cpp.o
+[65/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_safeareacontext.so
+[66/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenState.cpp.o
+[67/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSModalScreenShadowNode.cpp.o
+[68/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenShadowNode.cpp.o
+[69/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/rnscreens.cpp.o
+[70/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/States.cpp.o
+[71/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/ShadowNodes.cpp.o
+[72/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/Props.cpp.o
+[73/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/rnscreensJSI-generated.cpp.o
+[74/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGImageState.cpp.o
+[75/88] Building CXX object CMakeFiles/appmodules.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/generated/rncli/src/main/jni/rncli.cpp.o
+[76/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp.o
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:17:52: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onAppear(OnAppear $event) const {
+                                                   ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:19:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:21:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:26:58: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onDisappear(OnDisappear $event) const {
+                                                         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:28:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:30:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:35:58: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onDismissed(OnDismissed $event) const {
+                                                         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:36:31: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("dismissed", [$event=std::move($event)](jsi::Runtime &runtime) {
+                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:36:48: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("dismissed", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                               ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:37:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:38:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:38:51: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+                                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:39:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:44:84: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onNativeDismissCancelled(OnNativeDismissCancelled $event) const {
+                                                                                   ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:45:44: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("nativeDismissCancelled", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:45:61: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("nativeDismissCancelled", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                            ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:46:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:47:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:47:51: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+                                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:48:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:53:60: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onWillAppear(OnWillAppear $event) const {
+                                                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:55:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:57:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:62:66: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onWillDisappear(OnWillDisappear $event) const {
+                                                                 ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:64:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:66:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:71:76: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onHeaderHeightChange(OnHeaderHeightChange $event) const {
+                                                                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:72:40: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("headerHeightChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:72:57: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("headerHeightChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                        ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:73:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:74:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "headerHeight", $event.headerHeight);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:74:51: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "headerHeight", $event.headerHeight);
+                                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:75:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:80:76: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onTransitionProgress(OnTransitionProgress $event) const {
+                                                                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:81:40: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("transitionProgress", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:81:57: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("transitionProgress", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                        ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:82:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:83:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "progress", $event.progress);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:83:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "progress", $event.progress);
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:84:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "closing", $event.closing);
+^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:84:42: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "closing", $event.closing);
+                                         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:85:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "goingForward", $event.goingForward);
+^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:85:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "goingForward", $event.goingForward);
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:86:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:91:66: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onGestureCancel(OnGestureCancel $event) const {
+                                                                 ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:93:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:95:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:100:86: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSModalScreenEventEmitter::onHeaderBackButtonClicked(OnHeaderBackButtonClicked $event) const {
+                                                                                     ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:102:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:104:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:110:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onAppear(OnAppear $event) const {
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:112:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:114:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:119:53: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onDisappear(OnDisappear $event) const {
+                                                    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:121:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:123:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:128:53: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onDismissed(OnDismissed $event) const {
+                                                    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:129:31: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("dismissed", [$event=std::move($event)](jsi::Runtime &runtime) {
+                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:129:48: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("dismissed", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                               ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:130:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:131:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:131:51: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+                                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:132:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:137:79: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onNativeDismissCancelled(OnNativeDismissCancelled $event) const {
+                                                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:138:44: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("nativeDismissCancelled", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:138:61: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("nativeDismissCancelled", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                            ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:139:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:140:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:140:51: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "dismissCount", $event.dismissCount);
+                                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:141:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:146:55: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onWillAppear(OnWillAppear $event) const {
+                                                      ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:148:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:150:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:155:61: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onWillDisappear(OnWillDisappear $event) const {
+                                                            ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:157:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:159:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:164:71: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onHeaderHeightChange(OnHeaderHeightChange $event) const {
+                                                                      ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:165:40: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("headerHeightChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:165:57: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("headerHeightChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                        ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:166:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:167:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "headerHeight", $event.headerHeight);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:167:51: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "headerHeight", $event.headerHeight);
+                                                  ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:168:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:173:71: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onTransitionProgress(OnTransitionProgress $event) const {
+                                                                      ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:174:40: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("transitionProgress", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:174:57: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("transitionProgress", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                        ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:175:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:176:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "progress", $event.progress);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:176:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "progress", $event.progress);
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:177:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "closing", $event.closing);
+^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:177:42: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "closing", $event.closing);
+                                         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:178:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "goingForward", $event.goingForward);
+^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:178:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+$payload.setProperty(runtime, "goingForward", $event.goingForward);
+                                              ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:179:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:184:61: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onGestureCancel(OnGestureCancel $event) const {
+                                                            ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:186:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:188:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:193:81: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenEventEmitter::onHeaderBackButtonClicked(OnHeaderBackButtonClicked $event) const {
+                                                                                ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:195:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:197:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:203:68: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenStackHeaderConfigEventEmitter::onAttached(OnAttached $event) const {
+                                                                   ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:205:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:207:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:212:68: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenStackHeaderConfigEventEmitter::onDetached(OnDetached $event) const {
+                                                                   ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:214:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:216:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:222:78: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSScreenStackEventEmitter::onFinishTransitioning(OnFinishTransitioning $event) const {
+                                                                             ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:224:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:226:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:231:48: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSSearchBarEventEmitter::onFocus(OnFocus $event) const {
+                                               ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:233:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:235:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:240:46: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSSearchBarEventEmitter::onBlur(OnBlur $event) const {
+                                             ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:242:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:244:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:249:72: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSSearchBarEventEmitter::onSearchButtonPress(OnSearchButtonPress $event) const {
+                                                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:250:39: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("searchButtonPress", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                      ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:250:56: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("searchButtonPress", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:251:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:252:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "text", $event.text);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:252:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "text", $event.text);
+                                          ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:253:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:258:72: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSSearchBarEventEmitter::onCancelButtonPress(OnCancelButtonPress $event) const {
+                                                                       ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:260:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:262:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:267:58: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSSearchBarEventEmitter::onChangeText(OnChangeText $event) const {
+                                                         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:268:32: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("changeText", [$event=std::move($event)](jsi::Runtime &runtime) {
+                               ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:268:49: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+  dispatchEvent("changeText", [$event=std::move($event)](jsi::Runtime &runtime) {
+                                                ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:269:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:270:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "text", $event.text);
+    ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:270:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    $payload.setProperty(runtime, "text", $event.text);
+                                          ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:271:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:276:48: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSSearchBarEventEmitter::onClose(OnClose $event) const {
+                                               ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:278:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:280:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:285:46: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+void RNSSearchBarEventEmitter::onOpen(OnOpen $event) const {
+                                             ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:287:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    auto $payload = jsi::Object(runtime);
+         ^
+/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp:289:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+    return $payload;
+           ^
+138 warnings generated.
+[77/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp.o
+[78/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGImageShadowNode.cpp.o
+[79/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/States.cpp.o
+[80/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o
+[81/88] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/ComponentDescriptors.cpp.o
+[82/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_rnscreens.so
+[83/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/rnsvgJSI-generated.cpp.o
+[84/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o
+[85/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o
+[86/88] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o
+[87/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libreact_codegen_rnsvg.so
+[88/88] Linking CXX shared library /Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/executive-app/android/app/build/intermediates/cxx/Debug/6o27502f/obj/x86_64/libappmodules.so

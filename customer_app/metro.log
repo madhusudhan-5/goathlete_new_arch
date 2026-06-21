@@ -1,0 +1,29 @@
+
+> customer_app@1.0.0 start
+> react-native start --reset-cache
+
+info Welcome to React Native v0.76
+info Starting dev server on port 8081...
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+error Cannot read properties of undefined (reading 'handle').
+TypeError: Cannot read properties of undefined (reading 'handle')
+    at Function.use (/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/customer_app/node_modules/connect/index.js:87:21)
+    at exports.runServer (/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/customer_app/node_modules/@react-native/community-cli-plugin/node_modules/metro/src/index.flow.js:146:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Object.runServer [as func] (/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/customer_app/node_modules/@react-native/community-cli-plugin/dist/commands/start/runServer.js:136:26)
+    at async Command.handleAction (/Users/madhusudhanm/Documents/GoAthlete-App/GoAthlete_New_Arch/customer_app/node_modules/@react-native-community/cli/build/index.js:139:9)
+info Run CLI with --verbose flag for more details.

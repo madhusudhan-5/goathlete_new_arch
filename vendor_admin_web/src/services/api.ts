@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Backend URL - Adjust based on environment or proxy
-const BASE_URL = 'https://api.goathlete.in/api';
+const BASE_URL = 'http://localhost:8000/api';
 
 const api = axios.create({
     baseURL: BASE_URL,

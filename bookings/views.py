@@ -182,8 +182,7 @@ class BookingAnalyticsView(viewsets.ViewSet):
         Get analytics reports: revenue, booking counts, trends
         Query params: start_date, end_date, venue_id
         """
-        from django.db.models import Sum, Count
-        from django.db.models.functions import TruncDate
+        from django.db.models import Sum, Count, F
         
         user = request.user
         start_date = request.query_params.get('start_date')
@@ -227,7 +226,7 @@ class BookingAnalyticsView(viewsets.ViewSet):
         total_bookings = queryset.count()
         
         # Daily Trends
-        daily_trends = queryset.annotate(date=TruncDate('booking_date')) \
+        daily_trends = queryset.annotate(date=F('booking_date')) \
             .values('date') \
             .annotate(revenue=Sum('total_amount'), bookings=Count('id')) \
             .order_by('date')

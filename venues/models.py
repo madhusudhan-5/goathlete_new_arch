@@ -18,6 +18,10 @@ class Venue(models.Model):
     phone = models.CharField(max_length=15)
     email = models.EmailField(blank=True, null=True)
     
+    # Geolocation
+    latitude = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
+    longitude = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
+
     # License fields
     aadhar_number = models.CharField(max_length=12, blank=True)
     aadhar_document = models.TextField(blank=True)  # Base64 encoded

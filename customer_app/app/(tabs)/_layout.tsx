@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
 import { useColorScheme } from '@/components/useColorScheme';
-import { Home, Compass, Trophy, User } from 'lucide-react-native';
+import { Home, CalendarDays, Trophy, User } from 'lucide-react-native';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -29,8 +29,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <Compass size={22} color={color} />,
+          title: 'Bookings',
+          tabBarIcon: ({ color }) => <CalendarDays size={22} color={color} />,
         }}
       />
       <Tabs.Screen

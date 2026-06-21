@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'bookings',
     'tournaments',
     'players',
+    'banners',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -216,4 +218,8 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+
+# Razorpay Settings
+RAZORPAY_KEY_ID = os.getenv('RAZORPAY_KEY_ID', 'rzp_test_dummykey')
+RAZORPAY_KEY_SECRET = os.getenv('RAZORPAY_KEY_SECRET', 'dummysecret')
 

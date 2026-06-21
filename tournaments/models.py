@@ -416,3 +416,55 @@ class LocalTournamentParticipant(models.Model):
         verbose_name = "Local Tournament Participant"
         verbose_name_plural = "Local Tournament Participants"
         ordering = ['name']
+
+
+class OpenMatch(models.Model):
+    """
+    PLAYO-style open matches where anyone can join and split the booking cost.
+    """
+    MATCH_STATUS = [
+        ('OPEN', 'Open'),
+        ('FULL', 'Full'),
+        ('CANCELLED', 'Cancelled'),
+        ('COMPLETED', 'Completed'),
+    ]
+
+    sport = models.ForeignKey(Sport, on_delete=models.PROTECT, related_name='open_matches')
+    venue = models.ForeignKey(Venue, on_delete=models.CASCADE, related_name='open_matches')
+    creator = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='created_open_matches')
+    
+    date = models.DateField()
+    start_time = models.TimeField()
+    duration_hours = models.DecimalField(max_digits=4, decimal_places=1, default=1.0)
+    
+    total_spots = models.IntegerField()
+    price_per_player = models.DecimalField(max_digits=8, decimal_places=2)
+    
+    skill_level = models.CharField(max_length=50, blank=True, help_text="e.g., Beginner, Intermediate, Advanced")
+    status = models.CharField(max_length=20, choices=MATCH_STATUS, default='OPEN')
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.sport.name} Match at {self.venue.name} ({self.date})"
+        
+    @property
+    def filled_spots(self):
+        return self.players.count()
+
+class OpenMatchPlayer(models.Model):
+    match = models.ForeignKey(OpenMatch, on_delete=models.CASCADE, related_name='players')
+    player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='joined_open_matches')
+    payment_status = models.CharField(max_length=20, default='PENDING')
+    joined_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ['match', 'player']
+        
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        # Check if full
+        if self.match.filled_spots >= self.match.total_spots:
+            self.match.status = 'FULL'
+            self.match.save()

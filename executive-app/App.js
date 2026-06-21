@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StatusBar } from 'expo-status-bar';
+import BootSplash from 'react-native-bootsplash';
 
 // Screens
 import SplashScreen from './src/screens/SplashScreen';
@@ -19,8 +19,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
-      <NavigationContainer>
+      <NavigationContainer onReady={() => BootSplash.hide({ fade: true })}>
         <Stack.Navigator
           initialRouteName="Splash"
           screenOptions={{

@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { FaChartBar, FaUsers, FaBuilding, FaAngleRight, FaBars, FaTimes } from 'react-icons/fa';
+import { FaChartBar, FaUsers, FaBuilding, FaAngleRight, FaBars, FaTrophy, FaFutbol, FaRunning } from 'react-icons/fa';
 
 const NAV_GROUPS = [
   {
     label: 'Overview',
     items: [
       { to: '/dashboard', label: 'Dashboard', icon: <FaChartBar /> },
+    ],
+  },
+  {
+    label: 'Sports Platform',
+    items: [
+      { to: '/tournaments', label: 'Tournaments', icon: <FaTrophy /> },
+      { to: '/players', label: 'Players', icon: <FaRunning /> },
+      { to: '/sports', label: 'Sports & Templates', icon: <FaFutbol /> },
     ],
   },
   {

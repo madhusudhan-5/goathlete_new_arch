@@ -41,6 +41,11 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         ]
     
     def validate(self, data):
+        # Validate booking date is not in the past
+        from django.utils import timezone
+        if data.get('booking_date') < timezone.now().date():
+            raise serializers.ValidationError("Booking date cannot be in the past")
+
         # Validate offline booking has customer details
         if data.get('booking_type') == BookingType.OFFLINE:
             if not data.get('customer_name') and not data.get('player'):

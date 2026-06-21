@@ -7,6 +7,7 @@ from .models import Venue, Court
 from .serializers import VenuePreRegisterSerializer, VenueSerializer, CourtSerializer, SlotGenerationSerializer
 from accounts.models import Executive
 import json
+from django.db import models
 
 
 class VenuePreRegisterView(APIView):
@@ -274,3 +275,59 @@ class VenueStatusUpdateView(APIView):
         venue.save()
         
         return Response(VenueSerializer(venue).data, status=status.HTTP_200_OK)
+
+
+import math
+
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371  # Earth radius in km
+    dlat = math.radians(lat2 - float(lat1))
+    dlon = math.radians(lon2 - float(lon1))
+    a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(float(lat1))) \
+        * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    return R * c
+
+class VenueListView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        qs = Venue.objects.filter(status='REGISTERED')
+        
+        search = request.query_params.get('search')
+        if search:
+            qs = qs.filter(models.Q(name__icontains=search) | models.Q(city__icontains=search) | models.Q(address__icontains=search))
+            
+        sport = request.query_params.get('sport')
+        if sport:
+            qs = qs.filter(courts__sport_type__iexact=sport).distinct()
+            
+        lat = request.query_params.get('lat')
+        lng = request.query_params.get('lng')
+        radius = float(request.query_params.get('radius', 10))
+        
+        venues_list = []
+        for venue in qs:
+            data = VenueSerializer(venue).data
+            if lat and lng and venue.latitude and venue.longitude:
+                dist = haversine(venue.latitude, venue.longitude, float(lat), float(lng))
+                if dist > radius:
+                    continue
+                data['distance'] = dist
+            venues_list.append(data)
+            
+        if lat and lng:
+            venues_list.sort(key=lambda x: x.get('distance', 9999))
+            
+        return Response(venues_list, status=status.HTTP_200_OK)
+
+class VenueDetailView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, venue_id):
+        try:
+            venue = Venue.objects.get(id=venue_id)
+            return Response(VenueSerializer(venue).data, status=status.HTTP_200_OK)
+        except Venue.DoesNotExist:
+            return Response({'error': 'Venue not found'}, status=status.HTTP_404_NOT_FOUND)
+

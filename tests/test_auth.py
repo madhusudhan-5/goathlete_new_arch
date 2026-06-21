@@ -4,88 +4,87 @@ Tests for authentication endpoints.
 import pytest
 from django.urls import reverse
 from rest_framework import status
+from accounts.otp_models import WhatsAppOTP
 
 
 @pytest.mark.django_db
 class TestAuthentication:
     """Test authentication endpoints."""
 
-    def test_user_registration(self, api_client):
-        """Test user registration."""
-        url = reverse('register')  # Adjust based on your URL name
+    def test_admin_login_success(self, api_client, admin_user):
+        """Test successful admin login."""
+        url = reverse('admin-login')
         data = {
-            'username': 'newuser',
-            'email': 'newuser@example.com',
-            'password': 'newpass123',
-            'first_name': 'New',
-            'last_name': 'User'
-        }
-        
-        # This will fail if endpoint doesn't exist - adjust as needed
-        # response = api_client.post(url, data)
-        # assert response.status_code == status.HTTP_201_CREATED
-        # assert 'access' in response.data
-        pass  # Placeholder
-
-    def test_login_success(self, api_client, user):
-        """Test successful login."""
-        url = reverse('token_obtain_pair')  # JWT login endpoint
-        data = {
-            'username': 'testuser',
-            'password': 'testpass123'
+            'email': admin_user.email,
+            'password': 'adminpass123'
         }
         
         response = api_client.post(url, data)
         assert response.status_code == status.HTTP_200_OK
         assert 'access' in response.data
         assert 'refresh' in response.data
+        assert response.data['user']['email'] == admin_user.email
 
-    def test_login_invalid_credentials(self, api_client, user):
+    def test_admin_login_invalid_credentials(self, api_client, admin_user):
         """Test login with invalid credentials."""
-        url = reverse('token_obtain_pair')
+        url = reverse('admin-login')
         data = {
-            'username': 'testuser',
+            'email': admin_user.email,
             'password': 'wrongpassword'
         }
         
         response = api_client.post(url, data)
-        assert response.status_code == status.HTTP_401_UNAUTHORIZED
+        assert response.status_code == status.HTTP_400_BAD_REQUEST
 
-    def test_token_refresh(self, api_client, user):
-        """Test token refresh."""
-        # First get tokens
-        login_url = reverse('token_obtain_pair')
-        login_data = {
-            'username': 'testuser',
-            'password': 'testpass123'
-        }
+    def test_executive_login_and_verify_otp(self, api_client, executive):
+        """Test executive login and OTP verification."""
+        # Set user role to EXECUTIVE to satisfy validator
+        executive.user.role = 'EXECUTIVE'
+        executive.user.save()
+
+        # 1. Initiate login
+        login_url = reverse('executive-login')
+        login_data = {'email': executive.user.email}
         login_response = api_client.post(login_url, login_data)
-        refresh_token = login_response.data['refresh']
-        
-        # Now refresh
-        refresh_url = reverse('token_refresh')
-        refresh_data = {'refresh': refresh_token}
-        
-        response = api_client.post(refresh_url, refresh_data)
-        assert response.status_code == status.HTTP_200_OK
-        assert 'access' in response.data
+        assert login_response.status_code == status.HTTP_200_OK
+        assert 'otp' in login_response.data
+        otp_code = login_response.data['otp']
 
-    def test_whatsapp_otp_send(self, api_client):
-        """Test sending WhatsApp OTP."""
-        url = reverse('send-otp')  # Adjust based on your URL name
-        data = {'phone_number': '+919876543210'}
-        
-        # This will depend on your Twilio setup
-        # response = api_client.post(url, data)
-        # assert response.status_code == status.HTTP_200_OK
-        pass  # Placeholder
+        # 2. Verify OTP
+        verify_url = reverse('verify-otp')
+        verify_data = {
+            'email': executive.user.email,
+            'otp': otp_code
+        }
+        verify_response = api_client.post(verify_url, verify_data)
+        assert verify_response.status_code == status.HTTP_200_OK
+        assert 'access' in verify_response.data
+        assert 'refresh' in verify_response.data
 
-    def test_whatsapp_otp_verify(self, api_client):
-        """Test verifying WhatsApp OTP."""
-        # First send OTP
-        # Then verify with correct OTP
-        # This requires mocking Twilio
-        pass  # Placeholder
+    def test_whatsapp_otp_send_and_verify(self, api_client):
+        """Test player OTP sending and verification."""
+        phone_number = '+919876543210'
+        
+        # 1. Send OTP
+        send_url = reverse('send-otp')
+        send_data = {'phone_number': phone_number}
+        send_response = api_client.post(send_url, send_data)
+        assert send_response.status_code == status.HTTP_200_OK
+        
+        # 2. Retrieve generated OTP from DB
+        otp_obj = WhatsAppOTP.objects.filter(phone_number=phone_number).latest('created_at')
+        otp_code = otp_obj.otp
+        
+        # 3. Verify OTP
+        verify_url = reverse('verify-otp-whatsapp')
+        verify_data = {
+            'phone_number': phone_number,
+            'otp': otp_code
+        }
+        verify_response = api_client.post(verify_url, verify_data)
+        assert verify_response.status_code == status.HTTP_200_OK
+        assert 'tokens' in verify_response.data
+        assert 'access' in verify_response.data['tokens']
 
     def test_unauthorized_access(self, api_client):
         """Test accessing protected endpoint without authentication."""
@@ -97,5 +96,4 @@ class TestAuthentication:
         """Test accessing protected endpoint with authentication."""
         url = reverse('venue-list')
         response = authenticated_client.get(url)
-        # Should return 200 or 403 depending on permissions
         assert response.status_code in [status.HTTP_200_OK, status.HTTP_403_FORBIDDEN]
