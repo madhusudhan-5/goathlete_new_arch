@@ -88,6 +88,33 @@ Do not share this code with anyone."""
         except Exception as e:
             logger.error(f"Failed to fetch message status for {message_sid}: {str(e)}")
             return "error"
+            
+    def send_tournament_invite(self, phone_number, tournament_name):
+        """
+        Send a WhatsApp message when a player is added to a tournament.
+        """
+        if not self.client:
+            logger.error("Twilio client not initialized")
+            logger.info(f"📱 WhatsApp Tournament Invite for {phone_number}: {tournament_name}")
+            return True, "DEV_MODE"
+            
+        try:
+            to_whatsapp = f"whatsapp:{phone_number}"
+            from_whatsapp = f"whatsapp:{self.whatsapp_from}"
+            
+            message_body = f"Thanks for being part of the {tournament_name} and joining Goathlete to your performance dashboard. Kindly login to the app: https://goathlete.in/app"
+            
+            message = self.client.messages.create(
+                body=message_body,
+                from_=from_whatsapp,
+                to=to_whatsapp
+            )
+            logger.info(f"WhatsApp Tournament Invite sent to {phone_number}. SID: {message.sid}")
+            return True, message.sid
+            
+        except Exception as e:
+            logger.error(f"Failed to send WhatsApp invite to {phone_number}: {str(e)}")
+            return False, str(e)
 
 
 class OTPService:

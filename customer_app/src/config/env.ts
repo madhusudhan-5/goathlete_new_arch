@@ -14,12 +14,12 @@ const IS_DEV = __DEV__;
 
 const DEV_API_URL =
   Platform.OS === 'android'
-    ? 'http://192.168.1.199:8000/api'
+    ? 'http://192.168.1.4:8000/api'
     : 'http://localhost:8000/api';
 
 const PROD_API_URL = 'https://api.goathlete.in/api';
 
-export const API_BASE_URL = 'http://192.168.1.199:8000/api';
+export const API_BASE_URL = 'http://192.168.1.4:8000/api';
 
 // ─── Google OAuth ──────────────────────────────────────────────────────────
 // DEV  : Console log only — no real Google sign-in configured

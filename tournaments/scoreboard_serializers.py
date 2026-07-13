@@ -9,7 +9,7 @@ class SportSerializer(serializers.ModelSerializer):
     """Serializer for Sport"""
     class Meta:
         model = Sport
-        fields = ['id', 'name', 'code', 'icon', 'description', 'is_active']
+        fields = ['id', 'name', 'code', 'icon', 'description', 'min_players', 'is_active']
 
 
 class SportScoreboardTemplateSerializer(serializers.ModelSerializer):

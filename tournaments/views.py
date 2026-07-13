@@ -303,22 +303,27 @@ class LocalTournamentViewSet(viewsets.ModelViewSet):
             raise ValidationError("You already have an active tournament. Close it before creating a new one.")
 
         # Block if any participant email matches the organizer's email
-        participant_emails = [p['email'] for p in self.request.data.get('participants', [])]
-        user_email = self.request.user.email
-        if user_email in participant_emails:
-            from rest_framework.exceptions import ValidationError
-            raise ValidationError("You cannot add yourself as a participant.")
-
-        # Block if any participant email is already in an active tournament
-        blocked_emails = LocalTournamentParticipant.objects.filter(
-            email__in=participant_emails,
-            tournament__status=LocalTournamentStatus.ACTIVE
-        ).values_list('email', flat=True)
-        if blocked_emails:
-            from rest_framework.exceptions import ValidationError
-            raise ValidationError(
-                f"The following participants already have an active tournament: {', '.join(blocked_emails)}"
-            )
+        participant_mobiles = [p.get('mobile') for p in self.request.data.get('participants', []) if p.get('mobile')]
+        
+        # Check if any participant is already in an active tournament
+        active_tournaments = LocalTournament.objects.filter(
+            status__in=['scheduled', 'live'],
+            participants__mobile__in=participant_mobiles
+        ).distinct()
+        
+        if active_tournaments.exists():
+            # Find exactly which participants
+            blocked_mobiles = set()
+            for t in active_tournaments:
+                for p in t.participants.all():
+                    if p.mobile in participant_mobiles:
+                        blocked_mobiles.add(p.mobile)
+            
+            if blocked_mobiles:
+                from rest_framework import serializers
+                raise serializers.ValidationError(
+                    f"The following participants already have an active tournament: {', '.join(blocked_mobiles)}"
+                )
 
         serializer.save(organizer=player)
 

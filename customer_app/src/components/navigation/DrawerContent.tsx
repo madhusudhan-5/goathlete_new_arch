@@ -43,8 +43,11 @@ export default function DrawerContent(props: any) {
         text: 'Logout',
         style: 'destructive',
         onPress: async () => {
-          await authService.logout();
-          setIsLoggedIn(false);
+          navigation.closeDrawer();
+          setTimeout(async () => {
+            await authService.logout();
+            setIsLoggedIn(false);
+          }, 150);
         },
       },
     ]);

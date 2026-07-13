@@ -27,7 +27,16 @@ export default function ProfileScreen() {
 
   const handleLogout = () => Alert.alert('Logout', 'Are you sure?', [
     { text: 'Cancel', style: 'cancel' },
-    { text: 'Logout', style: 'destructive', onPress: async () => { await authService.logout(); setIsLoggedIn(false); } },
+    { 
+      text: 'Logout', 
+      style: 'destructive', 
+      onPress: () => {
+        setTimeout(async () => {
+          await authService.logout();
+          setIsLoggedIn(false);
+        }, 150);
+      } 
+    },
   ]);
 
   if (loading) return <SafeAreaView className="flex-1 bg-[#0A1F35] items-center justify-center"><ActivityIndicator size="large" color="#DA6F2B" /></SafeAreaView>;

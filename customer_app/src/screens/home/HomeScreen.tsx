@@ -301,7 +301,7 @@ export default function HomeScreen() {
           <Text className="text-white font-bold text-base mb-3">Quick Actions</Text>
           <View className="flex-row flex-wrap gap-3">
             {[
-              { icon: <MapPin size={20} color="#FFFFFF" />, label: 'Book Venue', bg: '#0A1F35', onPress: () => navigation.navigate('HomeTab', { screen: 'VenueBrowse' }) },
+              { icon: <MapPin size={20} color="#FFFFFF" />, label: 'Book Venue', bg: '#2563eb', onPress: () => navigation.navigate('HomeTab', { screen: 'VenueBrowse' }) },
               { icon: <Trophy size={20} color="#FFFFFF" />, label: 'Tournaments', bg: '#DA6F2B', onPress: () => navigation.navigate('CompeteTab') },
               { icon: <Zap size={20} color="#FFFFFF" />, label: 'Live Scores', bg: '#1e3a5f', onPress: () => navigation.navigate('HomeTab', { screen: 'OpenMatches' }) },
               { icon: <Package size={20} color="#FFFFFF" />, label: 'Rent Gear', bg: '#7c3aed', onPress: () => navigation.navigate('HomeTab', { screen: 'VenueBrowse' }) },
@@ -310,12 +310,12 @@ export default function HomeScreen() {
                 key={action.label}
                 onPress={action.onPress}
                 activeOpacity={0.85}
-                style={{ width: '47.5%', height: 90, backgroundColor: action.bg, borderRadius: 16, padding: 14, justifyContent: 'space-between' }}
+                style={{ width: '47%', height: 76, backgroundColor: action.bg, borderRadius: 12, padding: 12, justifyContent: 'space-between', flexDirection: 'row', alignItems: 'center' }}
               >
-                <View className="w-9 h-9 rounded-xl bg-white/20 items-center justify-center">
+                <View className="w-10 h-10 rounded-full bg-white/20 items-center justify-center">
                   {action.icon}
                 </View>
-                <Text className="text-white font-bold text-sm">{action.label}</Text>
+                <Text className="text-white font-bold text-sm ml-2 flex-1 flex-wrap">{action.label}</Text>
               </TouchableOpacity>
             ))}
           </View>

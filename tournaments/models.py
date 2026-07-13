@@ -400,7 +400,7 @@ class LocalTournamentParticipant(models.Model):
         related_name='participants'
     )
     name = models.CharField(max_length=255)
-    email = models.EmailField()
+    email = models.EmailField(blank=True, null=True)
     mobile = models.CharField(max_length=20)
     score = models.JSONField(
         default=dict,

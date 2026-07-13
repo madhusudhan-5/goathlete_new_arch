@@ -8,6 +8,7 @@ class Sport(models.Model):
     code = models.CharField(max_length=20, unique=True, help_text="Unique sport code (e.g., CRICKET, FOOTBALL)")
     icon = models.CharField(max_length=50, help_text="Emoji or icon identifier")
     description = models.TextField(blank=True)
+    min_players = models.IntegerField(default=2, help_text="Total minimum players required to create a match (e.g. Cricket=22, Badminton singles=2)")
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   View, Text, SafeAreaView, KeyboardAvoidingView,
-  Platform, TouchableOpacity, Alert, ActivityIndicator,
+  Platform, TouchableOpacity, Alert, ActivityIndicator, Image
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Smartphone, ArrowRight } from 'lucide-react-native';
@@ -14,6 +14,8 @@ export default function LoginScreen() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
+  const [devOtp, setDevOtp] = useState<string | null>(null);
+  const [otpError, setOtpError] = useState<string | null>(null);
   const { setIsLoggedIn } = useAuthContext();
 
   // ─── Phone OTP Login ───────────────────────────────────────────────────────
@@ -24,21 +26,25 @@ export default function LoginScreen() {
     }
     const formatted = phoneNumber.startsWith('+') ? phoneNumber : `+91${phoneNumber}`;
     setLoading(true);
+    setOtpError(null);
+    setDevOtp(null);
     try {
       const response = await authService.sendOtp(formatted);
-      if (response.success) {
-        navigation.navigate('OTP', { phone: formatted });
+      if (response.success || response.otp) {
+        if (response.otp) {
+          setDevOtp(response.otp);
+          if (LOG_API_CALLS) console.log(`[DEV] OTP for ${formatted}: ${response.otp}`);
+        }
+        navigation.navigate('OTP', { phone: formatted, otp: response.otp });
       } else {
-        Alert.alert('Error', response.message || 'Failed to send OTP');
-      }
-      // DEV: also show OTP in console
-      if (LOG_API_CALLS && response.otp) {
-        console.log(`[DEV] OTP for ${formatted}: ${response.otp}`);
-        Alert.alert('DEV MODE — OTP', `Your OTP: ${response.otp}`);
+        setOtpError(response.message || 'Failed to send OTP');
       }
     } catch (error: any) {
-      const msg = error.response?.data?.message || 'Failed to connect. Check your internet.';
-      Alert.alert('Error', msg);
+      let msg = 'Failed to connect. Check your internet.';
+      if (error.response?.data) {
+        msg = error.response.data.message || error.response.data.error || JSON.stringify(error.response.data);
+      }
+      setOtpError(msg);
     } finally {
       setLoading(false);
     }
@@ -92,9 +98,13 @@ export default function LoginScreen() {
 
           {/* ─── Branding ─────────────────────────────────────────────── */}
           <View className="items-center mb-10">
-            <View className="w-20 h-20 rounded-full bg-[#DA6F2B] items-center justify-center mb-4 shadow-lg"
+            <View className="w-20 h-20 rounded-full bg-white items-center justify-center mb-4 shadow-lg overflow-hidden"
               style={{ shadowColor: '#DA6F2B', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.4, shadowRadius: 16, elevation: 10 }}>
-              <Text style={{ fontSize: 38 }}>🏟️</Text>
+              <Image 
+                source={require('../../../assets/images/icon.png')} 
+                style={{ width: 80, height: 80 }} 
+                resizeMode="cover"
+              />
             </View>
             <Text className="text-white text-3xl font-bold mb-1">GoAthlete</Text>
             <Text className="text-[#94a3b8] text-sm text-center">
@@ -136,6 +146,13 @@ export default function LoginScreen() {
                 </>
               )}
             </TouchableOpacity>
+
+            {otpError ? (
+              <Text className="text-red-400 text-sm mt-3 text-center">{otpError}</Text>
+            ) : null}
+            {devOtp ? (
+              <Text className="text-green-400 text-sm mt-3 text-center font-bold">DEV OTP: {devOtp}</Text>
+            ) : null}
           </View>
 
           {/* ─── Divider ──────────────────────────────────────────────── */}
@@ -157,7 +174,10 @@ export default function LoginScreen() {
               <ActivityIndicator color="#0A1F35" />
             ) : (
               <>
-                <Text style={{ fontSize: 20, marginRight: 10 }}>🔵</Text>
+                <Image 
+                  source={{ uri: 'https://img.icons8.com/color/48/000000/google-logo.png' }} 
+                  style={{ width: 24, height: 24, marginRight: 10 }} 
+                />
                 <Text className="text-[#0A1F35] font-bold text-base">Continue with Google</Text>
               </>
             )}

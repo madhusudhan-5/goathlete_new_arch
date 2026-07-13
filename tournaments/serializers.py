@@ -2,6 +2,8 @@ from rest_framework import serializers
 from .models import Tournament, Team, TeamPlayer, Match, PerformanceStats, LocalTournament, LocalTournamentParticipant
 from players.serializers import PlayerSerializer
 from venues.serializers import VenueSerializer
+from accounts.twilio_service import TwilioWhatsAppService
+
 
 
 class TournamentSerializer(serializers.ModelSerializer):
@@ -283,18 +285,33 @@ class LocalTournamentCreateSerializer(serializers.ModelSerializer):
         fields = ['name', 'sport', 'participants']
 
     def validate_participants(self, value):
-        if len(value) < 2:
-            raise serializers.ValidationError("At least 2 participants are required.")
-        emails = [p['email'] for p in value]
+        emails = [p['email'] for p in value if p.get('email')]
         if len(emails) != len(set(emails)):
             raise serializers.ValidationError("Duplicate participant emails are not allowed.")
         return value
+        
+    def validate(self, data):
+        sport = data.get('sport')
+        participants = data.get('participants', [])
+        
+        if sport and len(participants) < sport.min_players:
+            raise serializers.ValidationError(f"At least {sport.min_players} participants are required for {sport.name}.")
+            
+        return data
 
     def create(self, validated_data):
         participants_data = validated_data.pop('participants')
         tournament = LocalTournament.objects.create(**validated_data)
+        
+        twilio_service = TwilioWhatsAppService()
         for participant_data in participants_data:
             LocalTournamentParticipant.objects.create(tournament=tournament, **participant_data)
+            
+            # Trigger WhatsApp invite
+            mobile = participant_data.get('mobile')
+            if mobile:
+                twilio_service.send_tournament_invite(mobile, tournament.name)
+                
         return tournament
 
 
